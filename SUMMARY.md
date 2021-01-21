@@ -1,21 +1,19 @@
-**Deutsche Hilfe**
-* [Häufige Fragen und Lösungen](de-FAQ)
+# Table of contents
 
-***
+* [Introduction](README.md)
+* [Häufige Fragen und Lösungen](haeufige-fragen-und-loesungen.md)
+* [Geräte](geraete/README.md)
+  * [Geräte importieren](geraete/geraete-importieren.md)
+* [Layout](layout/README.md)
+  * [Widgets](layout/widgets.md)
+  * [Module](layout/module.md)
+  * [Gewerke](layout/gewerke.md)
+* [Einstellungen](einstellungen.md)
+* [Beispiele](beispiele.md)
+* [Fehleranalyse und -Meldung](fehleranalyse-und-meldung.md)
 
-* [Geräte](de-Devices)
-  * [Geräte importieren](de-Devices_Importer)
-* [Layout](de-Layout)
-  * [Widgets](de-Widgets)
-  * [Module](de-Modules)
-  * [Gewerke](de-Functions)
-* [Einstellungen](de-Settings)
+## Gruppe
 
-***
+* [Backup & Restore](gruppe/backup-and-restore.md)
+* [Untitled](gruppe/untitled.md)
 
-* [Beispiele](de-Beispiele)
-
-***
-
-* [Fehleranalyse und -Meldung](de-Errors)
-* [Backup & Restore](de-Backup__Restore)
