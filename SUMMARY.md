@@ -4,8 +4,8 @@
 
 ## Geräte
 
-* [Geräte](geraete/de-devices.md)
-* [Geräte importieren](geraete/de-devices_importer.md)
+* [Geräte](geraete/de-devices/README.md)
+  * [Geräte importieren](geraete/de-devices/de-devices_importer.md)
 * [Gewerke](geraete/gewerke.md)
 
 ## Layout <a id="layout-1"></a>
