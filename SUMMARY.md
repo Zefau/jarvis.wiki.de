@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Häufige Fragen und Lösungen](haeufige-fragen-und-loesungen.md)
-* [Geräte](devices/README.md)
-  * [Geräte importieren](devices/geraete-importieren.md)
+* [Geräte](de-devices/README.md)
+  * [Geräte importieren](de-devices/geraete-importieren.md)
 * [Layout](layout/README.md)
   * [Widgets](layout/widgets.md)
   * [Module](layout/module.md)
