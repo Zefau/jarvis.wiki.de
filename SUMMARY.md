@@ -1,12 +1,21 @@
-# Table of contents
+**Deutsche Hilfe**
+* [Häufige Fragen und Lösungen](de-FAQ)
 
-* [Initial page](README.md)
+***
 
-## Test
+* [Geräte](de-Devices)
+  * [Geräte importieren](de-Devices_Importer)
+* [Layout](de-Layout)
+  * [Widgets](de-Widgets)
+  * [Module](de-Modules)
+  * [Gewerke](de-Functions)
+* [Einstellungen](de-Settings)
 
-* [Untitled](test/untitled.md)
+***
 
-## Rwar
+* [Beispiele](de-Beispiele)
 
-* [testi](rwar/testi.md)
+***
 
+* [Fehleranalyse und -Meldung](de-Errors)
+* [Backup & Restore](de-Backup__Restore)
