@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Häufige Fragen und Lösungen](haeufige-fragen-und-loesungen.md)
 * [Geräte](de-devices/README.md)
-  * [Geräte importieren](de-devices/geraete-importieren.md)
+  * [Geräte importieren](de-devices/de-devices_importer.md)
 * [Layout](layout/README.md)
   * [Widgets](layout/widgets.md)
   * [Module](layout/module.md)
