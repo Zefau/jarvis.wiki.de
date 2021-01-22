@@ -1,7 +1,7 @@
 # Geräte
 
 Ein Gerät stellt Element dar, welches durch einen Namen, Gewerk und seine Zustände (`States`) beschrieben ist, z. B. ist das Vitrinenlicht (Name) ein Licht (Gewerk) mit den Zuständen `power` (an/aus), `level` (bzw. `dimmer`) und ggf. einer Farbauswahl (`colorTemperature`, `rgb` / `hue`).
-Mehr über die Gewerke kann [hier nachgelesen](de-Functions) werden.
+Mehr über die Gewerke kann [hier nachgelesen](./functions.md) werden.
 
 
 # Geräteliste

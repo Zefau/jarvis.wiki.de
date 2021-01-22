@@ -34,8 +34,9 @@ Zeigt alle installierten Adapter mit ihren Instanzen und dem jeweiligen Status (
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls AdapterStatus konnte nicht geladen werden!](./AdapterStatus1.png)</kbd>
+<kbd>![Screenshot AdapterStatus1.png](./AdapterStatus1.png)</kbd>
 
 
 #### Konfiguration
@@ -55,6 +56,7 @@ Zeigt ical / ics Inhalte in einem Kalender an.
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration
@@ -77,8 +79,9 @@ Stellt historische Werte (z.B. aus ioBroker.history) grafisch als Chart mittels 
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls Chart konnte nicht geladen werden!](./Chart1.png)</kbd>
+<kbd>![Screenshot Chart1.png](./Chart1.png)</kbd>
 
 
 #### Konfiguration
@@ -101,6 +104,7 @@ Zeigt dynamische HTML Inhalte von Datenpunkten an.
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration
@@ -116,8 +120,9 @@ Das Modul dient der Anzeige des aktuellen Datums und Zeit.
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls DateTime konnte nicht geladen werden!](./DateTime1.png)</kbd>
+<kbd>![Screenshot DateTime1.png](./DateTime1.png)</kbd>
 
 
 #### Konfiguration
@@ -139,6 +144,7 @@ Zeigt ein Bild aus einer URL oder einem base64-Wert an.
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration
@@ -159,6 +165,7 @@ Zeigt Inhalte anderer Seiten in einem iFrame an.
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration
@@ -179,8 +186,9 @@ Zeigt eine Karte von OpenStreetMap.
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls Map konnte nicht geladen werden!](./Map1.png)</kbd>
+<kbd>![Screenshot Map1.png](./Map1.png)</kbd>
 
 
 #### Konfiguration
@@ -202,6 +210,7 @@ Zeigt ein Multimedia-Player an (z. B. Spotify).
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration
@@ -222,17 +231,18 @@ Zeigt eine Liste von States an.
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls StateList konnte nicht geladen werden!](./StateList1.png)</kbd>
+<kbd>![Screenshot StateList1.png](./StateList1.png)</kbd>
 
 ##### Screenshot2
-<kbd>![Screenshot des Moduls StateList konnte nicht geladen werden!](./StateList2.png)</kbd>
+<kbd>![Screenshot StateList2.png](./StateList2.png)</kbd>
 
 ##### Screenshot3
-<kbd>![Screenshot des Moduls StateList konnte nicht geladen werden!](./StateList3.png)</kbd>
+<kbd>![Screenshot StateList3.png](./StateList3.png)</kbd>
 
 ##### Screenshot4
-<kbd>![Screenshot des Moduls StateList konnte nicht geladen werden!](./StateList4.png)</kbd>
+<kbd>![Screenshot StateList4.png](./StateList4.png)</kbd>
 
 
 #### Konfiguration
@@ -248,8 +258,9 @@ Zeigt eine Liste von States (horizontal) an.
 
 
 #### Beispiel Screenshots
+
 ##### Screenshot1
-<kbd>![Screenshot des Moduls StateListHorizontal konnte nicht geladen werden!](./StateListHorizontal1.png)</kbd>
+<kbd>![Screenshot StateListHorizontal1.png](./StateListHorizontal1.png)</kbd>
 
 
 #### Konfiguration
@@ -265,6 +276,7 @@ Zeigt die Wetter-Vorschau an.
 
 
 #### Beispiel Screenshots
+Keine Screenshots verfügbar
 
 
 #### Konfiguration

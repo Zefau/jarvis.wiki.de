@@ -8,6 +8,7 @@ Um schnell in jarvis zu starten, können vorhandene Geräte aus ioBroker importi
 ## Such-Modus (alle oder Enums)
 
 Es werden zwei Modi unterstützt um die Adapter-Struktur zu durchsuchen:
+
 ![Importer](./devices-importer_structure-selection.png)
 
 - `nach allen Geräten durchsuchen`: Durchsucht die komplette Struktur der ausgewählten Adapter nach allen vorhandenen Geräten und listet diese auf.
