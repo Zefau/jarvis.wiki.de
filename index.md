@@ -14,14 +14,20 @@ Sofern jarvis nicht öffnet oder andere Probleme auftreten findet sich ggf. [in 
 
 ![Konfiguration](./xx-Home-Settings-Button.png)
 
+
 ### Geräte
 siehe [Beschreibung für Geräte](./devices/devices.md).
+
 ![Geräte](./xx-Home-Devices.png)
+
 
 ### Layout
 siehe [Beschreibung für Layout](./layout/layout.md).
+
 ![Layout](./xx-Home-Layout.png)
+
 
 ### Einstellungen
 siehe [Beschreibung für Einstellungen](./settings/settings.md).
+
 ![Einstellungen](./xx-Home-Settings.png)

@@ -6,7 +6,7 @@ Mehr über die Gewerke kann [hier nachgelesen](de-Functions) werden.
 
 # Geräteliste
 
-![Geräteliste](https://raw.githubusercontent.com/Zefau/ioBroker.jarvis/master/docs/de-Geräteliste.png)
+![Geräteliste](./devices_list.png)
 
 Die Liste der Geräte kann nach Gewerk oder Hersteller (`manufacturer`) gruppiert werden.
 
@@ -39,7 +39,7 @@ oder
 
 Die Gerätekonfiguration kann in den jarvis Einstellungen je Gerät vorgenommen werden.
 
-![Gerätekonfiguration](https://raw.githubusercontent.com/Zefau/ioBroker.jarvis/master/docs/de-Gerätekonfiguration.png)
+![Gerätekonfiguration](./devices_configuration.png)
 
 
 ## Konfiguration der Datenpunkte / States
@@ -71,15 +71,16 @@ Die folgenden Eigenschaften stehen zur Verfügung:
 - `level` (Standard `100`): Definiert das initiale Dimmlevel beim Einschalten eines Dimmers.
 
 Die Angaben sind im JSON Format zu machen, analog der [JSON Eingabefelder](#datenpunkt-eigenschaften).
+
 **Beispiel**
-![Datenpunkt Eigenschaften](https://raw.githubusercontent.com/Zefau/ioBroker.jarvis/master/docs/de-Devices-Properties.png)
+![Datenpunkt Eigenschaften](devices_properties.png)
 
 
 ## JSON Eingabefelder
 
 Für alle Datenpunkte, die das Format `json` haben, können die Inhalte abhängig des Wertes des Datenpunkts definiert werden.
 
-Die durch jarvis definierten Voreinstellungen sind durch das jeweilige Gewerk des Geräts vorgegeben und können durch die Angabe direkt im Gerät (vgl. Screenshot oben) überschrieben werden. Die [definierten Voreinstellungen können unter Gewerke](de-Functions) eingesehen werden.
+Die durch jarvis definierten Voreinstellungen sind durch das jeweilige Gewerk des Geräts vorgegeben und können durch die Angabe direkt im Gerät (vgl. Screenshot oben) überschrieben werden. Die [definierten Voreinstellungen können unter Gewerke](./functions.md) eingesehen werden.
 
 Erlaubte Operatoren sind `<`, `<=`, `>`, `>=` und `!=`.
 

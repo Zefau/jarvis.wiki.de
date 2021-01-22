@@ -5,14 +5,14 @@
 ## Geräte
 
 * [Geräte](devices/devices.md)
-  * [Geräte importieren](devices/devices_importer.md)
+  * [Geräte importieren](devices/devices-importer.md)
 * [Gewerke](devices/functions.md)
 
 ## Layout
 
 * [Layout](layout/layout.md)
 * [Widgets](layout/widgets.md)
-* [Module](layout/module.md)
+* [Module](layout/modules.md)
 * [Beispiele](layout/examples.md)
 
 ## Einstellungen

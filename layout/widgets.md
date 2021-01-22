@@ -8,8 +8,8 @@ Jedes Widget hat ein Label / einen Titel (Pflichtangabe). Darüber hinaus kann e
 
 ### Modul
 
-Das Modul dient dem Widget zur Anzeige. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](./modules).
+Das Modul dient dem Widget zur Anzeige. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](./modules.md).
 
 ### Geräte
 
-Abhängig vom ausgewähltem Modul können dem Widget [Geräte](./devices) (oder auch Gruppen oder Trennstreifen) zur Anzeige hinzugefügt werden. Je nach Modul ist für die hinzugefügten Geräte der Datenpunkt auszuwählen, der angezeigt oder angesteuert werden soll. Das Ansteuern bzw. das Auslösen von Datenpunkten erfolgt mittels Komponenten (z. B. `SwitchInput`), die per Dropdown ausgewählt werden.
+Abhängig vom ausgewähltem Modul können dem Widget [Geräte](./devices.md) (oder auch Gruppen oder Trennstreifen) zur Anzeige hinzugefügt werden. Je nach Modul ist für die hinzugefügten Geräte der Datenpunkt auszuwählen, der angezeigt oder angesteuert werden soll. Das Ansteuern bzw. das Auslösen von Datenpunkten erfolgt mittels Komponenten (z. B. `SwitchInput`), die per Dropdown ausgewählt werden.
