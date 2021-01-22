@@ -1,12 +1,10 @@
-# Beispiele
-
 Pulsierendes Icon
 
-![](../.gitbook/assets/examples_blink.gif)
+![](./examples_blink.gif)
 
 Um ein pulsierendes Icon zu erzeugen muss in den Einstellungen unter Styles zunächst der folgende Code hinzugefügt werden.
 
-```text
+```
 .blink {
     animation: blinker 1s linear infinite;
 }
@@ -19,10 +17,9 @@ Um ein pulsierendes Icon zu erzeugen muss in den Einstellungen unter Styles zun�
 
 Danach kann man bei einem Widget unter der Eigenschaft Icon den folgenden JSON Code verwenden.
 
-```text
+```
 {
     "<10": "mdi-thermometer blink",
     ">25": "mdi-thermometer blink"
 }
 ```
-
