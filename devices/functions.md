@@ -32,27 +32,27 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 - [Sonstige](#gewerk-sonstige-_defaults)
 
 
-<h2>Gewerk Rollladen / Jalousie (<code>blind</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Rollladen / Jalousie (`blind`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>level</code></td><td>-</td><td>-</td><td><code>%</code></td><td><pre lang="json">{
+<tr><td><code>level</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
    "default": "window-shutter-open",
    ">90": "window-shutter-open",
    "<=90": "window-shutter"
-}</pre></td><td>-</td></tr>
-<tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>%</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
    "default": "window-shutter-open",
    ">90": "window-shutter-open",
    "<=90": "window-shutter"
-}</pre></td><td>-</td></tr>
-<tr><td><code>activity</code></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>activity</code></td><td>-</td><td><code>{
    "true": "in Bewegung",
    "false": "keine"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "pan-vertical",
    "false": "dots-vertical"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -268,21 +268,21 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Tür (<code>door</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Tür (`door`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>open</code></td><td>-</td><td><pre lang="json">{
+<tr><td><code>open</code></td><td>-</td><td><code>{
    "0": "door#open#closed",
    "1": "door#open#opened",
    "false": "geschlossen",
    "true": "offen"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "0": "window-closed-variant",
    "1": "window-open-variant",
    "false": "door-closed",
    "true": "door-open"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 <tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -299,35 +299,35 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Lüfter (<code>fan</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Lüfter (`fan`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "fan",
    "false": "fan-off"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Heizung (<code>heating</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Heizung (`heating`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><pre lang="json">"thermometer"</pre></td><td>-</td></tr>
-<tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><pre lang="json">"thermometer-chevron-up"</pre></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
+<tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer-chevron-up"</code></td><td>-</td></tr>
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"radiator"</pre></td><td>-</td></tr>
-<tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>min.</code></td><td><pre lang="json">"clock-outline"</pre></td><td>-</td></tr>
+<tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>"radiator"</code></td><td>-</td></tr>
+<tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>min.</code></td><td><code>"clock-outline"</code></td><td>-</td></tr>
 <tr><td><code>boostState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>windowState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>partyMode</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"brightness-auto"</pre></td><td>-</td></tr>
+<tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>"brightness-auto"</code></td><td>-</td></tr>
 <tr><td><code>modeManu</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>modeCurrent</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>modeLowering</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"list-status"</pre></td><td>-</td></tr>
-<tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>%</code></td><td><pre lang="json">"valve"</pre></td><td>-</td></tr>
+<tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>"list-status"</code></td><td>-</td></tr>
+<tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>"valve"</code></td><td>-</td></tr>
 <tr><td><code>valvePosition</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
@@ -837,71 +837,71 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Haushalt (<code>household</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Haushalt (`household`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><pre lang="json">{
+<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
-}</pre></td><td>-</td></tr>
-<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Licht (<code>light</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Licht (`light`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "lightbulb-on",
    "false": "lightbulb-off-outline"
-}</pre></td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "lightbulb-on",
    "false": "lightbulb-off-outline"
-}</pre></td><td>-</td></tr>
-<tr><td><code>dimmer</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>dimmer</code></td><td><code>{
    "0": {
       "color": "#999"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "0": "aus"
-}</pre></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><pre lang="json">{
+}</code></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><code>{
    "0": "lightbulb-off-outline",
    "default": "lightbulb-on"
-}</pre></td><td>-</td></tr>
-<tr><td><code>level</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>level</code></td><td><code>{
    "0": {
       "color": "#999"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "0": "aus"
-}</pre></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><pre lang="json">{
+}</code></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><code>{
    "0": "lightbulb-off-outline",
    "default": "lightbulb-on"
-}</pre></td><td>-</td></tr>
-<tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><code>{
    "default": "thermometer"
-}</pre></td><td>-</td></tr>
-<tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><code>{
    "default": "thermometer"
-}</pre></td><td>-</td></tr>
-<tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>°</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>°</code></td><td><code>{
    "default": "palette"
-}</pre></td><td>-</td></tr>
-<tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "palette"
-}</pre></td><td>-</td></tr>
-<tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "palette"
-}</pre></td><td>-</td></tr>
-<tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "palette"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1236,38 +1236,38 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Ort (<code>location</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Ort (`location`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"map-marker"</pre></td><td>-</td></tr>
-<tr><td><code>presence</code></td><td>-</td><td><pre lang="json">{
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
+<tr><td><code>presence</code></td><td>-</td><td><code>{
    "true": "anwesend",
    "false": "abwesend"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "map-marker-radius",
    "false": "map-marker-remove-outline"
-}</pre></td><td>-</td></tr>
-<tr><td><code>users</code></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>users</code></td><td>-</td><td><code>{
    "": "niemand anwesend"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "": "account-group-outline",
    "default": "account-group"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Bewegungs-/Präsenzmelder (<code>motion</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Bewegungs-/Präsenzmelder (`motion`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "motion-sensor",
    "false": "motion-sensor-off"
-}</pre></td><td>-</td></tr>
-<tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "motion-sensor",
    "false": "motion-sensor-off"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1455,25 +1455,25 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Rasenmäher-Roboter (<code>mower</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Rasenmäher-Roboter (`mower`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Szenen (<code>scenes</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Szenen (`scenes`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 </table>
 
-<h2>Gewerk Sensor (<code>sensor</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Sensor (`sensor`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><pre lang="json">"mdi-thermometer"</pre></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr>
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>lux</code></td><td><pre lang="json">"mdi-brightness-7"</pre></td><td>-</td></tr>
-<tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>hPa</code></td><td><pre lang="json">"mdi-air-purifier"</pre></td><td>-</td></tr>
+<tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>lux</code></td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
+<tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>hPa</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1530,28 +1530,28 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Server (<code>server</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Server (`server`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "server-network",
    "false": "server-network-off"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Rauchmelder (<code>smoke</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Rauchmelder (`smoke`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "0": "mdi-alarm-light-outline",
    "1": "mdi-alarm-light",
    "2": "mdi-alarm-light",
    "3": "mdi-alarm-light",
    "true": "mdi-alarm-light",
    "false": "mdi-alarm-light-outline"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1593,19 +1593,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Steckdose (<code>socket</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Steckdose (`socket`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><pre lang="json">{
+<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
-}</pre></td><td>-</td></tr>
-<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1821,14 +1821,14 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Lautsprecher (<code>speaker</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Lautsprecher (`speaker`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Schalter (<code>switch</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Schalter (`switch`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
@@ -2003,40 +2003,40 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Fernseher (<code>tv</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Fernseher (`tv`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "true": "television-clean",
    "false": "television-off"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Benutzer (<code>user</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Benutzer (`user`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"map-marker"</pre></td><td>-</td></tr>
-<tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"account"</pre></td><td>-</td></tr>
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
+<tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><code>"account"</code></td><td>-</td></tr>
 <tr><td><code>battery</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Staubsauger-Roboter (<code>vacuum</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Staubsauger-Roboter (`vacuum`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
-<h2>Gewerk Wetter-Station (<code>weather-station</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Wetter-Station (`weather-station`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>wind</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>temperature</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"mdi-brightness-7"</pre></td><td>-</td></tr>
-<tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"mdi-weather-sunny"</pre></td><td>-</td></tr>
+<tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
+<tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -2182,22 +2182,22 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Fenster (<code>window</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Fenster (`window`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>open</code></td><td>-</td><td><pre lang="json">{
+<tr><td><code>open</code></td><td>-</td><td><code>{
    "0": "geschlossen",
    "1": "offen",
    "2": "offen",
    "false": "geschlossen",
    "true": "offen"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "0": "window-closed-variant",
    "1": "window-open-variant",
    "false": "window-closed-variant",
    "true": "window-open-variant"
-}</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -2280,10 +2280,10 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 </ul>
 </ul>
 
-<h2>Gewerk Sonstige (<code>_defaults</code>)</h2>
-<h3>vordefinierte Datenpunkte</h3>
+## Gewerk Sonstige (`_defaults`)
+### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td><pre lang="json">{
+<tr><td><code>_any</code></td><td><code>{
    "true": {
       "color": "#090",
       "fontWeight": "bold"
@@ -2291,35 +2291,35 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "false": {
       "color": "#999"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "true": "an",
    "false": "aus"
-}</pre></td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>%</code></td><td><pre lang="json">{
+}</code></td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
    ">80": "battery-high",
    "<=80": "battery-medium",
    "<=30": "battery-low",
    "<=10": "battery-outline blink",
    "<=5": "battery-alert-variant-outline blink"
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "<=10": {
       "color": "#900"
    }
-}</pre></td></tr>
-<tr><td><code>firmware</code></td><td>-</td><td><pre lang="json">{
+}</code></td></tr>
+<tr><td><code>firmware</code></td><td>-</td><td><code>{
    "true": "Update verfügbar",
    "false": "kein Update"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "mdi-cog-refresh",
    "false": "mdi-cog-outline"
-}</pre></td><td>-</td></tr>
-<tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "mdi-snowflake"
-}</pre></td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td><pre lang="json">"water-percent"</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
+<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>"water-percent"</code></td><td>-</td></tr>
 <tr><td><code>illuminance</code></td><td>-</td><td>-</td><td><code>lux</code></td><td>-</td><td>-</td></tr>
 <tr><td><code>level</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>lowbattery</code></td><td><pre lang="json">{
+<tr><td><code>lowbattery</code></td><td><code>{
    "true": {
       "color": "#900",
       "fontWeight": "bold"
@@ -2327,22 +2327,22 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "false": {
       "color": "#999"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "true": "niedrig",
    "false": "voll"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "battery-alert-variant-outline",
    "false": "battery-high"
-}</pre></td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"map-marker"</pre></td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"power"</pre></td><td>-</td></tr>
-<tr><td><code>config</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
+<tr><td><code>config</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "mdi-cog"
-}</pre></td><td>-</td></tr>
-<tr><td><code>connectivity</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>connectivity</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "mdi-wifi-arrow-left-right"
-}</pre></td><td>-</td></tr>
-<tr><td><code>reachability</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>reachability</code></td><td><code>{
    "true": {
       "color": "#090"
    },
@@ -2350,19 +2350,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
       "color": "#900",
       "fontWeight": "bold"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "true": "erreichbar",
    "false": "nicht erreichbar"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "lan-connect",
    "false": "lan-disconnect"
-}</pre></td><td>-</td></tr>
-<tr><td><code>rssi</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>rssi</code></td><td>-</td><td>-</td><td>-</td><td><code>{
    "default": "mdi-antenna"
-}</pre></td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><pre lang="json">"thermometer"</pre></td><td>-</td></tr>
-<tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">"power"</pre></td><td>-</td></tr>
-<tr><td><code>unreach</code></td><td><pre lang="json">{
+}</code></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
+<tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
+<tr><td><code>unreach</code></td><td><code>{
    "true": {
       "color": "#900",
       "fontWeight": "bold"
@@ -2370,14 +2370,14 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "false": {
       "color": "#090"
    }
-}</pre></td><td><pre lang="json">{
+}</code></td><td><code>{
    "true": "nicht erreichbar",
    "false": "erreichbar"
-}</pre></td><td>-</td><td><pre lang="json">{
+}</code></td><td>-</td><td><code>{
    "true": "lan-disconnect",
    "false": "lan-connect"
-}</pre></td><td>-</td></tr>
-<tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>km/h</code></td><td><pre lang="json">"weather-windy"</pre></td><td>-</td></tr>
+}</code></td><td>-</td></tr>
+<tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>km/h</code></td><td><code>"weather-windy"</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
