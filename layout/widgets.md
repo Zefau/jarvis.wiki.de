@@ -12,4 +12,4 @@ Das Modul dient dem Widget zur Anzeige. [Eine Übersicht und Beschreibung der Mo
 
 ### Geräte
 
-Abhängig vom ausgewähltem Modul können dem Widget [Geräte](./devices.md) (oder auch Gruppen oder Trennstreifen) zur Anzeige hinzugefügt werden. Je nach Modul ist für die hinzugefügten Geräte der Datenpunkt auszuwählen, der angezeigt oder angesteuert werden soll. Das Ansteuern bzw. das Auslösen von Datenpunkten erfolgt mittels Komponenten (z. B. `SwitchInput`), die per Dropdown ausgewählt werden.
+Abhängig vom ausgewähltem Modul können dem Widget [Geräte](../devices/devices.md) (oder auch Gruppen oder Trennstreifen) zur Anzeige hinzugefügt werden. Je nach Modul ist für die hinzugefügten Geräte der Datenpunkt auszuwählen, der angezeigt oder angesteuert werden soll. Das Ansteuern bzw. das Auslösen von Datenpunkten erfolgt mittels Komponenten (z. B. `SwitchInput`), die per Dropdown ausgewählt werden.

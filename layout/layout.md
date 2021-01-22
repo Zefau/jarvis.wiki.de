@@ -20,5 +20,5 @@ Ein Tab muss mindestens eine Spalte besitzen, sofern die Vollbild Option nicht a
 
 Jede Spalte kann keine oder beliebig viele Widgets enthalten.
 
-Ein Widget dient zur Anzeige von Geräten und deren Datenpunkte durch ein bestimmtes Modul. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](./modules).
-[Die Konfiguration von Widgets ist ebenfalls im Wiki beschrieben](./widgets).
+Ein Widget dient zur Anzeige von Geräten und deren Datenpunkte durch ein bestimmtes Modul. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](./modules.md).
+[Die Konfiguration von Widgets ist ebenfalls im Wiki beschrieben](./widgets.md).
