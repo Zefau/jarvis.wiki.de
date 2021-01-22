@@ -37,16 +37,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `level` | - | - | `%` | `{
    "default": "window-shutter-open",
    ">90": "window-shutter-open",
    "<=90": "window-shutter"
 }` | - |
+
 | `level2` | - | - | `%` | `{
    "default": "window-shutter-open",
    ">90": "window-shutter-open",
    "<=90": "window-shutter"
 }` | - |
+
 | `activity` | - | `{
    "true": "in Bewegung",
    "false": "keine"
@@ -54,6 +57,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "pan-vertical",
    "false": "dots-vertical"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-BBL*
@@ -173,6 +177,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `open` | - | `{
    "0": "door#open#closed",
    "1": "door#open#opened",
@@ -184,7 +189,9 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "false": "door-closed",
    "true": "door-open"
 }` | - |
+
 | `lock` | - | - | - | - | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HM-Sec-Key*
@@ -198,33 +205,53 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `power` | - | - | - | `{
    "true": "fan",
    "false": "fan-off"
 }` | - |
+
 
 ## Gewerk Heizung (`heating`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `temperature` | - | - | `°C` | `"thermometer"` | - |
+
 | `settemperature` | - | - | `°C` | `"thermometer-chevron-up"` | - |
+
 | `humidity` | - | - | `%` | - | - |
+
 | `boost` | - | - | - | `"radiator"` | - |
+
 | `boostTime` | - | - | `min.` | `"clock-outline"` | - |
+
 | `boostState` | - | - | - | - | - |
+
 | `frost` | - | - | - | - | - |
+
 | `windowState` | - | - | - | - | - |
+
 | `partyMode` | - | - | - | - | - |
+
 | `modeAuto` | - | - | - | `"brightness-auto"` | - |
+
 | `modeManu` | - | - | - | - | - |
+
 | `modeCurrent` | - | - | - | - | - |
+
 | `modeLowering` | - | - | - | - | - |
+
 | `modeControl` | - | - | - | `"list-status"` | - |
+
 | `valve` | - | - | `%` | `"valve"` | - |
+
 | `valvePosition` | - | - | - | - | - |
+
 | `valveState` | - | - | - | - | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-STHD*
@@ -502,29 +529,36 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `power` | - | - | - | - | - |
+
 | `consumption` | - | - | `W` | `{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
 }` | - |
+
 | `meter` | - | - | `W` | `{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
 }` | - |
+
 
 ## Gewerk Licht (`light`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `on` | - | - | - | `{
    "true": "lightbulb-on",
    "false": "lightbulb-off-outline"
 }` | - |
+
 | `power` | - | - | - | `{
    "true": "lightbulb-on",
    "false": "lightbulb-off-outline"
 }` | - |
+
 | `dimmer` | `{
    "0": {
       "color": "#999"
@@ -535,6 +569,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "0": "lightbulb-off-outline",
    "default": "lightbulb-on"
 }` | - |
+
 | `level` | `{
    "0": {
       "color": "#999"
@@ -545,24 +580,31 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "0": "lightbulb-off-outline",
    "default": "lightbulb-on"
 }` | - |
+
 | `ct` | - | - | `°K` | `{
    "default": "thermometer"
 }` | - |
+
 | `colortemperature` | - | - | `°K` | `{
    "default": "thermometer"
 }` | - |
+
 | `hue` | - | - | `°` | `{
    "default": "palette"
 }` | - |
+
 | `rgb` | - | - | - | `{
    "default": "palette"
 }` | - |
+
 | `hsv` | - | - | - | `{
    "default": "palette"
 }` | - |
+
 | `hex` | - | - | - | `{
    "default": "palette"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-BSM*
@@ -755,7 +797,9 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `position` | - | - | - | `"map-marker"` | - |
+
 | `presence` | - | `{
    "true": "anwesend",
    "false": "abwesend"
@@ -763,6 +807,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "map-marker-radius",
    "false": "map-marker-remove-outline"
 }` | - |
+
 | `users` | - | `{
    "": "niemand anwesend"
 }` | - | `{
@@ -770,19 +815,23 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "default": "account-group"
 }` | - |
 
+
 ## Gewerk Bewegungs-/Präsenzmelder (`motion`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `motion` | - | - | - | `{
    "true": "motion-sensor",
    "false": "motion-sensor-off"
 }` | - |
+
 | `presence` | - | - | - | `{
    "true": "motion-sensor",
    "false": "motion-sensor-off"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-SMI55*
@@ -887,6 +936,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
 
+
 ## Gewerk Szenen (`scenes`)
 ### vordefinierte Datenpunkte
 
@@ -897,10 +947,15 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `temperature` | - | - | `°C` | `"mdi-thermometer"` | - |
+
 | `humidity` | - | - | `%` | - | - |
+
 | `illumination` | - | - | `lux` | `"mdi-brightness-7"` | - |
+
 | `pressure` | - | - | `hPa` | `"mdi-air-purifier"` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HM-Sec-TiS*
@@ -935,16 +990,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `power` | - | - | - | `{
    "true": "server-network",
    "false": "server-network-off"
 }` | - |
+
 
 ## Gewerk Rauchmelder (`smoke`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `alarm` | - | - | - | `{
    "0": "mdi-alarm-light-outline",
    "1": "mdi-alarm-light",
@@ -953,6 +1011,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "mdi-alarm-light",
    "false": "mdi-alarm-light-outline"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-SWSD*
@@ -978,15 +1037,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `power` | - | - | - | - | - |
+
 | `consumption` | - | - | `W` | `{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
 }` | - |
+
 | `meter` | - | - | `W` | `{
    "default": "mdi-power-plug-off-outline",
    ">0": "mdi-power-plug"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-FSM*
@@ -1113,11 +1176,13 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
 
+
 ## Gewerk Schalter (`switch`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `power` | - | - | - | - | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-WRC2*
@@ -1220,19 +1285,25 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `power` | - | - | - | `{
    "true": "television-clean",
    "false": "television-off"
 }` | - |
+
 
 ## Gewerk Benutzer (`user`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `position` | - | - | - | `"map-marker"` | - |
+
 | `location` | - | - | - | `"account"` | - |
+
 | `battery` | - | - | - | - | - |
+
 
 ## Gewerk Staubsauger-Roboter (`vacuum`)
 ### vordefinierte Datenpunkte
@@ -1240,16 +1311,23 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
 
+
 ## Gewerk Wetter-Station (`weather-station`)
 ### vordefinierte Datenpunkte
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `humidity` | - | - | - | - | - |
+
 | `wind` | - | - | - | - | - |
+
 | `temperature` | - | - | - | - | - |
+
 | `illumination` | - | - | - | `"mdi-brightness-7"` | - |
+
 | `sunshineduration` | - | - | - | `"mdi-weather-sunny"` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-STHO*
@@ -1325,6 +1403,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 | Datenpunkt Bezeichner | Datenpunkt Stil |Anzeige | Einheit | Icon | Icon Stil |
 | `_any` | - | - | - | - | - |
+
 | `open` | - | `{
    "0": "geschlossen",
    "1": "offen",
@@ -1337,6 +1416,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "false": "window-closed-variant",
    "true": "window-open-variant"
 }` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HmIP-SWDM*
@@ -1392,6 +1472,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "an",
    "false": "aus"
 }` | - | - | - |
+
 | `battery` | - | - | `%` | `{
    ">80": "battery-high",
    "<=80": "battery-medium",
@@ -1403,6 +1484,7 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
       "color": "#900"
    }
 }` |
+
 | `firmware` | - | `{
    "true": "Update verfügbar",
    "false": "kein Update"
@@ -1410,12 +1492,17 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "mdi-cog-refresh",
    "false": "mdi-cog-outline"
 }` | - |
+
 | `frost` | - | - | - | `{
    "default": "mdi-snowflake"
 }` | - |
+
 | `humidity` | - | - | `%` | `"water-percent"` | - |
+
 | `illuminance` | - | - | `lux` | - | - |
+
 | `level` | - | - | `%` | - | - |
+
 | `lowbattery` | `{
    "true": {
       "color": "#900",
@@ -1431,14 +1518,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "battery-alert-variant-outline",
    "false": "battery-high"
 }` | - |
+
 | `position` | - | - | - | `"map-marker"` | - |
+
 | `power` | - | - | - | `"power"` | - |
+
 | `config` | - | - | - | `{
    "default": "mdi-cog"
 }` | - |
+
 | `connectivity` | - | - | - | `{
    "default": "mdi-wifi-arrow-left-right"
 }` | - |
+
 | `reachability` | `{
    "true": {
       "color": "#090"
@@ -1454,11 +1546,15 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "lan-connect",
    "false": "lan-disconnect"
 }` | - |
+
 | `rssi` | - | - | - | `{
    "default": "mdi-antenna"
 }` | - |
+
 | `temperature` | - | - | `°C` | `"thermometer"` | - |
+
 | `trigger` | - | - | - | `"power"` | - |
+
 | `unreach` | `{
    "true": {
       "color": "#900",
@@ -1474,7 +1570,9 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
    "true": "lan-disconnect",
    "false": "lan-connect"
 }` | - |
+
 | `wind` | - | - | `km/h` | `"weather-windy"` | - |
+
 ### Beispielkonfiguration
 #### Adapter hm-rpc
 *HM-LC-Sw1PBU-FM*
