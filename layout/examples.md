@@ -1,6 +1,6 @@
 Pulsierendes Icon
 
-![](https://github.com/Zefau/ioBroker.jarvis/tree/master/docs/de-Beispiele-Blink.gif)
+![](./examples_blink.gif)
 
 Um ein pulsierendes Icon zu erzeugen muss in den Einstellungen unter Styles zunächst der folgende Code hinzugefügt werden.
 

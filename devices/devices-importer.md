@@ -2151,7 +2151,6 @@ alle Datenpunkte werden übernommen
    "reachability": ".alive",
    "ip": ".INFO.IPAddress",
    "signal": ".Wifi_Signal",
-   "alive": ".alive",
    "dataReceived": ".RfReceived_Data",
    "power": {
       "state": ".POWER",

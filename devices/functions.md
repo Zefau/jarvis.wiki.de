@@ -1545,6 +1545,10 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><pre lang="json">{
+   "0": "mdi-alarm-light-outline",
+   "1": "mdi-alarm-light",
+   "2": "mdi-alarm-light",
+   "3": "mdi-alarm-light",
    "true": "mdi-alarm-light",
    "false": "mdi-alarm-light-outline"
 }</pre></td><td>-</td></tr>
@@ -2757,33 +2761,6 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <li><code>11</code>
 <ul>
 <li>0: <code>l</code></li>
-</ul>
-</ul>
-<h5>alive</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>l</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>v</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>e</code></li>
 </ul>
 </ul>
 <h5>dataReceived</h5>
