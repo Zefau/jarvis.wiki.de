@@ -62,7 +62,6 @@ Keine Screenshots verfügbar
 #### Konfiguration
 | Parameter | Beschreibung | Typ | Standard |
 | - | - | - | - |
-
 | `calendarPreview` | Zeigt eine Kalender-Vorschau  | Switch | `true` |
 | `calendarView` | Wähle die Art der Anzeige von Ereignissen  | RadioGroup | `listView` |
 | `refresh` | Aktualisierung (in Minuten)  | Number | `5` |
@@ -286,10 +285,10 @@ Keine Screenshots verfügbar
 | ***`localid`*** | Ort (localid) von daswetter.com  | Text | - |
 | `display` | Anzeigevariante  | Select (`both`, `overview`, `preview`) | `both` |
 | `forecastSunRain` | Zeige Sonne/Regen-Vorschau  | Switch | `true` |
-| `iconSetWeather` | Icon Set Wetter  | Select (`set1,_translated`, `set2,_translated`, `set3,_translated`, `set4,_translated`, `set5,_translated`, `set5-white,_translated`) | `set5` |
+| `iconSetWeather` | Icon Set Wetter  | Select (`set1`, `set2`, `set3`, `set4`, `set5`, `set5-white`) | `set5` |
 | `forecastTemperature` | Zeige Temperatur-Vorschau  | Switch | `true` |
 | `forecastWind` | Zeige Wind-Vorschau  | Switch | `true` |
-| `iconSetWind` | Icon Set Wind  | Select (`set1,_translated`, `set2,_translated`, `set5-white,_translated`) | `set2` |
+| `iconSetWind` | Icon Set Wind  | Select (`set1`, `set2`, `set5-white`) | `set2` |
 
 
 ***
