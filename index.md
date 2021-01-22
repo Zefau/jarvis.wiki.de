@@ -1,33 +1,34 @@
+# Einführung
+
 ## Willkommen bei jarvis
 
 Um jarvis zu öffnen einfach im ioBroker Dashboard die Kachel klicken:
 
-![Konfiguration](./xx-Home-ioBroker-Dashboard.png)
+![Konfiguration](.gitbook/assets/xx-Home-ioBroker-Dashboard.png)
 
-
-Sofern jarvis nicht öffnet oder andere Probleme auftreten findet sich ggf. [in der Liste häufiger Fehler](./other/faq.md) eine Lösung.
-
+Sofern jarvis nicht öffnet oder andere Probleme auftreten findet sich ggf. [in der Liste häufiger Fehler](sonstiges/faq.md) eine Lösung.
 
 ## Konfiguration
 
-Über das Zahnrad-Icon (über die Topbar rechts oben) können die Geräte, die Einstellungen und das Layout gepflegt werden: 
+Über das Zahnrad-Icon \(über die Topbar rechts oben\) können die Geräte, die Einstellungen und das Layout gepflegt werden:
 
-![Konfiguration](./xx-Home-Settings-Button.png)
-
+![Konfiguration](.gitbook/assets/xx-Home-Settings-Button.png)
 
 ### Geräte
-siehe [Beschreibung für Geräte](./devices/devices.md).
 
-![Geräte](./xx-Home-Devices.png)
+siehe [Beschreibung für Geräte](geraete/devices/).
 
+![Ger&#xE4;te](.gitbook/assets/xx-Home-Devices.png)
 
 ### Layout
-siehe [Beschreibung für Layout](./layout/layout.md).
 
-![Layout](./xx-Home-Layout.png)
+siehe [Beschreibung für Layout](layout/layout.md).
 
+![Layout](.gitbook/assets/xx-Home-Layout.png)
 
 ### Einstellungen
-siehe [Beschreibung für Einstellungen](./settings/settings.md).
 
-![Einstellungen](./xx-Home-Settings.png)
+siehe [Beschreibung für Einstellungen](einstellungen/settings.md).
+
+![Einstellungen](.gitbook/assets/xx-Home-Settings.png)
+

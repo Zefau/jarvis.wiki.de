@@ -1,12 +1,13 @@
 # Table of contents
 
+* [Introduction](README.md)
 * [Einführung](index.md)
 
 ## Geräte
 
-* [Geräte](devices/devices.md)
-  * [Geräte importieren](devices/devices-importer.md)
-* [Gewerke](devices/functions.md)
+* [Geräte](geraete/devices/README.md)
+  * [Geräte importieren](geraete/devices/devices-importer.md)
+* [Gewerke](geraete/functions.md)
 
 ## Layout
 
@@ -17,11 +18,11 @@
 
 ## Einstellungen
 
-* [Einstellungen](settings/settings.md)
+* [Einstellungen](einstellungen/settings.md)
 
 ## Sonstiges
 
-* [Häufige Fragen und Lösungen](other/faq.md)
-* [Fehleranalyse und -Meldung](other/error-reporting.md)
-* [Backup & Restore](other/backup-and-restore.md)
+* [Häufige Fragen und Lösungen](sonstiges/faq.md)
+* [Fehleranalyse und -Meldung](sonstiges/error-reporting.md)
+* [Backup & Restore](sonstiges/backup-and-restore.md)
 
