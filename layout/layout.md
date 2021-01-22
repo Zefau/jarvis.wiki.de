@@ -1,8 +1,8 @@
-## Layout
+# Layout
 
-![Layout](./layout.png)
+![Layout](../.gitbook/assets/xx-Home-Layout%20%281%29.png)
 
-### Tabs
+## Tabs
 
 Mit dem Button `Tab hinzufügen` kann ein neuer Tab hinzugefügt werden. Ein Layout benötigt mindestens einen Tab und kann beliebig viele Tabs haben.
 
@@ -10,15 +10,15 @@ Jeder Tab besitzt ein eigenes Icon und ein Label / Titel. Mit der Option `Tab La
 
 Soll nur für einen bestimmten Tab nur das Icon angezeigt werden, ist das Eingabefeld einfach leer zu lassen.
 
-Die Option `Tab als Vollbild` sorgt dafür, dass keine Spalten verfügbar sind und nur ein Widget (im Vollbild) angezeigt wird.
+Die Option `Tab als Vollbild` sorgt dafür, dass keine Spalten verfügbar sind und nur ein Widget \(im Vollbild\) angezeigt wird.
 
-### Spalten
+## Spalten
 
 Ein Tab muss mindestens eine Spalte besitzen, sofern die Vollbild Option nicht aktiviert ist. Es können beliebig viele Spalten hinzugefügt werden.
 
-### Widgets
+## Widgets
 
 Jede Spalte kann keine oder beliebig viele Widgets enthalten.
 
-Ein Widget dient zur Anzeige von Geräten und deren Datenpunkte durch ein bestimmtes Modul. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](./modules.md).
-[Die Konfiguration von Widgets ist ebenfalls im Wiki beschrieben](./widgets.md).
+Ein Widget dient zur Anzeige von Geräten und deren Datenpunkte durch ein bestimmtes Modul. [Eine Übersicht und Beschreibung der Module ist im Wiki zu finden](modules.md). [Die Konfiguration von Widgets ist ebenfalls im Wiki beschrieben](widgets.md).
+

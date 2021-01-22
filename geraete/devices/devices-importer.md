@@ -2,111 +2,108 @@
 
 Um schnell in jarvis zu starten, können vorhandene Geräte aus ioBroker importiert werden:
 
-![Importer](./devices-importer_button.png)
+![Importer](../../.gitbook/assets/devices-importer_button.png)
 
-
-## Such-Modus (alle oder Enums)
+## Such-Modus \(alle oder Enums\)
 
 Es werden zwei Modi unterstützt um die Adapter-Struktur zu durchsuchen:
 
-![Importer](./devices-importer_structure-selection.png)
+![Importer](../../.gitbook/assets/devices-importer_structure-selection.png)
 
-- `nach allen Geräten durchsuchen`: Durchsucht die komplette Struktur der ausgewählten Adapter nach allen vorhandenen Geräten und listet diese auf.
-- `nur nach in Enums hinzugefügten Geräten durchsuchen`: Durchsucht die Struktur der ausgewählten Adapter nur nach Geräten, die bereits in Enums zugeordnet sind.
-
+* `nach allen Geräten durchsuchen`: Durchsucht die komplette Struktur der ausgewählten Adapter nach allen vorhandenen Geräten und listet diese auf.
+* `nur nach in Enums hinzugefügten Geräten durchsuchen`: Durchsucht die Struktur der ausgewählten Adapter nur nach Geräten, die bereits in Enums zugeordnet sind.
 
 ## Liste unterstützter Adapter
 
-- [alias](#adapter-alias)
-- [ble](#adapter-ble)
-- [daswetter](#adapter-daswetter)
-- [deconz](#adapter-deconz)
-- [hm-rpc](#adapter-hm-rpc)
-  - [Function `light` of hm-rpc](#function-light-of-hm-rpc)
-  - [Function `heating` of hm-rpc](#function-heating-of-hm-rpc)
-  - [Function `blind` of hm-rpc](#function-blind-of-hm-rpc)
-  - [Function `sensor` of hm-rpc](#function-sensor-of-hm-rpc)
-  - [Function `smoke` of hm-rpc](#function-smoke-of-hm-rpc)
-  - [Function `window` of hm-rpc](#function-window-of-hm-rpc)
-  - [Function `socket` of hm-rpc](#function-socket-of-hm-rpc)
-  - [Function `motion` of hm-rpc](#function-motion-of-hm-rpc)
-  - [Function `door` of hm-rpc](#function-door-of-hm-rpc)
-  - [Function `weather-station` of hm-rpc](#function-weather-station-of-hm-rpc)
-  - [Function `switch` of hm-rpc](#function-switch-of-hm-rpc)
-  - [Function `CUxD` of hm-rpc](#function-CUxD-of-hm-rpc)
-- [hmip](#adapter-hmip)
-  - [Function `heating` of hmip](#function-heating-of-hmip)
-  - [Function `blind` of hmip](#function-blind-of-hmip)
-  - [Function `window` of hmip](#function-window-of-hmip)
-  - [Function `socket` of hmip](#function-socket-of-hmip)
-  - [Function `motion` of hmip](#function-motion-of-hmip)
-  - [Function `weather-station` of hmip](#function-weather-station-of-hmip)
-- [hue-extended](#adapter-hue-extended)
-  - [Function `light` of hue-extended](#function-light-of-hue-extended)
-- [hue](#adapter-hue)
-  - [Function `light` of hue](#function-light-of-hue)
-- [innogy-smarthome](#adapter-innogy-smarthome)
-- [knx](#adapter-knx)
-- [lifx](#adapter-lifx)
-- [linkeddevices](#adapter-linkeddevices)
-- [mihome-vacuum](#adapter-mihome-vacuum)
-  - [Function `consumableFilter` of mihome-vacuum](#function-consumableFilter-of-mihome-vacuum)
-  - [Function `consumableBrushMain` of mihome-vacuum](#function-consumableBrushMain-of-mihome-vacuum)
-  - [Function `consumableBrushSide` of mihome-vacuum](#function-consumableBrushSide-of-mihome-vacuum)
-  - [Function `consumableSensors` of mihome-vacuum](#function-consumableSensors-of-mihome-vacuum)
-  - [Function `consumableFilterWater` of mihome-vacuum](#function-consumableFilterWater-of-mihome-vacuum)
-  - [Function `controlSoundVolume` of mihome-vacuum](#function-controlSoundVolume-of-mihome-vacuum)
-  - [Function `controlModeCarpet` of mihome-vacuum](#function-controlModeCarpet-of-mihome-vacuum)
-  - [Function `controlFind` of mihome-vacuum](#function-controlFind-of-mihome-vacuum)
-  - [Function `controlHome` of mihome-vacuum](#function-controlHome-of-mihome-vacuum)
-  - [Function `controlPause` of mihome-vacuum](#function-controlPause-of-mihome-vacuum)
-  - [Function `cleanRoomResume` of mihome-vacuum](#function-cleanRoomResume-of-mihome-vacuum)
-  - [Function `cleanZoneResume` of mihome-vacuum](#function-cleanZoneResume-of-mihome-vacuum)
-  - [Function `cleanSpot` of mihome-vacuum](#function-cleanSpot-of-mihome-vacuum)
-  - [Function `cleanZone` of mihome-vacuum](#function-cleanZone-of-mihome-vacuum)
-  - [Function `clean` of mihome-vacuum](#function-clean-of-mihome-vacuum)
-  - [Function `controlFan` of mihome-vacuum](#function-controlFan-of-mihome-vacuum)
-  - [Function `historyTableJson` of mihome-vacuum](#function-historyTableJson-of-mihome-vacuum)
-  - [Function `cleanedTotalArea` of mihome-vacuum](#function-cleanedTotalArea-of-mihome-vacuum)
-  - [Function `cleanedTotalCleanups` of mihome-vacuum](#function-cleanedTotalCleanups-of-mihome-vacuum)
-  - [Function `cleanedTotalTime` of mihome-vacuum](#function-cleanedTotalTime-of-mihome-vacuum)
-  - [Function `cleanedMissionArea` of mihome-vacuum](#function-cleanedMissionArea-of-mihome-vacuum)
-  - [Function `cleanedMissionTime` of mihome-vacuum](#function-cleanedMissionTime-of-mihome-vacuum)
-  - [Function `battery` of mihome-vacuum](#function-battery-of-mihome-vacuum)
-  - [Function `device_fw` of mihome-vacuum](#function-device_fw-of-mihome-vacuum)
-  - [Function `device_model` of mihome-vacuum](#function-device_model-of-mihome-vacuum)
-  - [Function `doNotDisturb` of mihome-vacuum](#function-doNotDisturb-of-mihome-vacuum)
-  - [Function `error` of mihome-vacuum](#function-error-of-mihome-vacuum)
-  - [Function `timer` of mihome-vacuum](#function-timer-of-mihome-vacuum)
-  - [Function `state` of mihome-vacuum](#function-state-of-mihome-vacuum)
-  - [Function `waterBox` of mihome-vacuum](#function-waterBox-of-mihome-vacuum)
-  - [Function `map` of mihome-vacuum](#function-map-of-mihome-vacuum)
-  - [Function `cleanQueue` of mihome-vacuum](#function-cleanQueue-of-mihome-vacuum)
-- [mihome](#adapter-mihome)
-- [mqtt](#adapter-mqtt)
-  - [Function `light` of mqtt](#function-light-of-mqtt)
-  - [Function `other` of mqtt](#function-other-of-mqtt)
-- [nuki-extended](#adapter-nuki-extended)
-  - [Function `openers` of nuki-extended](#function-openers-of-nuki-extended)
-  - [Function `smartlocks` of nuki-extended](#function-smartlocks-of-nuki-extended)
-- [rpi2](#adapter-rpi2)
-- [shelly](#adapter-shelly)
-  - [Function `blind` of shelly](#function-blind-of-shelly)
-  - [Function `light` of shelly](#function-light-of-shelly)
-- [sonoff](#adapter-sonoff)
-- [tr-064](#adapter-tr-064)
-  - [Function `calllists` of tr-064](#function-calllists-of-tr-064)
-  - [Function `phonebook` of tr-064](#function-phonebook-of-tr-064)
-  - [Function `states` of tr-064](#function-states-of-tr-064)
-- [unifi](#adapter-unifi)
-  - [Function `health` of unifi](#function-health-of-unifi)
-  - [Function `sysinfo` of unifi](#function-sysinfo-of-unifi)
-- [wifilight](#adapter-wifilight)
-- [yeelight-2](#adapter-yeelight-2)
-- [zigbee](#adapter-zigbee)
-- [zwave2](#adapter-zwave2)
-  - [Function `thermostat` of zwave2](#function-thermostat-of-zwave2)
-
+* [alias](devices-importer.md#adapter-alias)
+* [ble](devices-importer.md#adapter-ble)
+* [daswetter](devices-importer.md#adapter-daswetter)
+* [deconz](devices-importer.md#adapter-deconz)
+* [hm-rpc](devices-importer.md#adapter-hm-rpc)
+  * [Function `light` of hm-rpc](devices-importer.md#function-light-of-hm-rpc)
+  * [Function `heating` of hm-rpc](devices-importer.md#function-heating-of-hm-rpc)
+  * [Function `blind` of hm-rpc](devices-importer.md#function-blind-of-hm-rpc)
+  * [Function `sensor` of hm-rpc](devices-importer.md#function-sensor-of-hm-rpc)
+  * [Function `smoke` of hm-rpc](devices-importer.md#function-smoke-of-hm-rpc)
+  * [Function `window` of hm-rpc](devices-importer.md#function-window-of-hm-rpc)
+  * [Function `socket` of hm-rpc](devices-importer.md#function-socket-of-hm-rpc)
+  * [Function `motion` of hm-rpc](devices-importer.md#function-motion-of-hm-rpc)
+  * [Function `door` of hm-rpc](devices-importer.md#function-door-of-hm-rpc)
+  * [Function `weather-station` of hm-rpc](devices-importer.md#function-weather-station-of-hm-rpc)
+  * [Function `switch` of hm-rpc](devices-importer.md#function-switch-of-hm-rpc)
+  * [Function `CUxD` of hm-rpc](devices-importer.md#function-CUxD-of-hm-rpc)
+* [hmip](devices-importer.md#adapter-hmip)
+  * [Function `heating` of hmip](devices-importer.md#function-heating-of-hmip)
+  * [Function `blind` of hmip](devices-importer.md#function-blind-of-hmip)
+  * [Function `window` of hmip](devices-importer.md#function-window-of-hmip)
+  * [Function `socket` of hmip](devices-importer.md#function-socket-of-hmip)
+  * [Function `motion` of hmip](devices-importer.md#function-motion-of-hmip)
+  * [Function `weather-station` of hmip](devices-importer.md#function-weather-station-of-hmip)
+* [hue-extended](devices-importer.md#adapter-hue-extended)
+  * [Function `light` of hue-extended](devices-importer.md#function-light-of-hue-extended)
+* [hue](devices-importer.md#adapter-hue)
+  * [Function `light` of hue](devices-importer.md#function-light-of-hue)
+* [innogy-smarthome](devices-importer.md#adapter-innogy-smarthome)
+* [knx](devices-importer.md#adapter-knx)
+* [lifx](devices-importer.md#adapter-lifx)
+* [linkeddevices](devices-importer.md#adapter-linkeddevices)
+* [mihome-vacuum](devices-importer.md#adapter-mihome-vacuum)
+  * [Function `consumableFilter` of mihome-vacuum](devices-importer.md#function-consumableFilter-of-mihome-vacuum)
+  * [Function `consumableBrushMain` of mihome-vacuum](devices-importer.md#function-consumableBrushMain-of-mihome-vacuum)
+  * [Function `consumableBrushSide` of mihome-vacuum](devices-importer.md#function-consumableBrushSide-of-mihome-vacuum)
+  * [Function `consumableSensors` of mihome-vacuum](devices-importer.md#function-consumableSensors-of-mihome-vacuum)
+  * [Function `consumableFilterWater` of mihome-vacuum](devices-importer.md#function-consumableFilterWater-of-mihome-vacuum)
+  * [Function `controlSoundVolume` of mihome-vacuum](devices-importer.md#function-controlSoundVolume-of-mihome-vacuum)
+  * [Function `controlModeCarpet` of mihome-vacuum](devices-importer.md#function-controlModeCarpet-of-mihome-vacuum)
+  * [Function `controlFind` of mihome-vacuum](devices-importer.md#function-controlFind-of-mihome-vacuum)
+  * [Function `controlHome` of mihome-vacuum](devices-importer.md#function-controlHome-of-mihome-vacuum)
+  * [Function `controlPause` of mihome-vacuum](devices-importer.md#function-controlPause-of-mihome-vacuum)
+  * [Function `cleanRoomResume` of mihome-vacuum](devices-importer.md#function-cleanRoomResume-of-mihome-vacuum)
+  * [Function `cleanZoneResume` of mihome-vacuum](devices-importer.md#function-cleanZoneResume-of-mihome-vacuum)
+  * [Function `cleanSpot` of mihome-vacuum](devices-importer.md#function-cleanSpot-of-mihome-vacuum)
+  * [Function `cleanZone` of mihome-vacuum](devices-importer.md#function-cleanZone-of-mihome-vacuum)
+  * [Function `clean` of mihome-vacuum](devices-importer.md#function-clean-of-mihome-vacuum)
+  * [Function `controlFan` of mihome-vacuum](devices-importer.md#function-controlFan-of-mihome-vacuum)
+  * [Function `historyTableJson` of mihome-vacuum](devices-importer.md#function-historyTableJson-of-mihome-vacuum)
+  * [Function `cleanedTotalArea` of mihome-vacuum](devices-importer.md#function-cleanedTotalArea-of-mihome-vacuum)
+  * [Function `cleanedTotalCleanups` of mihome-vacuum](devices-importer.md#function-cleanedTotalCleanups-of-mihome-vacuum)
+  * [Function `cleanedTotalTime` of mihome-vacuum](devices-importer.md#function-cleanedTotalTime-of-mihome-vacuum)
+  * [Function `cleanedMissionArea` of mihome-vacuum](devices-importer.md#function-cleanedMissionArea-of-mihome-vacuum)
+  * [Function `cleanedMissionTime` of mihome-vacuum](devices-importer.md#function-cleanedMissionTime-of-mihome-vacuum)
+  * [Function `battery` of mihome-vacuum](devices-importer.md#function-battery-of-mihome-vacuum)
+  * [Function `device_fw` of mihome-vacuum](devices-importer.md#function-device_fw-of-mihome-vacuum)
+  * [Function `device_model` of mihome-vacuum](devices-importer.md#function-device_model-of-mihome-vacuum)
+  * [Function `doNotDisturb` of mihome-vacuum](devices-importer.md#function-doNotDisturb-of-mihome-vacuum)
+  * [Function `error` of mihome-vacuum](devices-importer.md#function-error-of-mihome-vacuum)
+  * [Function `timer` of mihome-vacuum](devices-importer.md#function-timer-of-mihome-vacuum)
+  * [Function `state` of mihome-vacuum](devices-importer.md#function-state-of-mihome-vacuum)
+  * [Function `waterBox` of mihome-vacuum](devices-importer.md#function-waterBox-of-mihome-vacuum)
+  * [Function `map` of mihome-vacuum](devices-importer.md#function-map-of-mihome-vacuum)
+  * [Function `cleanQueue` of mihome-vacuum](devices-importer.md#function-cleanQueue-of-mihome-vacuum)
+* [mihome](devices-importer.md#adapter-mihome)
+* [mqtt](devices-importer.md#adapter-mqtt)
+  * [Function `light` of mqtt](devices-importer.md#function-light-of-mqtt)
+  * [Function `other` of mqtt](devices-importer.md#function-other-of-mqtt)
+* [nuki-extended](devices-importer.md#adapter-nuki-extended)
+  * [Function `openers` of nuki-extended](devices-importer.md#function-openers-of-nuki-extended)
+  * [Function `smartlocks` of nuki-extended](devices-importer.md#function-smartlocks-of-nuki-extended)
+* [rpi2](devices-importer.md#adapter-rpi2)
+* [shelly](devices-importer.md#adapter-shelly)
+  * [Function `blind` of shelly](devices-importer.md#function-blind-of-shelly)
+  * [Function `light` of shelly](devices-importer.md#function-light-of-shelly)
+* [sonoff](devices-importer.md#adapter-sonoff)
+* [tr-064](devices-importer.md#adapter-tr-064)
+  * [Function `calllists` of tr-064](devices-importer.md#function-calllists-of-tr-064)
+  * [Function `phonebook` of tr-064](devices-importer.md#function-phonebook-of-tr-064)
+  * [Function `states` of tr-064](devices-importer.md#function-states-of-tr-064)
+* [unifi](devices-importer.md#adapter-unifi)
+  * [Function `health` of unifi](devices-importer.md#function-health-of-unifi)
+  * [Function `sysinfo` of unifi](devices-importer.md#function-sysinfo-of-unifi)
+* [wifilight](devices-importer.md#adapter-wifilight)
+* [yeelight-2](devices-importer.md#adapter-yeelight-2)
+* [zigbee](devices-importer.md#adapter-zigbee)
+* [zwave2](devices-importer.md#adapter-zwave2)
+  * [Function `thermostat` of zwave2](devices-importer.md#function-thermostat-of-zwave2)
 
 ## Unterstützte Geräte der Adapter
 
@@ -129,7 +126,8 @@ alle Datenpunkte werden übernommen
 ### Adapter hm-rpc
 
 #### Function `light` of hm-rpc
-```
+
+```text
 {
    "HmIP-BSM": {
       "power": {
@@ -337,9 +335,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `heating` of hm-rpc
-```
+
+```text
 {
    "HmIP-STHD": {
       "temperature": {
@@ -688,9 +686,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `blind` of hm-rpc
-```
+
+```text
 {
    "HmIP-BBL": {
       "level": {
@@ -821,9 +819,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `sensor` of hm-rpc
-```
+
+```text
 {
    "HM-Sec-TiS": {
       "power": {
@@ -867,9 +865,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `smoke` of hm-rpc
-```
+
+```text
 {
    "HmIP-SWSD": {
       "alarm": {
@@ -906,9 +904,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `window` of hm-rpc
-```
+
+```text
 {
    "HmIP-SWDM": {
       "open": {
@@ -958,9 +956,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `socket` of hm-rpc
-```
+
+```text
 {
    "HmIP-FSM": {
       "power": {
@@ -1122,9 +1120,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `motion` of hm-rpc
-```
+
+```text
 {
    "HmIP-SMI55": {
       "motion": {
@@ -1259,9 +1257,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `door` of hm-rpc
-```
+
+```text
 {
    "HM-Sec-Key": {
       "error": {
@@ -1274,9 +1272,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `weather-station` of hm-rpc
-```
+
+```text
 {
    "HmIP-STHO": {
       "temperature": {
@@ -1345,9 +1343,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `switch` of hm-rpc
-```
+
+```text
 {
    "HmIP-WRC2": {
       "PRESS_LONG_BOTTOM": {
@@ -1483,9 +1481,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `CUxD` of hm-rpc
-```
+
+```text
 {
    "HM-LC-Sw1PBU-FM": {
       "powerCh1": {
@@ -1559,7 +1557,8 @@ alle Datenpunkte werden übernommen
 ### Adapter hmip
 
 #### Function `heating` of hmip
-```
+
+```text
 {
    "HmIP-STH": {
       "temperature": {
@@ -1615,9 +1614,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `blind` of hmip
-```
+
+```text
 {
    "HmIP-BBL": {
       "level": {
@@ -1646,9 +1645,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `window` of hmip
-```
+
+```text
 {
    "HmIP-SWDO": {
       "open": {
@@ -1676,9 +1675,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `socket` of hmip
-```
+
+```text
 {
    "HmIP-PS": {
       "power": {
@@ -1689,9 +1688,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `motion` of hmip
-```
+
+```text
 {
    "HmIP-SMI": {
       "motion": {
@@ -1704,9 +1703,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `weather-station` of hmip
-```
+
+```text
 {
    "HmIP-STHO": {
       "temperature": {
@@ -1753,7 +1752,8 @@ alle Datenpunkte werden übernommen
 ### Adapter hue-extended
 
 #### Function `light` of hue-extended
-```
+
+```text
 {
    "power": {
       "state": ".action.on",
@@ -1781,7 +1781,8 @@ alle Datenpunkte werden übernommen
 ### Adapter hue
 
 #### Function `light` of hue
-```
+
+```text
 {
    "power": {
       "state": ".on",
@@ -1824,7 +1825,8 @@ alle Datenpunkte werden übernommen
 ### Adapter mihome-vacuum
 
 #### Function `consumableFilter` of mihome-vacuum
-```
+
+```text
 {
    "state": ".consumable.filter",
    "action": ".consumable.filter_reset",
@@ -1832,9 +1834,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `consumableBrushMain` of mihome-vacuum
-```
+
+```text
 {
    "state": ".consumable.main_brush",
    "action": ".consumable.main_brush_reset",
@@ -1842,9 +1844,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `consumableBrushSide` of mihome-vacuum
-```
+
+```text
 {
    "state": ".consumable.side_brush",
    "action": ".consumable.side_brush_reset",
@@ -1852,9 +1854,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `consumableSensors` of mihome-vacuum
-```
+
+```text
 {
    "state": ".consumable.sensors",
    "action": ".consumable.sensors_reset",
@@ -1862,9 +1864,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `consumableFilterWater` of mihome-vacuum
-```
+
+```text
 {
    "state": ".consumable.water_filter",
    "action": ".consumable.water_filter_reset",
@@ -1872,9 +1874,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `controlSoundVolume` of mihome-vacuum
-```
+
+```text
 {
    "state": ".control.sound_volume",
    "action": ".control.sound_volume",
@@ -1882,90 +1884,90 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `controlModeCarpet` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.carpet_mode",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `controlFind` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.find",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `controlHome` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.home",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `controlPause` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.pause",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `cleanRoomResume` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.resumeRoomClean",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `cleanZoneResume` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.resumeZoneClean",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `cleanSpot` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.spotclean",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `cleanZone` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.zoneClean",
    "actionElement": "InputAction"
 }
 ```
 
-
 #### Function `clean` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.clean",
    "actionElement": "IconButtonAction"
 }
 ```
 
-
 #### Function `controlFan` of mihome-vacuum
-```
+
+```text
 {
    "action": ".control.fan_power",
    "display": {
@@ -1979,130 +1981,130 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `historyTableJson` of mihome-vacuum
-```
+
+```text
 {
    "state": ".history.allTableJSON"
 }
 ```
 
-
 #### Function `cleanedTotalArea` of mihome-vacuum
-```
+
+```text
 {
    "state": ".history.total_area"
 }
 ```
 
-
 #### Function `cleanedTotalCleanups` of mihome-vacuum
-```
+
+```text
 {
    "state": ".history.cleanups"
 }
 ```
 
-
 #### Function `cleanedTotalTime` of mihome-vacuum
-```
+
+```text
 {
    "state": ".history.total_time"
 }
 ```
 
-
 #### Function `cleanedMissionArea` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.cleanedarea"
 }
 ```
 
-
 #### Function `cleanedMissionTime` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.cleanedtime"
 }
 ```
 
-
 #### Function `battery` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.battery"
 }
 ```
 
-
 #### Function `device_fw` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.device_fw"
 }
 ```
 
-
 #### Function `device_model` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.device_model"
 }
 ```
 
-
 #### Function `doNotDisturb` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.dnd"
 }
 ```
 
-
 #### Function `error` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.error"
 }
 ```
 
-
 #### Function `timer` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.nextTimer"
 }
 ```
 
-
 #### Function `state` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.state"
 }
 ```
 
-
 #### Function `waterBox` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.water_box"
 }
 ```
 
-
 #### Function `map` of mihome-vacuum
-```
+
+```text
 {
    "state": ".map.map64",
    "action": ".map.loadMap"
 }
 ```
 
-
 #### Function `cleanQueue` of mihome-vacuum
-```
+
+```text
 {
    "state": ".info.queue",
    "action": ".control.clearQueue"
@@ -2116,7 +2118,8 @@ alle Datenpunkte werden übernommen
 ### Adapter mqtt
 
 #### Function `light` of mqtt
-```
+
+```text
 {
    "dimmer": {
       "state": ".Dimmer",
@@ -2141,9 +2144,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `other` of mqtt
-```
+
+```text
 {
    "version": [
       ".Version",
@@ -2219,7 +2222,8 @@ alle Datenpunkte werden übernommen
 ### Adapter nuki-extended
 
 #### Function `openers` of nuki-extended
-```
+
+```text
 {
    "door": {
       "state": ".state.doorState"
@@ -2280,9 +2284,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `smartlocks` of nuki-extended
-```
+
+```text
 {
    "door": {
       "state": ".state.closed"
@@ -2364,7 +2368,8 @@ alle Datenpunkte werden übernommen
 ### Adapter shelly
 
 #### Function `blind` of shelly
-```
+
+```text
 {
    "level": {
       "state": ".Shutter.Position",
@@ -2377,9 +2382,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `light` of shelly
-```
+
+```text
 {
    "power": {
       "state": ".lights.Switch",
@@ -2399,7 +2404,8 @@ alle Datenpunkte werden übernommen
 ### Adapter tr-064
 
 #### Function `calllists` of tr-064
-```
+
+```text
 {
    "allCount": {
       "state": ".all.count"
@@ -2440,9 +2446,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `phonebook` of tr-064
-```
+
+```text
 {
    "image": {
       "state": ".image"
@@ -2456,9 +2462,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `states` of tr-064
-```
+
+```text
 {
    "ab": {
       "state": ".ab"
@@ -2489,7 +2495,8 @@ alle Datenpunkte werden übernommen
 ### Adapter unifi
 
 #### Function `health` of unifi
-```
+
+```text
 {
    "lan.lan_ip": {
       "state": ".lan.lan_ip"
@@ -2593,9 +2600,9 @@ alle Datenpunkte werden übernommen
 }
 ```
 
-
 #### Function `sysinfo` of unifi
-```
+
+```text
 {
    "update_available": {
       "state": ".update_available"
@@ -2621,7 +2628,8 @@ alle Datenpunkte werden übernommen
 ### Adapter zwave2
 
 #### Function `thermostat` of zwave2
-```
+
+```text
 {
    "valve": {
       "state": ".Multilevel_Switch.currentValue",
