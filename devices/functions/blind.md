@@ -4,8 +4,8 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;"&gt;90":&nbsp;"window-shutter-open",<br />&nbsp;"&lt;=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;"&gt;90":&nbsp;"window-shutter-open",<br />&nbsp;"&lt;=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
