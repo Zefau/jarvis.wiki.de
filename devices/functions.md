@@ -37,21 +37,21 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>level</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
-   "default": "window-shutter-open",
-   ">90": "window-shutter-open",
-   "<=90": "window-shutter"
+&nbsp;&nbsp;&nbsp;default:&nbsp;window-shutter-open,
+&nbsp;&nbsp;&nbsp;>90:&nbsp;window-shutter-open,
+&nbsp;&nbsp;&nbsp;<=90:&nbsp;window-shutter
 }</code></td><td>-</td></tr>
 <tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
-   "default": "window-shutter-open",
-   ">90": "window-shutter-open",
-   "<=90": "window-shutter"
+&nbsp;&nbsp;&nbsp;default:&nbsp;window-shutter-open,
+&nbsp;&nbsp;&nbsp;>90:&nbsp;window-shutter-open,
+&nbsp;&nbsp;&nbsp;<=90:&nbsp;window-shutter
 }</code></td><td>-</td></tr>
 <tr><td><code>activity</code></td><td>-</td><td><code>{
-   "true": "in Bewegung",
-   "false": "keine"
+&nbsp;&nbsp;&nbsp;true:&nbsp;in&nbsp;Bewegung,
+&nbsp;&nbsp;&nbsp;false:&nbsp;keine
 }</code></td><td>-</td><td><code>{
-   "true": "pan-vertical",
-   "false": "dots-vertical"
+&nbsp;&nbsp;&nbsp;true:&nbsp;pan-vertical,
+&nbsp;&nbsp;&nbsp;false:&nbsp;dots-vertical
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -273,15 +273,15 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>open</code></td><td>-</td><td><code>{
-   "0": "door#open#closed",
-   "1": "door#open#opened",
-   "false": "geschlossen",
-   "true": "offen"
+&nbsp;&nbsp;&nbsp;0:&nbsp;door#open#closed,
+&nbsp;&nbsp;&nbsp;1:&nbsp;door#open#opened,
+&nbsp;&nbsp;&nbsp;false:&nbsp;geschlossen,
+&nbsp;&nbsp;&nbsp;true:&nbsp;offen
 }</code></td><td>-</td><td><code>{
-   "0": "window-closed-variant",
-   "1": "window-open-variant",
-   "false": "door-closed",
-   "true": "door-open"
+&nbsp;&nbsp;&nbsp;0:&nbsp;window-closed-variant,
+&nbsp;&nbsp;&nbsp;1:&nbsp;window-open-variant,
+&nbsp;&nbsp;&nbsp;false:&nbsp;door-closed,
+&nbsp;&nbsp;&nbsp;true:&nbsp;door-open
 }</code></td><td>-</td></tr>
 <tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
@@ -304,8 +304,8 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "fan",
-   "false": "fan-off"
+&nbsp;&nbsp;&nbsp;true:&nbsp;fan,
+&nbsp;&nbsp;&nbsp;false:&nbsp;fan-off
 }</code></td><td>-</td></tr>
 </table>
 
@@ -313,21 +313,21 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 ### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
-<tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer-chevron-up"</code></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>thermometer</code></td><td>-</td></tr>
+<tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>thermometer-chevron-up</code></td><td>-</td></tr>
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>"radiator"</code></td><td>-</td></tr>
-<tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>min.</code></td><td><code>"clock-outline"</code></td><td>-</td></tr>
+<tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>radiator</code></td><td>-</td></tr>
+<tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>min.</code></td><td><code>clock-outline</code></td><td>-</td></tr>
 <tr><td><code>boostState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>windowState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>partyMode</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>"brightness-auto"</code></td><td>-</td></tr>
+<tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>brightness-auto</code></td><td>-</td></tr>
 <tr><td><code>modeManu</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>modeCurrent</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>modeLowering</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>"list-status"</code></td><td>-</td></tr>
-<tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>"valve"</code></td><td>-</td></tr>
+<tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>list-status</code></td><td>-</td></tr>
+<tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>valve</code></td><td>-</td></tr>
 <tr><td><code>valvePosition</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
@@ -843,12 +843,12 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
-   "default": "mdi-power-plug-off-outline",
-   ">0": "mdi-power-plug"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-power-plug-off-outline,
+&nbsp;&nbsp;&nbsp;>0:&nbsp;mdi-power-plug
 }</code></td><td>-</td></tr>
 <tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
-   "default": "mdi-power-plug-off-outline",
-   ">0": "mdi-power-plug"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-power-plug-off-outline,
+&nbsp;&nbsp;&nbsp;>0:&nbsp;mdi-power-plug
 }</code></td><td>-</td></tr>
 </table>
 
@@ -857,50 +857,50 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "lightbulb-on",
-   "false": "lightbulb-off-outline"
+&nbsp;&nbsp;&nbsp;true:&nbsp;lightbulb-on,
+&nbsp;&nbsp;&nbsp;false:&nbsp;lightbulb-off-outline
 }</code></td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "lightbulb-on",
-   "false": "lightbulb-off-outline"
+&nbsp;&nbsp;&nbsp;true:&nbsp;lightbulb-on,
+&nbsp;&nbsp;&nbsp;false:&nbsp;lightbulb-off-outline
 }</code></td><td>-</td></tr>
 <tr><td><code>dimmer</code></td><td><code>{
-   "0": {
-      "color": "#999"
-   }
+&nbsp;&nbsp;&nbsp;0:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#999
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "0": "aus"
-}</code></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><code>{
-   "0": "lightbulb-off-outline",
-   "default": "lightbulb-on"
+&nbsp;&nbsp;&nbsp;0:&nbsp;aus
+}</code></td><td><code>val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\&nbsp;%\&nbsp;:&nbsp;null</code></td><td><code>{
+&nbsp;&nbsp;&nbsp;0:&nbsp;lightbulb-off-outline,
+&nbsp;&nbsp;&nbsp;default:&nbsp;lightbulb-on
 }</code></td><td>-</td></tr>
 <tr><td><code>level</code></td><td><code>{
-   "0": {
-      "color": "#999"
-   }
+&nbsp;&nbsp;&nbsp;0:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#999
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "0": "aus"
-}</code></td><td><code>val => val > 0 ? \ %\ : null</code></td><td><code>{
-   "0": "lightbulb-off-outline",
-   "default": "lightbulb-on"
+&nbsp;&nbsp;&nbsp;0:&nbsp;aus
+}</code></td><td><code>val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\&nbsp;%\&nbsp;:&nbsp;null</code></td><td><code>{
+&nbsp;&nbsp;&nbsp;0:&nbsp;lightbulb-off-outline,
+&nbsp;&nbsp;&nbsp;default:&nbsp;lightbulb-on
 }</code></td><td>-</td></tr>
 <tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><code>{
-   "default": "thermometer"
+&nbsp;&nbsp;&nbsp;default:&nbsp;thermometer
 }</code></td><td>-</td></tr>
 <tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>°K</code></td><td><code>{
-   "default": "thermometer"
+&nbsp;&nbsp;&nbsp;default:&nbsp;thermometer
 }</code></td><td>-</td></tr>
 <tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>°</code></td><td><code>{
-   "default": "palette"
+&nbsp;&nbsp;&nbsp;default:&nbsp;palette
 }</code></td><td>-</td></tr>
 <tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "palette"
+&nbsp;&nbsp;&nbsp;default:&nbsp;palette
 }</code></td><td>-</td></tr>
 <tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "palette"
+&nbsp;&nbsp;&nbsp;default:&nbsp;palette
 }</code></td><td>-</td></tr>
 <tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "palette"
+&nbsp;&nbsp;&nbsp;default:&nbsp;palette
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -1240,19 +1240,19 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 ### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>map-marker</code></td><td>-</td></tr>
 <tr><td><code>presence</code></td><td>-</td><td><code>{
-   "true": "anwesend",
-   "false": "abwesend"
+&nbsp;&nbsp;&nbsp;true:&nbsp;anwesend,
+&nbsp;&nbsp;&nbsp;false:&nbsp;abwesend
 }</code></td><td>-</td><td><code>{
-   "true": "map-marker-radius",
-   "false": "map-marker-remove-outline"
+&nbsp;&nbsp;&nbsp;true:&nbsp;map-marker-radius,
+&nbsp;&nbsp;&nbsp;false:&nbsp;map-marker-remove-outline
 }</code></td><td>-</td></tr>
 <tr><td><code>users</code></td><td>-</td><td><code>{
-   "": "niemand anwesend"
+&nbsp;&nbsp;&nbsp;:&nbsp;niemand&nbsp;anwesend
 }</code></td><td>-</td><td><code>{
-   "": "account-group-outline",
-   "default": "account-group"
+&nbsp;&nbsp;&nbsp;:&nbsp;account-group-outline,
+&nbsp;&nbsp;&nbsp;default:&nbsp;account-group
 }</code></td><td>-</td></tr>
 </table>
 
@@ -1261,12 +1261,12 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "motion-sensor",
-   "false": "motion-sensor-off"
+&nbsp;&nbsp;&nbsp;true:&nbsp;motion-sensor,
+&nbsp;&nbsp;&nbsp;false:&nbsp;motion-sensor-off
 }</code></td><td>-</td></tr>
 <tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "motion-sensor",
-   "false": "motion-sensor-off"
+&nbsp;&nbsp;&nbsp;true:&nbsp;motion-sensor,
+&nbsp;&nbsp;&nbsp;false:&nbsp;motion-sensor-off
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -1470,10 +1470,10 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 ### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>mdi-thermometer</code></td><td>-</td></tr>
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>lux</code></td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
-<tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>hPa</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr>
+<tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>lux</code></td><td><code>mdi-brightness-7</code></td><td>-</td></tr>
+<tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>hPa</code></td><td><code>mdi-air-purifier</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -1535,8 +1535,8 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "server-network",
-   "false": "server-network-off"
+&nbsp;&nbsp;&nbsp;true:&nbsp;server-network,
+&nbsp;&nbsp;&nbsp;false:&nbsp;server-network-off
 }</code></td><td>-</td></tr>
 </table>
 
@@ -1545,12 +1545,12 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "0": "mdi-alarm-light-outline",
-   "1": "mdi-alarm-light",
-   "2": "mdi-alarm-light",
-   "3": "mdi-alarm-light",
-   "true": "mdi-alarm-light",
-   "false": "mdi-alarm-light-outline"
+&nbsp;&nbsp;&nbsp;0:&nbsp;mdi-alarm-light-outline,
+&nbsp;&nbsp;&nbsp;1:&nbsp;mdi-alarm-light,
+&nbsp;&nbsp;&nbsp;2:&nbsp;mdi-alarm-light,
+&nbsp;&nbsp;&nbsp;3:&nbsp;mdi-alarm-light,
+&nbsp;&nbsp;&nbsp;true:&nbsp;mdi-alarm-light,
+&nbsp;&nbsp;&nbsp;false:&nbsp;mdi-alarm-light-outline
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -1599,12 +1599,12 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
-   "default": "mdi-power-plug-off-outline",
-   ">0": "mdi-power-plug"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-power-plug-off-outline,
+&nbsp;&nbsp;&nbsp;>0:&nbsp;mdi-power-plug
 }</code></td><td>-</td></tr>
 <tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>W</code></td><td><code>{
-   "default": "mdi-power-plug-off-outline",
-   ">0": "mdi-power-plug"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-power-plug-off-outline,
+&nbsp;&nbsp;&nbsp;>0:&nbsp;mdi-power-plug
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -2008,8 +2008,8 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "true": "television-clean",
-   "false": "television-off"
+&nbsp;&nbsp;&nbsp;true:&nbsp;television-clean,
+&nbsp;&nbsp;&nbsp;false:&nbsp;television-off
 }</code></td><td>-</td></tr>
 </table>
 
@@ -2017,8 +2017,8 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 ### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
-<tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><code>"account"</code></td><td>-</td></tr>
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>map-marker</code></td><td>-</td></tr>
+<tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><code>account</code></td><td>-</td></tr>
 <tr><td><code>battery</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 </table>
 
@@ -2035,8 +2035,8 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <tr><td><code>humidity</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>wind</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>temperature</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
-<tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr>
+<tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>mdi-brightness-7</code></td><td>-</td></tr>
+<tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>mdi-weather-sunny</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
@@ -2187,16 +2187,16 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>open</code></td><td>-</td><td><code>{
-   "0": "geschlossen",
-   "1": "offen",
-   "2": "offen",
-   "false": "geschlossen",
-   "true": "offen"
+&nbsp;&nbsp;&nbsp;0:&nbsp;geschlossen,
+&nbsp;&nbsp;&nbsp;1:&nbsp;offen,
+&nbsp;&nbsp;&nbsp;2:&nbsp;offen,
+&nbsp;&nbsp;&nbsp;false:&nbsp;geschlossen,
+&nbsp;&nbsp;&nbsp;true:&nbsp;offen
 }</code></td><td>-</td><td><code>{
-   "0": "window-closed-variant",
-   "1": "window-open-variant",
-   "false": "window-closed-variant",
-   "true": "window-open-variant"
+&nbsp;&nbsp;&nbsp;0:&nbsp;window-closed-variant,
+&nbsp;&nbsp;&nbsp;1:&nbsp;window-open-variant,
+&nbsp;&nbsp;&nbsp;false:&nbsp;window-closed-variant,
+&nbsp;&nbsp;&nbsp;true:&nbsp;window-open-variant
 }</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
@@ -2284,100 +2284,100 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 ### vordefinierte Datenpunkte
 <table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
 <tr><td><code>_any</code></td><td><code>{
-   "true": {
-      "color": "#090",
-      "fontWeight": "bold"
-   },
-   "false": {
-      "color": "#999"
-   }
+&nbsp;&nbsp;&nbsp;true:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#090,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontWeight:&nbsp;bold
+&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;false:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#999
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "true": "an",
-   "false": "aus"
+&nbsp;&nbsp;&nbsp;true:&nbsp;an,
+&nbsp;&nbsp;&nbsp;false:&nbsp;aus
 }</code></td><td>-</td><td>-</td><td>-</td></tr>
 <tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>{
-   ">80": "battery-high",
-   "<=80": "battery-medium",
-   "<=30": "battery-low",
-   "<=10": "battery-outline blink",
-   "<=5": "battery-alert-variant-outline blink"
+&nbsp;&nbsp;&nbsp;>80:&nbsp;battery-high,
+&nbsp;&nbsp;&nbsp;<=80:&nbsp;battery-medium,
+&nbsp;&nbsp;&nbsp;<=30:&nbsp;battery-low,
+&nbsp;&nbsp;&nbsp;<=10:&nbsp;battery-outline&nbsp;blink,
+&nbsp;&nbsp;&nbsp;<=5:&nbsp;battery-alert-variant-outline&nbsp;blink
 }</code></td><td><code>{
-   "<=10": {
-      "color": "#900"
-   }
+&nbsp;&nbsp;&nbsp;<=10:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#900
+&nbsp;&nbsp;&nbsp;}
 }</code></td></tr>
 <tr><td><code>firmware</code></td><td>-</td><td><code>{
-   "true": "Update verfügbar",
-   "false": "kein Update"
+&nbsp;&nbsp;&nbsp;true:&nbsp;Update&nbsp;verfügbar,
+&nbsp;&nbsp;&nbsp;false:&nbsp;kein&nbsp;Update
 }</code></td><td>-</td><td><code>{
-   "true": "mdi-cog-refresh",
-   "false": "mdi-cog-outline"
+&nbsp;&nbsp;&nbsp;true:&nbsp;mdi-cog-refresh,
+&nbsp;&nbsp;&nbsp;false:&nbsp;mdi-cog-outline
 }</code></td><td>-</td></tr>
 <tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "mdi-snowflake"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-snowflake
 }</code></td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>"water-percent"</code></td><td>-</td></tr>
+<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>%</code></td><td><code>water-percent</code></td><td>-</td></tr>
 <tr><td><code>illuminance</code></td><td>-</td><td>-</td><td><code>lux</code></td><td>-</td><td>-</td></tr>
 <tr><td><code>level</code></td><td>-</td><td>-</td><td><code>%</code></td><td>-</td><td>-</td></tr>
 <tr><td><code>lowbattery</code></td><td><code>{
-   "true": {
-      "color": "#900",
-      "fontWeight": "bold"
-   },
-   "false": {
-      "color": "#999"
-   }
+&nbsp;&nbsp;&nbsp;true:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#900,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontWeight:&nbsp;bold
+&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;false:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#999
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "true": "niedrig",
-   "false": "voll"
+&nbsp;&nbsp;&nbsp;true:&nbsp;niedrig,
+&nbsp;&nbsp;&nbsp;false:&nbsp;voll
 }</code></td><td>-</td><td><code>{
-   "true": "battery-alert-variant-outline",
-   "false": "battery-high"
+&nbsp;&nbsp;&nbsp;true:&nbsp;battery-alert-variant-outline,
+&nbsp;&nbsp;&nbsp;false:&nbsp;battery-high
 }</code></td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
+<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>map-marker</code></td><td>-</td></tr>
+<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>power</code></td><td>-</td></tr>
 <tr><td><code>config</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "mdi-cog"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-cog
 }</code></td><td>-</td></tr>
 <tr><td><code>connectivity</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "mdi-wifi-arrow-left-right"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-wifi-arrow-left-right
 }</code></td><td>-</td></tr>
 <tr><td><code>reachability</code></td><td><code>{
-   "true": {
-      "color": "#090"
-   },
-   "false": {
-      "color": "#900",
-      "fontWeight": "bold"
-   }
+&nbsp;&nbsp;&nbsp;true:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#090
+&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;false:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#900,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontWeight:&nbsp;bold
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "true": "erreichbar",
-   "false": "nicht erreichbar"
+&nbsp;&nbsp;&nbsp;true:&nbsp;erreichbar,
+&nbsp;&nbsp;&nbsp;false:&nbsp;nicht&nbsp;erreichbar
 }</code></td><td>-</td><td><code>{
-   "true": "lan-connect",
-   "false": "lan-disconnect"
+&nbsp;&nbsp;&nbsp;true:&nbsp;lan-connect,
+&nbsp;&nbsp;&nbsp;false:&nbsp;lan-disconnect
 }</code></td><td>-</td></tr>
 <tr><td><code>rssi</code></td><td>-</td><td>-</td><td>-</td><td><code>{
-   "default": "mdi-antenna"
+&nbsp;&nbsp;&nbsp;default:&nbsp;mdi-antenna
 }</code></td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
-<tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
+<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>°C</code></td><td><code>thermometer</code></td><td>-</td></tr>
+<tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><code>power</code></td><td>-</td></tr>
 <tr><td><code>unreach</code></td><td><code>{
-   "true": {
-      "color": "#900",
-      "fontWeight": "bold"
-   },
-   "false": {
-      "color": "#090"
-   }
+&nbsp;&nbsp;&nbsp;true:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#900,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontWeight:&nbsp;bold
+&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;false:&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#090
+&nbsp;&nbsp;&nbsp;}
 }</code></td><td><code>{
-   "true": "nicht erreichbar",
-   "false": "erreichbar"
+&nbsp;&nbsp;&nbsp;true:&nbsp;nicht&nbsp;erreichbar,
+&nbsp;&nbsp;&nbsp;false:&nbsp;erreichbar
 }</code></td><td>-</td><td><code>{
-   "true": "lan-disconnect",
-   "false": "lan-connect"
+&nbsp;&nbsp;&nbsp;true:&nbsp;lan-disconnect,
+&nbsp;&nbsp;&nbsp;false:&nbsp;lan-connect
 }</code></td><td>-</td></tr>
-<tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>km/h</code></td><td><code>"weather-windy"</code></td><td>-</td></tr>
+<tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>km/h</code></td><td><code>weather-windy</code></td><td>-</td></tr>
 </table>
 <h3>Beispielkonfiguration</h3>
 <h4>Adapter hm-rpc</h4>
