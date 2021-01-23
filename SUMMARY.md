@@ -1,6 +1,3 @@
-# Table of contents
-
-* [Einführung](index.md)
 
 ## Geräte
 
