@@ -16,13 +16,13 @@
 <tbody><tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-BSM*
+#### HmIP-BSM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -61,7 +61,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-BSL*
+#### HmIP-BSL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -107,7 +107,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-BRC2*
+#### HmIP-BRC2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -125,7 +125,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-BDT*
+#### HmIP-BDT
 
 <table><thead><tr>
 <th>State Key</th>
@@ -143,7 +143,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Dim1T-FM*
+#### HM-LC-Dim1T-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -175,7 +175,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-RGBW-WM*
+#### HM-LC-RGBW-WM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -214,7 +214,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw1PBU-FM*
+#### HM-LC-Sw1PBU-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -232,7 +232,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw1-FM*
+#### HM-LC-Sw1-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -264,7 +264,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw1-DR*
+#### HM-LC-Sw1-DR
 
 <table><thead><tr>
 <th>State Key</th>
@@ -289,7 +289,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw2-FM*
+#### HM-LC-Sw2-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -328,7 +328,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw4-DR*
+#### HM-LC-Sw4-DR
 
 <table><thead><tr>
 <th>State Key</th>
@@ -395,7 +395,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Dim1TPBU-FM*
+#### HM-LC-Dim1TPBU-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -413,7 +413,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Dim1T-Pl-3*
+#### HM-LC-Dim1T-Pl-3
 
 <table><thead><tr>
 <th>State Key</th>

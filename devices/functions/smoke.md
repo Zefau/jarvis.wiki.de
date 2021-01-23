@@ -7,13 +7,13 @@
 <tbody><tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"mdi-alarm-light-outline",<br />&nbsp;"1":&nbsp;"mdi-alarm-light",<br />&nbsp;"2":&nbsp;"mdi-alarm-light",<br />&nbsp;"3":&nbsp;"mdi-alarm-light",<br />&nbsp;"true":&nbsp;"mdi-alarm-light",<br />&nbsp;"false":&nbsp;"mdi-alarm-light-outline"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-SWSD*
+#### HmIP-SWSD
 
 <table><thead><tr>
 <th>State Key</th>
@@ -31,7 +31,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-SD*
+#### HM-Sec-SD
 
 <table><thead><tr>
 <th>State Key</th>
@@ -56,7 +56,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-SD-2*
+#### HM-Sec-SD-2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -81,7 +81,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-SD-2-Team*
+#### HM-Sec-SD-2-Team
 
 <table><thead><tr>
 <th>State Key</th>

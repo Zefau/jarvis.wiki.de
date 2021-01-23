@@ -8,13 +8,13 @@
 <tbody><tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HM-Sec-Key*
+#### HM-Sec-Key
 
 <table><thead><tr>
 <th>State Key</th>

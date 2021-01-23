@@ -11,13 +11,13 @@
 <tbody><tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-STHO*
+#### HmIP-STHO
 
 <table><thead><tr>
 <th>State Key</th>
@@ -42,7 +42,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-STHO-A*
+#### HmIP-STHO-A
 
 <table><thead><tr>
 <th>State Key</th>
@@ -67,7 +67,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWO-B*
+#### HmIP-SWO-B
 
 <table><thead><tr>
 <th>State Key</th>
@@ -113,7 +113,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWO-PL*
+#### HmIP-SWO-PL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -173,7 +173,7 @@
 </tr>
 </tbody></table>
 
-*HM-WDS40-TH-I-2*
+#### HM-WDS40-TH-I-2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -201,7 +201,7 @@
 ### Adapter hmip
 
 
-*HmIP-STHO*
+#### HmIP-STHO
 
 <table><thead><tr>
 <th>State Key</th>
@@ -240,7 +240,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-STHO-A*
+#### HmIP-STHO-A
 
 <table><thead><tr>
 <th>State Key</th>
@@ -265,7 +265,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWO-B*
+#### HmIP-SWO-B
 
 <table><thead><tr>
 <th>State Key</th>

@@ -8,13 +8,13 @@
 <tbody><tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-SMI55*
+#### HmIP-SMI55
 
 <table><thead><tr>
 <th>State Key</th>
@@ -39,7 +39,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SMI*
+#### HmIP-SMI
 
 <table><thead><tr>
 <th>State Key</th>
@@ -64,7 +64,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SMO-A*
+#### HmIP-SMO-A
 
 <table><thead><tr>
 <th>State Key</th>
@@ -89,7 +89,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SAM*
+#### HmIP-SAM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -114,7 +114,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SPI*
+#### HmIP-SPI
 
 <table><thead><tr>
 <th>State Key</th>
@@ -139,7 +139,7 @@
 </tr>
 </tbody></table>
 
-*HM-PB-6-WM55*
+#### HM-PB-6-WM55
 
 <table><thead><tr>
 <th>State Key</th>
@@ -234,7 +234,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sen-MDIR-WM55*
+#### HM-Sen-MDIR-WM55
 
 <table><thead><tr>
 <th>State Key</th>
@@ -287,7 +287,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sen-MDIR-O-2*
+#### HM-Sen-MDIR-O-2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -312,7 +312,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sen-MDIR-O-3*
+#### HM-Sen-MDIR-O-3
 
 <table><thead><tr>
 <th>State Key</th>
@@ -340,7 +340,7 @@
 ### Adapter hmip
 
 
-*HmIP-SMI*
+#### HmIP-SMI
 
 <table><thead><tr>
 <th>State Key</th>

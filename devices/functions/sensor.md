@@ -10,13 +10,13 @@
 <tbody><tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>"&nbsp;hPa"</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HM-Sec-TiS*
+#### HM-Sec-TiS
 
 <table><thead><tr>
 <th>State Key</th>
@@ -34,7 +34,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SLO*
+#### HmIP-SLO
 
 <table><thead><tr>
 <th>State Key</th>
@@ -73,7 +73,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWD*
+#### HmIP-SWD
 
 <table><thead><tr>
 <th>State Key</th>
@@ -105,7 +105,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-WDS-2*
+#### HM-Sec-WDS-2
 
 <table><thead><tr>
 <th>State Key</th>

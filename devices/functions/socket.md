@@ -9,13 +9,13 @@
 <tbody><tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-FSM*
+#### HmIP-FSM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -75,7 +75,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-PS*
+#### HmIP-PS
 
 <table><thead><tr>
 <th>State Key</th>
@@ -93,7 +93,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-PSM*
+#### HmIP-PSM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -118,7 +118,7 @@
 </tr>
 </tbody></table>
 
-*HM-ES-PMSw1-Pl-DN-R1*
+#### HM-ES-PMSw1-Pl-DN-R1
 
 <table><thead><tr>
 <th>State Key</th>
@@ -178,7 +178,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw1-Pl-2*
+#### HM-LC-Sw1-Pl-2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -203,7 +203,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Sw1-Pl-DN-R1*
+#### HM-LC-Sw1-Pl-DN-R1
 
 <table><thead><tr>
 <th>State Key</th>
@@ -228,7 +228,7 @@
 </tr>
 </tbody></table>
 
-*HM-ES-PMSw1-DR*
+#### HM-ES-PMSw1-DR
 
 <table><thead><tr>
 <th>State Key</th>
@@ -295,7 +295,7 @@
 </tr>
 </tbody></table>
 
-*HM-ES-PMSw1-Pl*
+#### HM-ES-PMSw1-Pl
 
 <table><thead><tr>
 <th>State Key</th>
@@ -365,7 +365,7 @@
 ### Adapter hmip
 
 
-*HmIP-PS*
+#### HmIP-PS
 
 <table><thead><tr>
 <th>State Key</th>

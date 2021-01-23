@@ -9,13 +9,13 @@
 <tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-BBL*
+#### HmIP-BBL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -54,7 +54,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-FROLL*
+#### HmIP-FROLL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -86,7 +86,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-BROLL*
+#### HmIP-BROLL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -125,7 +125,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Bl1-FM*
+#### HM-LC-Bl1-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -157,7 +157,7 @@
 </tr>
 </tbody></table>
 
-*HM-LC-Bl1PBU-FM*
+#### HM-LC-Bl1PBU-FM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -189,7 +189,7 @@
 </tr>
 </tbody></table>
 
-*HmIPW-DRBL4*
+#### HmIPW-DRBL4
 
 <table><thead><tr>
 <th>State Key</th>
@@ -315,7 +315,7 @@
 ### Adapter hmip
 
 
-*HmIP-BBL*
+#### HmIP-BBL
 
 <table><thead><tr>
 <th>State Key</th>
@@ -347,7 +347,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-BROLL*
+#### HmIP-BROLL
 
 <table><thead><tr>
 <th>State Key</th>

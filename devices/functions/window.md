@@ -7,13 +7,13 @@
 <tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"geschlossen",<br />&nbsp;"1":&nbsp;"offen",<br />&nbsp;"2":&nbsp;"offen",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"window-closed-variant",<br />&nbsp;"true":&nbsp;"window-open-variant"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-##Beispielkonfiguration
+## Beispielkonfiguration
 
 
 ### Adapter hm-rpc
 
 
-*HmIP-SWDM*
+#### HmIP-SWDM
 
 <table><thead><tr>
 <th>State Key</th>
@@ -31,7 +31,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWDO-I*
+#### HmIP-SWDO-I
 
 <table><thead><tr>
 <th>State Key</th>
@@ -49,7 +49,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWDO*
+#### HmIP-SWDO
 
 <table><thead><tr>
 <th>State Key</th>
@@ -67,7 +67,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SRH*
+#### HmIP-SRH
 
 <table><thead><tr>
 <th>State Key</th>
@@ -85,7 +85,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-RHS*
+#### HM-Sec-RHS
 
 <table><thead><tr>
 <th>State Key</th>
@@ -103,7 +103,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-Sco*
+#### HM-Sec-Sco
 
 <table><thead><tr>
 <th>State Key</th>
@@ -121,7 +121,7 @@
 </tr>
 </tbody></table>
 
-*HM-Sec-SC-2*
+#### HM-Sec-SC-2
 
 <table><thead><tr>
 <th>State Key</th>
@@ -142,7 +142,7 @@
 ### Adapter hmip
 
 
-*HmIP-SWDO*
+#### HmIP-SWDO
 
 <table><thead><tr>
 <th>State Key</th>
@@ -160,7 +160,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SWDO-I*
+#### HmIP-SWDO-I
 
 <table><thead><tr>
 <th>State Key</th>
@@ -178,7 +178,7 @@
 </tr>
 </tbody></table>
 
-*HmIP-SRH*
+#### HmIP-SRH
 
 <table><thead><tr>
 <th>State Key</th>
