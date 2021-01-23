@@ -33,3102 +33,4931 @@ Grundsätzlich kann durch den Benutzer in Jarvis alles frei definiert und konfig
 
 
 ## Gewerk Rollladen / Jalousie (`blind`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;&nbsp;&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;&nbsp;&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr>
-<tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;&nbsp;&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;&nbsp;&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr>
-<tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-BBL</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.3.LEVEL</code></li>
-<li>action: <code>.4.LEVEL</code></li>
-</ul>
-<li><code>level2</code>
-<ul>
-<li>state: <code>.3.LEVEL2</code></li>
-<li>action: <code>.4.LEVEL2</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.3.ACTIVITY_STATE</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.4.STOP</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.3.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2</td>
+<td><code>.3.LEVEL2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL2</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.3.ACTIVITY_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STOP</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-FROLL</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.3.LEVEL</code></li>
-<li>action: <code>.4.LEVEL</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.3.ACTIVITY_STATE</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.4.STOP</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.3.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.3.ACTIVITY_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STOP</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BROLL</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.3.LEVEL</code></li>
-<li>action: <code>.4.LEVEL</code></li>
-</ul>
-<li><code>level2</code>
-<ul>
-<li>state: <code>.3.LEVEL2</code></li>
-<li>action: <code>.4.LEVEL2</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.3.ACTIVITY_STATE</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.4.STOP</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.3.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2</td>
+<td><code>.3.LEVEL2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL2</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.3.ACTIVITY_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STOP</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Bl1-FM</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.1.WORKING</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.1.STOP</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.1.WORKING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STOP</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Bl1PBU-FM</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.1.WORKING</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.1.STOP</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.1.WORKING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STOP</code></td>
+</tr>
+</tbody></table>
 <h5>HmIPW-DRBL4</h5>
-<ul>
-<li><code>levelCh1</code>
-<ul>
-<li>state: <code>.2.LEVEL</code></li>
-<li>action: <code>.2.LEVEL</code></li>
-</ul>
-<li><code>level2Ch1</code>
-<ul>
-<li>state: <code>.2.LEVEL_2</code></li>
-<li>action: <code>.2.LEVEL_2</code></li>
-</ul>
-<li><code>activityCh1</code>
-<ul>
-<li>state: <code>.2.PROCESS</code></li>
-</ul>
-<li><code>stopCh1</code>
-<ul>
-<li>action: <code>.2.STOP</code></li>
-</ul>
-<li><code>levelCh2</code>
-<ul>
-<li>state: <code>.6.LEVEL</code></li>
-<li>action: <code>.6.LEVEL</code></li>
-</ul>
-<li><code>level2Ch2</code>
-<ul>
-<li>state: <code>.6.LEVEL_2</code></li>
-<li>action: <code>.6.LEVEL_2</code></li>
-</ul>
-<li><code>activityCh2</code>
-<ul>
-<li>state: <code>.6.PROCESS</code></li>
-</ul>
-<li><code>stopCh2</code>
-<ul>
-<li>action: <code>.6.STOP</code></li>
-</ul>
-<li><code>levelCh3</code>
-<ul>
-<li>state: <code>.10.LEVEL</code></li>
-<li>action: <code>.10.LEVEL</code></li>
-</ul>
-<li><code>level2Ch3</code>
-<ul>
-<li>state: <code>.10.LEVEL_2</code></li>
-<li>action: <code>.10.LEVEL_2</code></li>
-</ul>
-<li><code>activityCh3</code>
-<ul>
-<li>state: <code>.10.PROCESS</code></li>
-</ul>
-<li><code>stopCh3</code>
-<ul>
-<li>action: <code>.10.STOP</code></li>
-</ul>
-<li><code>levelCh4</code>
-<ul>
-<li>state: <code>.14.LEVEL</code></li>
-<li>action: <code>.14.LEVEL</code></li>
-</ul>
-<li><code>level2Ch4</code>
-<ul>
-<li>state: <code>.14.LEVEL_2</code></li>
-<li>action: <code>.14.LEVEL_2</code></li>
-</ul>
-<li><code>activityCh4</code>
-<ul>
-<li>state: <code>.14.PROCESS</code></li>
-</ul>
-<li><code>stopCh4</code>
-<ul>
-<li>action: <code>.14.STOP</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>levelCh1</td>
+<td><code>.2.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2Ch1</td>
+<td><code>.2.LEVEL_2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.LEVEL_2</code></td>
+</tr>
+<tr>
+<td><code>activityCh1</td>
+<td><code>.2.PROCESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stopCh1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.STOP</code></td>
+</tr>
+<tr>
+<td><code>levelCh2</td>
+<td><code>.6.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2Ch2</td>
+<td><code>.6.LEVEL_2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.LEVEL_2</code></td>
+</tr>
+<tr>
+<td><code>activityCh2</td>
+<td><code>.6.PROCESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stopCh2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.STOP</code></td>
+</tr>
+<tr>
+<td><code>levelCh3</td>
+<td><code>.10.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.10.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2Ch3</td>
+<td><code>.10.LEVEL_2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.10.LEVEL_2</code></td>
+</tr>
+<tr>
+<td><code>activityCh3</td>
+<td><code>.10.PROCESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stopCh3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.10.STOP</code></td>
+</tr>
+<tr>
+<td><code>levelCh4</td>
+<td><code>.14.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.14.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>level2Ch4</td>
+<td><code>.14.LEVEL_2</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.14.LEVEL_2</code></td>
+</tr>
+<tr>
+<td><code>activityCh4</td>
+<td><code>.14.PROCESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stopCh4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.14.STOP</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-BBL</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.channels.1.shutterLevel</code></li>
-<li>action: <code>.channels.1.shutterLevel</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.channels.1.processing</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.channels.1.stop</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.channels.1.shutterLevel</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.shutterLevel</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.channels.1.processing</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.stop</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BROLL</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.channels.1.shutterLevel</code></li>
-<li>action: <code>.channels.1.shutterLevel</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.channels.1.processing</code></li>
-</ul>
-<li><code>stop</code>
-<ul>
-<li>action: <code>.channels.1.stop</code></li>
-</ul>
-</ul>
-<h4>Adapter shelly</h4>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.Shutter.Position</code></li>
-<li>action: <code>.Shutter.Position</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.Shutter.state</code></li>
-<li>action: <code>.Shutter.Pause</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.channels.1.shutterLevel</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.shutterLevel</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.channels.1.processing</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.stop</code></td>
+</tr>
+</tbody></table>
+#### Adapter shelly
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.Shutter.Position</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Shutter.Position</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.Shutter.state</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Shutter.Pause</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Tür (`door`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"door#open#closed",<br />&nbsp;&nbsp;&nbsp;"1":&nbsp;"door#open#opened",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;&nbsp;&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"door-closed",<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"door-open"<br />}</code></td><td>-</td></tr>
-<tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"door#open#closed",<br />&nbsp;"1":&nbsp;"door#open#opened",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"door-closed",<br />&nbsp;"true":&nbsp;"door-open"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HM-Sec-Key</h5>
-<ul>
-<li><code>error</code>
-<ul>
-<li>state: <code>.1.ERROR</code></li>
-</ul>
-<li><code>lock</code>
-<ul>
-<li>state: <code>.1.OPEN</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>error</td>
+<td><code>.1.ERROR</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lock</td>
+<td><code>.1.OPEN</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Lüfter (`fan`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"fan",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"fan-off"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"fan",<br />&nbsp;"false":&nbsp;"fan-off"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Heizung (`heating`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
-<tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer-chevron-up"</code></td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>"radiator"</code></td><td>-</td></tr>
-<tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>"min."</code></td><td><code>"clock-outline"</code></td><td>-</td></tr>
-<tr><td><code>boostState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>windowState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>partyMode</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>"brightness-auto"</code></td><td>-</td></tr>
-<tr><td><code>modeManu</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeCurrent</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeLowering</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>"list-status"</code></td><td>-</td></tr>
-<tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>"%"</code></td><td><code>"valve"</code></td><td>-</td></tr>
-<tr><td><code>valvePosition</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer-chevron-up"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>"radiator"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>"min."</code></td><td><code>"clock-outline"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>boostState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>windowState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>partyMode</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>"brightness-auto"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeManu</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeCurrent</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeLowering</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>"list-status"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>"%"</code></td><td><code>"valve"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>valvePosition</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-STHD</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>frost</code>
-<ul>
-<li>state: <code>.1.FROST_PROTECTION</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-<li><code>boostTime</code>
-<ul>
-<li>state: <code>.1.BOOST_TIME</code></li>
-<li>action: <code>.1.BOOST_TIME</code></li>
-</ul>
-<li><code>windowState</code>
-<ul>
-<li>state: <code>.1.WINDOW_STATE</code></li>
-</ul>
-<li><code>partyMode</code>
-<ul>
-<li>state: <code>.1.PARTY_MODE</code></li>
-<li>action: <code>.1.PARTY_MODE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>frost</td>
+<td><code>.1.FROST_PROTECTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostTime</td>
+<td><code>.1.BOOST_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_TIME</code></td>
+</tr>
+<tr>
+<td><code>windowState</td>
+<td><code>.1.WINDOW_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>partyMode</td>
+<td><code>.1.PARTY_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PARTY_MODE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-eTRV-B</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>frost</code>
-<ul>
-<li>state: <code>.1.FROST_PROTECTION</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-<li><code>boostTime</code>
-<ul>
-<li>state: <code>.1.BOOST_TIME</code></li>
-<li>action: <code>.1.BOOST_TIME</code></li>
-</ul>
-<li><code>windowState</code>
-<ul>
-<li>state: <code>.1.WINDOW_STATE</code></li>
-</ul>
-<li><code>partyMode</code>
-<ul>
-<li>state: <code>.1.PARTY_MODE</code></li>
-<li>action: <code>.1.PARTY_MODE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>frost</td>
+<td><code>.1.FROST_PROTECTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostTime</td>
+<td><code>.1.BOOST_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_TIME</code></td>
+</tr>
+<tr>
+<td><code>windowState</td>
+<td><code>.1.WINDOW_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>partyMode</td>
+<td><code>.1.PARTY_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PARTY_MODE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-eTRV</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>frost</code>
-<ul>
-<li>state: <code>.1.FROST_PROTECTION</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-<li><code>boostTime</code>
-<ul>
-<li>state: <code>.1.BOOST_TIME</code></li>
-<li>action: <code>.1.BOOST_TIME</code></li>
-</ul>
-<li><code>windowState</code>
-<ul>
-<li>state: <code>.1.WINDOW_STATE</code></li>
-</ul>
-<li><code>partyMode</code>
-<ul>
-<li>state: <code>.1.PARTY_MODE</code></li>
-<li>action: <code>.1.PARTY_MODE</code></li>
-</ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>valve</code>
-<ul>
-<li>state: <code>.1.VALVE_STATE</code></li>
-<li>action: <code>.1.VALVE_STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>frost</td>
+<td><code>.1.FROST_PROTECTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostTime</td>
+<td><code>.1.BOOST_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_TIME</code></td>
+</tr>
+<tr>
+<td><code>windowState</td>
+<td><code>.1.WINDOW_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>partyMode</td>
+<td><code>.1.PARTY_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PARTY_MODE</code></td>
+</tr>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>valve</td>
+<td><code>.1.VALVE_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.VALVE_STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-eTRV-2</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>frost</code>
-<ul>
-<li>state: <code>.1.FROST_PROTECTION</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-<li><code>boostTime</code>
-<ul>
-<li>state: <code>.1.BOOST_TIME</code></li>
-<li>action: <code>.1.BOOST_TIME</code></li>
-</ul>
-<li><code>windowState</code>
-<ul>
-<li>state: <code>.1.WINDOW_STATE</code></li>
-</ul>
-<li><code>partyMode</code>
-<ul>
-<li>state: <code>.1.PARTY_MODE</code></li>
-<li>action: <code>.1.PARTY_MODE</code></li>
-</ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>valve</code>
-<ul>
-<li>state: <code>.1.VALVE_STATE</code></li>
-<li>action: <code>.1.VALVE_STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>frost</td>
+<td><code>.1.FROST_PROTECTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostTime</td>
+<td><code>.1.BOOST_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_TIME</code></td>
+</tr>
+<tr>
+<td><code>windowState</td>
+<td><code>.1.WINDOW_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>partyMode</td>
+<td><code>.1.PARTY_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PARTY_MODE</code></td>
+</tr>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>valve</td>
+<td><code>.1.VALVE_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.VALVE_STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BWTH</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-WTH</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-WTH-2</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.1.SET_POINT_TEMPERATURE</code></li>
-<li>action: <code>.1.SET_POINT_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.1.BOOST_MODE</code></li>
-<li>action: <code>.1.BOOST_MODE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.SET_POINT_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.1.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.BOOST_MODE</code></td>
+</tr>
+</tbody></table>
 <h5>HM-CC-RT-DN</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.4.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.4.SET_TEMPERATURE</code></li>
-<li>action: <code>.4.SET_TEMPERATURE</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.4.BOOST_MODE</code></li>
-<li>action: <code>.4.BOOST_MODE</code></li>
-</ul>
-<li><code>batteryState</code>
-<ul>
-<li>state: <code>.4.BATTERY_STATE</code></li>
-</ul>
-<li><code>partyTemperature</code>
-<ul>
-<li>state: <code>.4.PARTY_TEMPERATURE</code></li>
-</ul>
-<li><code>modeAuto</code>
-<ul>
-<li>state: <code>.4.AUTO_MODE</code></li>
-<li>action: <code>.4.AUTO_MODE</code></li>
-</ul>
-<li><code>modeManu</code>
-<ul>
-<li>state: <code>.4.MANU_MODE</code></li>
-<li>action: <code>.4.MANU_MODE</code></li>
-</ul>
-<li><code>boostState</code>
-<ul>
-<li>state: <code>.4.BOOST_STATE</code></li>
-<li>action: <code>.4.BOOST_STATE</code></li>
-</ul>
-<li><code>modeCurrent</code>
-<ul>
-<li>state: <code>.4.COMFORT_MODE</code></li>
-<li>action: <code>.4.COMFORT_MODE</code></li>
-</ul>
-<li><code>modeLowering</code>
-<ul>
-<li>state: <code>.4.LOWERING_MODE</code></li>
-<li>action: <code>.4.LOWERING_MODE</code></li>
-</ul>
-<li><code>modeControl</code>
-<ul>
-<li>state: <code>.4.CONTROL_MODE</code></li>
-<li>action: <code>.4.CONTROL_MODE</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-<li><code>valve</code>
-<ul>
-<li>state: <code>.4.VALVE_STATE</code></li>
-<li>action: <code>.4.VALVE_STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.4.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.4.SET_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.SET_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.4.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>batteryState</td>
+<td><code>.4.BATTERY_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>partyTemperature</td>
+<td><code>.4.PARTY_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>modeAuto</td>
+<td><code>.4.AUTO_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.AUTO_MODE</code></td>
+</tr>
+<tr>
+<td><code>modeManu</td>
+<td><code>.4.MANU_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.MANU_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostState</td>
+<td><code>.4.BOOST_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.BOOST_STATE</code></td>
+</tr>
+<tr>
+<td><code>modeCurrent</td>
+<td><code>.4.COMFORT_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.COMFORT_MODE</code></td>
+</tr>
+<tr>
+<td><code>modeLowering</td>
+<td><code>.4.LOWERING_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LOWERING_MODE</code></td>
+</tr>
+<tr>
+<td><code>modeControl</td>
+<td><code>.4.CONTROL_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"Auto-Mode",<br />&nbsp;"1":&nbsp;"Manu-Mode",<br />&nbsp;"2":&nbsp;"Party-Mode",<br />&nbsp;"3":&nbsp;"Boost-Mode"<br />}</code></td>
+<td><code>.4.CONTROL_MODE</code></td>
+</tr>
+<tr>
+<td><code>valve</td>
+<td><code>.4.VALVE_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.VALVE_STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HM-TC-IT-WM-W-EU</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>actualHumidity</code>
-<ul>
-<li>state: <code>.2.ACTUAL_HUMIDITY</code></li>
-</ul>
-<li><code>actualTemperature</code>
-<ul>
-<li>state: <code>.2.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>modeAuto</code>
-<ul>
-<li>state: <code>.2.AUTO_MODE</code></li>
-<li>action: <code>.2.AUTO_MODE</code></li>
-</ul>
-<li><code>batteryState</code>
-<ul>
-<li>state: <code>.2.BATTERY_STATE</code></li>
-</ul>
-<li><code>boost</code>
-<ul>
-<li>state: <code>.2.BOOST_MODE</code></li>
-<li>action: <code>.2.BOOST_MODE</code></li>
-</ul>
-<li><code>boostState</code>
-<ul>
-<li>state: <code>.2.BOOST_STATE</code></li>
-<li>action: <code>.2.BOOST_STATE</code></li>
-</ul>
-<li><code>modeControl</code>
-<ul>
-<li>state: <code>.2.CONTROL_MODE</code></li>
-<li>action: <code>.2.CONTROL_MODE</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-<li><code>modeCurrent</code>
-<ul>
-<li>state: <code>.2.COMFORT_MODE</code></li>
-<li>action: <code>.2.COMFORT_MODE</code></li>
-</ul>
-<li><code>lowBatteryAlarmReporting</code>
-<ul>
-<li>state: <code>.2.LOWBAT_REPORTING</code></li>
-<li>action: <code>.2.LOWBAT_REPORTING</code></li>
-</ul>
-<li><code>modeManu</code>
-<ul>
-<li>state: <code>.2.MANU_MODE</code></li>
-<li>action: <code>.2.MANU_MODE</code></li>
-</ul>
-<li><code>partyTemperature</code>
-<ul>
-<li>state: <code>.2.PARTY_TEMPERATURE</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.2.SET_TEMPERATURE</code></li>
-<li>action: <code>.2.SET_TEMPERATURE</code></li>
-</ul>
-<li><code>openWindow</code>
-<ul>
-<li>state: <code>.2.WINDOW_OPEN_REPORTING</code></li>
-<li>action: <code>.2.WINDOW_OPEN_REPORTING</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>actualHumidity</td>
+<td><code>.2.ACTUAL_HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>actualTemperature</td>
+<td><code>.2.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>modeAuto</td>
+<td><code>.2.AUTO_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.AUTO_MODE</code></td>
+</tr>
+<tr>
+<td><code>batteryState</td>
+<td><code>.2.BATTERY_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>boost</td>
+<td><code>.2.BOOST_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.BOOST_MODE</code></td>
+</tr>
+<tr>
+<td><code>boostState</td>
+<td><code>.2.BOOST_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.BOOST_STATE</code></td>
+</tr>
+<tr>
+<td><code>modeControl</td>
+<td><code>.2.CONTROL_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"Auto-Mode",<br />&nbsp;"1":&nbsp;"Manu-Mode",<br />&nbsp;"2":&nbsp;"Party-Mode",<br />&nbsp;"3":&nbsp;"Boost-Mode"<br />}</code></td>
+<td><code>.2.CONTROL_MODE</code></td>
+</tr>
+<tr>
+<td><code>modeCurrent</td>
+<td><code>.2.COMFORT_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.COMFORT_MODE</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryAlarmReporting</td>
+<td><code>.2.LOWBAT_REPORTING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.LOWBAT_REPORTING</code></td>
+</tr>
+<tr>
+<td><code>modeManu</td>
+<td><code>.2.MANU_MODE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.MANU_MODE</code></td>
+</tr>
+<tr>
+<td><code>partyTemperature</td>
+<td><code>.2.PARTY_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.2.SET_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.SET_TEMPERATURE</code></td>
+</tr>
+<tr>
+<td><code>openWindow</td>
+<td><code>.2.WINDOW_OPEN_REPORTING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.WINDOW_OPEN_REPORTING</code></td>
+</tr>
+</tbody></table>
 <h5>HM-WDS40-TH-I</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-WDS10-TH-O</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-WDS30-OT2-SM</h5>
-<ul>
-<li><code>temperatureCh1</code>
-<ul>
-<li>state: <code>.1.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh1</code>
-<ul>
-<li>state: <code>.1.LOWBAT</code></li>
-</ul>
-<li><code>temperatureCh2</code>
-<ul>
-<li>state: <code>.2.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh2</code>
-<ul>
-<li>state: <code>.2.LOWBAT</code></li>
-</ul>
-<li><code>temperatureCh3</code>
-<ul>
-<li>state: <code>.3.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh3</code>
-<ul>
-<li>state: <code>.3.LOWBAT</code></li>
-</ul>
-<li><code>temperatureCh4</code>
-<ul>
-<li>state: <code>.4.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh4</code>
-<ul>
-<li>state: <code>.4.LOWBAT</code></li>
-</ul>
-<li><code>temperatureCh5</code>
-<ul>
-<li>state: <code>.5.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh5</code>
-<ul>
-<li>state: <code>.5.LOWBAT</code></li>
-</ul>
-<li><code>temperatureCh6</code>
-<ul>
-<li>state: <code>.6.TEMPERATURE</code></li>
-</ul>
-<li><code>lowBatteryCh6</code>
-<ul>
-<li>state: <code>.6.LOWBAT</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperatureCh1</td>
+<td><code>.1.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh1</td>
+<td><code>.1.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperatureCh2</td>
+<td><code>.2.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh2</td>
+<td><code>.2.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperatureCh3</td>
+<td><code>.3.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh3</td>
+<td><code>.3.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperatureCh4</td>
+<td><code>.4.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh4</td>
+<td><code>.4.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperatureCh5</td>
+<td><code>.5.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh5</td>
+<td><code>.5.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperatureCh6</td>
+<td><code>.6.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh6</td>
+<td><code>.6.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-STH</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.channels.1.actualTemperature</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.channels.1.humidity</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.channels.1.setPointTemperature</code></li>
-<li>action: <code>.channels.1.setPointTemperature</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.channels.1.actualTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.channels.1.humidity</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.channels.1.setPointTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.setPointTemperature</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-eTRV-B</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.channels.1.valveActualTemperature</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.channels.1.setPointTemperature</code></li>
-<li>action: <code>.channels.1.setPointTemperature</code></li>
-</ul>
-<li><code>valvePosition</code>
-<ul>
-<li>state: <code>.channels.1.valvePosition</code></li>
-</ul>
-<li><code>valveState</code>
-<ul>
-<li>state: <code>.channels.1.valveState</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.channels.1.valveActualTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.channels.1.setPointTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.setPointTemperature</code></td>
+</tr>
+<tr>
+<td><code>valvePosition</td>
+<td><code>.channels.1.valvePosition</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>valveState</td>
+<td><code>.channels.1.valveState</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-eTRV-2</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.channels.1.valveActualTemperature</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.channels.1.setPointTemperature</code></li>
-<li>action: <code>.channels.1.setPointTemperature</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.channels.1.valveActualTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.channels.1.setPointTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.setPointTemperature</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-WTH-2</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.channels.1.actualTemperature</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.channels.1.humidity</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.channels.1.setPointTemperature</code></li>
-<li>action: <code>.channels.1.setPointTemperature</code></li>
-</ul>
-<li><code>vapor</code>
-<ul>
-<li>state: <code>.channels.1.vaporAmount</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.channels.1.actualTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.channels.1.humidity</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.channels.1.setPointTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.setPointTemperature</code></td>
+</tr>
+<tr>
+<td><code>vapor</td>
+<td><code>.channels.1.vaporAmount</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Haushalt (`household`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;&nbsp;&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr>
-<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;&nbsp;&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Licht (`light`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr>
-<tr><td><code>dimmer</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr>
-<tr><td><code>level</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr>
-<tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr>
-<tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr>
-<tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>"&nbsp;°"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr>
-<tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr>
-<tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr>
-<tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>dimmer</code></td><td><code>{<br />&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level</code></td><td><code>{<br />&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=>&nbsp;val&nbsp;>&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>"&nbsp;°"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-BSM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.4.STATE</code></li>
-<li>action: <code>.4.STATE</code></li>
-</ul>
-<li><code>powerMeter</code>
-<ul>
-<li>state: <code>.7.POWER</code></li>
-</ul>
-<li><code>powerVoltage</code>
-<ul>
-<li>state: <code>.7.VOLTAGE</code></li>
-</ul>
-<li><code>powerFrequency</code>
-<ul>
-<li>state: <code>.7.FREQUENCY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.4.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.7.POWER</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerVoltage</td>
+<td><code>.7.VOLTAGE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerFrequency</td>
+<td><code>.7.FREQUENCY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BSL</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.4.STATE</code></li>
-<li>action: <code>.4.STATE</code></li>
-</ul>
-<li><code>levelTop</code>
-<ul>
-<li>state: <code>.8.LEVEL</code></li>
-<li>action: <code>.8.LEVEL</code></li>
-</ul>
-<li><code>colorTop</code>
-<ul>
-<li>state: <code>.8.COLOR</code></li>
-<li>action: <code>.8.COLOR</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-<li><code>levelBottom</code>
-<ul>
-<li>state: <code>.12.LEVEL</code></li>
-<li>action: <code>.12.LEVEL</code></li>
-</ul>
-<li><code>colorBottom</code>
-<ul>
-<li>state: <code>.12.COLOR</code></li>
-<li>action: <code>.12.COLOR</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.4.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STATE</code></td>
+</tr>
+<tr>
+<td><code>levelTop</td>
+<td><code>.8.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.8.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>colorTop</td>
+<td><code>.8.COLOR</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"BLACK",<br />&nbsp;"1":&nbsp;"BLUE",<br />&nbsp;"2":&nbsp;"GREEN",<br />&nbsp;"3":&nbsp;"TURQUOISE",<br />&nbsp;"4":&nbsp;"RED",<br />&nbsp;"5":&nbsp;"PURPLE",<br />&nbsp;"6":&nbsp;"YELLOW",<br />&nbsp;"7":&nbsp;"WHITE"<br />}</code></td>
+<td><code>.8.COLOR</code></td>
+</tr>
+<tr>
+<td><code>levelBottom</td>
+<td><code>.12.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.12.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>colorBottom</td>
+<td><code>.12.COLOR</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"BLACK",<br />&nbsp;"1":&nbsp;"BLUE",<br />&nbsp;"2":&nbsp;"GREEN",<br />&nbsp;"3":&nbsp;"TURQUOISE",<br />&nbsp;"4":&nbsp;"RED",<br />&nbsp;"5":&nbsp;"PURPLE",<br />&nbsp;"6":&nbsp;"YELLOW",<br />&nbsp;"7":&nbsp;"WHITE"<br />}</code></td>
+<td><code>.12.COLOR</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BRC2</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-<li>action: <code>.4.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-BDT</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.3.LEVEL</code></li>
-<li>action: <code>.4.LEVEL</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.3.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.LEVEL</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Dim1T-FM</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>timerOn</code>
-<ul>
-<li>state: <code>.1.RAMP_TIME</code></li>
-<li>action: <code>.1.RAMP_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>timerOn</td>
+<td><code>.1.RAMP_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.RAMP_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-RGBW-WM</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>timerOn</code>
-<ul>
-<li>state: <code>.1.RAMP_TIME</code></li>
-<li>action: <code>.1.RAMP_TIME</code></li>
-</ul>
-<li><code>hue</code>
-<ul>
-<li>state: <code>.2.COLOR</code></li>
-<li>action: <code>.2.COLOR</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>timerOn</td>
+<td><code>.1.RAMP_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.RAMP_TIME</code></td>
+</tr>
+<tr>
+<td><code>hue</td>
+<td><code>.2.COLOR</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.COLOR</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1PBU-FM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1-FM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>activity</code>
-<ul>
-<li>state: <code>.1.WORKING</code></li>
-<li>action: <code>.1.WORKING</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>activity</td>
+<td><code>.1.WORKING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.WORKING</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1-DR</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw2-FM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>powerCh2</code>
-<ul>
-<li>state: <code>.2.STATE</code></li>
-<li>action: <code>.2.STATE</code></li>
-</ul>
-<li><code>timerOffCh2</code>
-<ul>
-<li>state: <code>.2.ON_TIME</code></li>
-<li>action: <code>.2.ON_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCh2</td>
+<td><code>.2.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOffCh2</td>
+<td><code>.2.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.ON_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw4-DR</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>powerCh2</code>
-<ul>
-<li>state: <code>.2.STATE</code></li>
-<li>action: <code>.2.STATE</code></li>
-</ul>
-<li><code>timerOffCh2</code>
-<ul>
-<li>state: <code>.2.ON_TIME</code></li>
-<li>action: <code>.2.ON_TIME</code></li>
-</ul>
-<li><code>powerCh3</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-<li>action: <code>.3.STATE</code></li>
-</ul>
-<li><code>timerOffCh3</code>
-<ul>
-<li>state: <code>.3.ON_TIME</code></li>
-<li>action: <code>.3.ON_TIME</code></li>
-</ul>
-<li><code>powerCh4</code>
-<ul>
-<li>state: <code>.4.STATE</code></li>
-<li>action: <code>.4.STATE</code></li>
-</ul>
-<li><code>timerOffCh4</code>
-<ul>
-<li>state: <code>.4.ON_TIME</code></li>
-<li>action: <code>.4.ON_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCh2</td>
+<td><code>.2.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOffCh2</td>
+<td><code>.2.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCh3</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.3.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOffCh3</td>
+<td><code>.3.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.3.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCh4</td>
+<td><code>.4.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOffCh4</td>
+<td><code>.4.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.ON_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Dim1TPBU-FM</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Dim1T-Pl-3</h5>
-<ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.1.LEVEL</code></li>
-<li>action: <code>.1.LEVEL</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>timerOn</code>
-<ul>
-<li>state: <code>.1.RAMP_TIME</code></li>
-<li>action: <code>.1.RAMP_TIME</code></li>
-</ul>
-</ul>
-<h4>Adapter hue-extended</h4>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.action.on</code></li>
-<li>action: <code>.action.on</code></li>
-</ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.action.level</code></li>
-<li>action: <code>.action.level</code></li>
-</ul>
-<li><code>colorTemperature</code>
-<ul>
-<li>state: <code>.action.colorTemperature</code></li>
-<li>action: <code>.action.colorTemperature</code></li>
-</ul>
-<li><code>hue</code>
-<ul>
-<li>state: <code>.action.hue</code></li>
-<li>action: <code>.action.hue</code></li>
-</ul>
-<li><code>hex</code>
-<ul>
-<li>state: <code>.action.hex</code></li>
-<li>action: <code>.action.hex</code></li>
-</ul>
-</ul>
-<h4>Adapter hue</h4>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.on</code></li>
-<li>action: <code>.on</code></li>
-</ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.level</code></li>
-<li>action: <code>.level</code></li>
-</ul>
-<li><code>colorTemperature</code>
-<ul>
-<li>state: <code>.ct</code></li>
-<li>action: <code>.ct</code></li>
-</ul>
-<li><code>hue</code>
-<ul>
-<li>state: <code>.hue</code></li>
-<li>action: <code>.hue</code></li>
-</ul>
-<li><code>reachability</code>
-<ul>
-<li>state: <code>.reachable</code></li>
-</ul>
-</ul>
-<h4>Adapter mqtt</h4>
-<ul>
-<li><code>dimmer</code>
-<ul>
-<li>state: <code>.Dimmer</code></li>
-<li>action: <code>.Dimmer</code></li>
-</ul>
-<li><code>ct</code>
-<ul>
-<li>state: <code>.CT</code></li>
-<li>action: <code>.CT</code></li>
-<li>properties: <code>[object Object]</code></li>
-</ul>
-<li><code>hue</code>
-<ul>
-<li>state: <code>.Hue</code></li>
-<li>action: <code>.Hue</code></li>
-</ul>
-<li><code>sat</code>
-<ul>
-<li>state: <code>.Saturation</code></li>
-<li>action: <code>.Saturation</code></li>
-</ul>
-</ul>
-<h4>Adapter shelly</h4>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.lights.Switch</code></li>
-<li>action: <code>.lights.Switch</code></li>
-</ul>
-<li><code>level</code>
-<ul>
-<li>state: <code>.lights.brightness</code></li>
-<li>action: <code>.lights.brightness</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>level</td>
+<td><code>.1.LEVEL</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.LEVEL</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>timerOn</td>
+<td><code>.1.RAMP_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.RAMP_TIME</code></td>
+</tr>
+</tbody></table>
+#### Adapter hue-extended
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.action.on</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.action.on</code></td>
+</tr>
+<tr>
+<td><code>level</td>
+<td><code>.action.level</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.action.level</code></td>
+</tr>
+<tr>
+<td><code>colorTemperature</td>
+<td><code>.action.colorTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.action.colorTemperature</code></td>
+</tr>
+<tr>
+<td><code>hue</td>
+<td><code>.action.hue</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.action.hue</code></td>
+</tr>
+<tr>
+<td><code>hex</td>
+<td><code>.action.hex</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.action.hex</code></td>
+</tr>
+</tbody></table>
+#### Adapter hue
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.on</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.on</code></td>
+</tr>
+<tr>
+<td><code>level</td>
+<td><code>.level</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.level</code></td>
+</tr>
+<tr>
+<td><code>colorTemperature</td>
+<td><code>.ct</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.ct</code></td>
+</tr>
+<tr>
+<td><code>hue</td>
+<td><code>.hue</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.hue</code></td>
+</tr>
+<tr>
+<td><code>reachability</td>
+<td><code>.reachable</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter mqtt
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>dimmer</td>
+<td><code>.Dimmer</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Dimmer</code></td>
+</tr>
+<tr>
+<td><code>ct</td>
+<td><code>.CT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.CT</code></td>
+</tr>
+<tr>
+<td><code>hue</td>
+<td><code>.Hue</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Hue</code></td>
+</tr>
+<tr>
+<td><code>sat</td>
+<td><code>.Saturation</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Saturation</code></td>
+</tr>
+</tbody></table>
+#### Adapter shelly
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.lights.Switch</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.lights.Switch</code></td>
+</tr>
+<tr>
+<td><code>level</td>
+<td><code>.lights.brightness</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.lights.brightness</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Ort (`location`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
-<tr><td><code>presence</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"anwesend",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"abwesend"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"map-marker-radius",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"map-marker-remove-outline"<br />}</code></td><td>-</td></tr>
-<tr><td><code>users</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"":&nbsp;"niemand&nbsp;anwesend"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"":&nbsp;"account-group-outline",<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"account-group"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>presence</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"anwesend",<br />&nbsp;"false":&nbsp;"abwesend"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"map-marker-radius",<br />&nbsp;"false":&nbsp;"map-marker-remove-outline"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>users</code></td><td>-</td><td><code>{<br />&nbsp;"":&nbsp;"niemand&nbsp;anwesend"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"":&nbsp;"account-group-outline",<br />&nbsp;"default":&nbsp;"account-group"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Bewegungs-/Präsenzmelder (`motion`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr>
-<tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-SMI55</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.3.MOTION</code></li>
-</ul>
-<li><code>brightness</code>
-<ul>
-<li>state: <code>.3.BRIGHTNESS</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.3.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>brightness</td>
+<td><code>.3.BRIGHTNESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SMI</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.1.MOTION</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.1.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SMO-A</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.1.MOTION</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.1.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SAM</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.1.MOTION</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.1.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SPI</h5>
-<ul>
-<li><code>presence</code>
-<ul>
-<li>state: <code>.1.PRESENCE_DETECTION_STATE</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>presence</td>
+<td><code>.1.PRESENCE_DETECTION_STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-PB-6-WM55</h5>
-<ul>
-<li><code>PRESS_LONG1</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG</code></li>
-<li>action: <code>.1.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT1</code>
-<ul>
-<li>state: <code>.1.PRESS_SHORT</code></li>
-<li>action: <code>.1.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG2</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG</code></li>
-<li>action: <code>.2.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT2</code>
-<ul>
-<li>state: <code>.2.PRESS_SHORT</code></li>
-<li>action: <code>.2.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG3</code>
-<ul>
-<li>state: <code>.3.PRESS_LONG</code></li>
-<li>action: <code>.3.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT3</code>
-<ul>
-<li>state: <code>.3.PRESS_SHORT</code></li>
-<li>action: <code>.3.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG4</code>
-<ul>
-<li>state: <code>.4.PRESS_LONG</code></li>
-<li>action: <code>.4.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT4</code>
-<ul>
-<li>state: <code>.4.PRESS_SHORT</code></li>
-<li>action: <code>.4.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG5</code>
-<ul>
-<li>state: <code>.5.PRESS_LONG</code></li>
-<li>action: <code>.5.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT5</code>
-<ul>
-<li>state: <code>.5.PRESS_SHORT</code></li>
-<li>action: <code>.5.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG6</code>
-<ul>
-<li>state: <code>.6.PRESS_LONG</code></li>
-<li>action: <code>.6.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT6</code>
-<ul>
-<li>state: <code>.6.PRESS_SHORT</code></li>
-<li>action: <code>.6.PRESS_SHORT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>PRESS_LONG1</td>
+<td><code>.1.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT1</td>
+<td><code>.1.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG2</td>
+<td><code>.2.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT2</td>
+<td><code>.2.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG3</td>
+<td><code>.3.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.3.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT3</td>
+<td><code>.3.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.3.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG4</td>
+<td><code>.4.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT4</td>
+<td><code>.4.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG5</td>
+<td><code>.5.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.5.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT5</td>
+<td><code>.5.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.5.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG6</td>
+<td><code>.6.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT6</td>
+<td><code>.6.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.PRESS_SHORT</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sen-MDIR-WM55</h5>
-<ul>
-<li><code>PRESS_LONG_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG</code></li>
-<li>action: <code>.1.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_SHORT</code></li>
-<li>action: <code>.1.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG</code></li>
-<li>action: <code>.2.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_SHORT</code></li>
-<li>action: <code>.2.PRESS_SHORT</code></li>
-</ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.3.MOTION</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.3.ILLUMINATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>PRESS_LONG_BOTTOM</td>
+<td><code>.1.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_BOTTOM</td>
+<td><code>.1.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_TOP</td>
+<td><code>.2.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_TOP</td>
+<td><code>.2.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>motion</td>
+<td><code>.3.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.3.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sen-MDIR-O-2</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.1.MOTION</code></li>
-</ul>
-<li><code>brightness</code>
-<ul>
-<li>state: <code>.1.BRIGHTNESS</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.1.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>brightness</td>
+<td><code>.1.BRIGHTNESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sen-MDIR-O-3</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.1.MOTION</code></li>
-</ul>
-<li><code>brightness</code>
-<ul>
-<li>state: <code>.1.BRIGHTNESS</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.1.MOTION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>brightness</td>
+<td><code>.1.BRIGHTNESS</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-SMI</h5>
-<ul>
-<li><code>motion</code>
-<ul>
-<li>state: <code>.channels.1.motionDetected</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.channels.1.illumination</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>motion</td>
+<td><code>.channels.1.motionDetected</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.channels.1.illumination</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Rasenmäher-Roboter (`mower`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 </table>
 
 ## Gewerk Szenen (`scenes`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 </table>
 
 ## Gewerk Sensor (`sensor`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>"&nbsp;lux"</code></td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
-<tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>"&nbsp;hPa"</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>"&nbsp;lux"</code></td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>"&nbsp;hPa"</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HM-Sec-TiS</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SLO</h5>
-<ul>
-<li><code>illuminationAverage</code>
-<ul>
-<li>state: <code>.1.AVERAGE_ILLUMINATION</code></li>
-<li>unit: <code> Lux</code></li>
-</ul>
-<li><code>illuminationCurrent</code>
-<ul>
-<li>state: <code>.1.CURRENT_ILLUMINATION</code></li>
-<li>unit: <code> Lux</code></li>
-</ul>
-<li><code>illuminationHighest</code>
-<ul>
-<li>state: <code>.1.HIGHEST_ILLUMINATION</code></li>
-<li>unit: <code> Lux</code></li>
-</ul>
-<li><code>illuminationLowest</code>
-<ul>
-<li>state: <code>.1.LOWEST_ILLUMINATION</code></li>
-<li>unit: <code> Lux</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>illuminationAverage</td>
+<td><code>.1.AVERAGE_ILLUMINATION</code></td>
+<td><code> Lux</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illuminationCurrent</td>
+<td><code>.1.CURRENT_ILLUMINATION</code></td>
+<td><code> Lux</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illuminationHighest</td>
+<td><code>.1.HIGHEST_ILLUMINATION</code></td>
+<td><code> Lux</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illuminationLowest</td>
+<td><code>.1.LOWEST_ILLUMINATION</code></td>
+<td><code> Lux</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWD</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.ALARMSTATE</code></li>
-</ul>
-<li><code>alarmMoisture</code>
-<ul>
-<li>state: <code>.1.MOISTURE_DETECTED</code></li>
-</ul>
-<li><code>alarmWaterlevel</code>
-<ul>
-<li>state: <code>.1.WATERLEVEL_DETECTED</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.ALARMSTATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>alarmMoisture</td>
+<td><code>.1.MOISTURE_DETECTED</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>alarmWaterlevel</td>
+<td><code>.1.WATERLEVEL_DETECTED</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-WDS-2</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Server (`server`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"server-network",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"server-network-off"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"server-network",<br />&nbsp;"false":&nbsp;"server-network-off"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Rauchmelder (`smoke`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"mdi-alarm-light-outline",<br />&nbsp;&nbsp;&nbsp;"1":&nbsp;"mdi-alarm-light",<br />&nbsp;&nbsp;&nbsp;"2":&nbsp;"mdi-alarm-light",<br />&nbsp;&nbsp;&nbsp;"3":&nbsp;"mdi-alarm-light",<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"mdi-alarm-light",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"mdi-alarm-light-outline"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"mdi-alarm-light-outline",<br />&nbsp;"1":&nbsp;"mdi-alarm-light",<br />&nbsp;"2":&nbsp;"mdi-alarm-light",<br />&nbsp;"3":&nbsp;"mdi-alarm-light",<br />&nbsp;"true":&nbsp;"mdi-alarm-light",<br />&nbsp;"false":&nbsp;"mdi-alarm-light-outline"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-SWSD</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.SMOKE_DETECTOR_ALARM_STATUS</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.SMOKE_DETECTOR_ALARM_STATUS</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"IDLE_OFF",<br />&nbsp;"1":&nbsp;"PRIMARY_ALARM",<br />&nbsp;"2":&nbsp;"INTRUSION_ALARM",<br />&nbsp;"3":&nbsp;"SECONDARY_ALARM"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-SD</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-<li><code>lowBatteryCh1</code>
-<ul>
-<li>state: <code>.1.LOWBAT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh1</td>
+<td><code>.1.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-SD-2</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-<li><code>lowBatteryCh1</code>
-<ul>
-<li>state: <code>.1.LOWBAT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowBatteryCh1</td>
+<td><code>.1.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-SD-2-Team</h5>
-<ul>
-<li><code>alarm</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>alarm</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Steckdose (`socket`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;&nbsp;&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr>
-<tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;&nbsp;&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>consumption</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-FSM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.2.STATE</code></li>
-<li>action: <code>.2.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.2.ON_TIME</code></li>
-<li>action: <code>.2.ON_TIME</code></li>
-</ul>
-<li><code>powerCurrent</code>
-<ul>
-<li>state: <code>.5.CURRENT</code></li>
-<li>unit: <code> mA</code></li>
-</ul>
-<li><code>powerFrequency</code>
-<ul>
-<li>state: <code>.5.FREQUENCY</code></li>
-</ul>
-<li><code>powerCounter</code>
-<ul>
-<li>state: <code>.5.ENERGY_COUNTER</code></li>
-<li>unit: <code> Wh</code></li>
-</ul>
-<li><code>powerMeter</code>
-<ul>
-<li>state: <code>.5.POWER</code></li>
-<li>unit: <code> W</code></li>
-</ul>
-<li><code>powerVoltage</code>
-<ul>
-<li>state: <code>.5.VOLTAGE</code></li>
-<li>unit: <code> V</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.2.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.2.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCurrent</td>
+<td><code>.5.CURRENT</code></td>
+<td><code> mA</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerFrequency</td>
+<td><code>.5.FREQUENCY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerCounter</td>
+<td><code>.5.ENERGY_COUNTER</code></td>
+<td><code> Wh</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.5.POWER</code></td>
+<td><code> W</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerVoltage</td>
+<td><code>.5.VOLTAGE</code></td>
+<td><code> V</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-PS</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-PSM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-</ul>
-<li><code>meter</code>
-<ul>
-<li>state: <code>.6.POWER</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>meter</td>
+<td><code>.6.POWER</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-ES-PMSw1-Pl-DN-R1</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>powerCurrent</code>
-<ul>
-<li>state: <code>.2.CURRENT</code></li>
-<li>unit: <code> mA</code></li>
-</ul>
-<li><code>powerFrequency</code>
-<ul>
-<li>state: <code>.2.FREQUENCY</code></li>
-</ul>
-<li><code>powerCounter</code>
-<ul>
-<li>state: <code>.2.ENERGY_COUNTER</code></li>
-<li>unit: <code> Wh</code></li>
-</ul>
-<li><code>powerMeter</code>
-<ul>
-<li>state: <code>.2.POWER</code></li>
-<li>unit: <code> W</code></li>
-</ul>
-<li><code>powerVoltage</code>
-<ul>
-<li>state: <code>.2.VOLTAGE</code></li>
-<li>unit: <code> V</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>powerCurrent</td>
+<td><code>.2.CURRENT</code></td>
+<td><code> mA</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerFrequency</td>
+<td><code>.2.FREQUENCY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerCounter</td>
+<td><code>.2.ENERGY_COUNTER</code></td>
+<td><code> Wh</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.2.POWER</code></td>
+<td><code> W</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerVoltage</td>
+<td><code>.2.VOLTAGE</code></td>
+<td><code> V</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1-Pl-2</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1-Pl-DN-R1</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+</tbody></table>
 <h5>HM-ES-PMSw1-DR</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>boot</code>
-<ul>
-<li>state: <code>.2.BOOT</code></li>
-<li>action: <code>.2.BOOT</code></li>
-</ul>
-<li><code>powerCurrent</code>
-<ul>
-<li>state: <code>.2.CURRENT</code></li>
-<li>unit: <code> mA</code></li>
-</ul>
-<li><code>powerFrequency</code>
-<ul>
-<li>state: <code>.2.FREQUENCY</code></li>
-</ul>
-<li><code>powerCounter</code>
-<ul>
-<li>state: <code>.2.ENERGY_COUNTER</code></li>
-<li>unit: <code> Wh</code></li>
-</ul>
-<li><code>powerMeter</code>
-<ul>
-<li>state: <code>.2.POWER</code></li>
-<li>unit: <code> W</code></li>
-</ul>
-<li><code>powerVoltage</code>
-<ul>
-<li>state: <code>.2.VOLTAGE</code></li>
-<li>unit: <code> V</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>boot</td>
+<td><code>.2.BOOT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.BOOT</code></td>
+</tr>
+<tr>
+<td><code>powerCurrent</td>
+<td><code>.2.CURRENT</code></td>
+<td><code> mA</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerFrequency</td>
+<td><code>.2.FREQUENCY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerCounter</td>
+<td><code>.2.ENERGY_COUNTER</code></td>
+<td><code> Wh</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.2.POWER</code></td>
+<td><code> W</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerVoltage</td>
+<td><code>.2.VOLTAGE</code></td>
+<td><code> V</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-ES-PMSw1-Pl</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>timerOff</code>
-<ul>
-<li>state: <code>.1.ON_TIME</code></li>
-<li>action: <code>.1.ON_TIME</code></li>
-</ul>
-<li><code>boot</code>
-<ul>
-<li>state: <code>.2.BOOT</code></li>
-<li>action: <code>.2.BOOT</code></li>
-</ul>
-<li><code>powerCurrent</code>
-<ul>
-<li>state: <code>.2.CURRENT</code></li>
-<li>unit: <code> mA</code></li>
-</ul>
-<li><code>powerFrequency</code>
-<ul>
-<li>state: <code>.2.FREQUENCY</code></li>
-</ul>
-<li><code>powerCounter</code>
-<ul>
-<li>state: <code>.2.ENERGY_COUNTER</code></li>
-<li>unit: <code> Wh</code></li>
-</ul>
-<li><code>powerMeter</code>
-<ul>
-<li>state: <code>.2.POWER</code></li>
-<li>unit: <code> W</code></li>
-</ul>
-<li><code>powerVoltage</code>
-<ul>
-<li>state: <code>.2.VOLTAGE</code></li>
-<li>unit: <code> V</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>timerOff</td>
+<td><code>.1.ON_TIME</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.ON_TIME</code></td>
+</tr>
+<tr>
+<td><code>boot</td>
+<td><code>.2.BOOT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.BOOT</code></td>
+</tr>
+<tr>
+<td><code>powerCurrent</td>
+<td><code>.2.CURRENT</code></td>
+<td><code> mA</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerFrequency</td>
+<td><code>.2.FREQUENCY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerCounter</td>
+<td><code>.2.ENERGY_COUNTER</code></td>
+<td><code> Wh</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.2.POWER</code></td>
+<td><code> W</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>powerVoltage</td>
+<td><code>.2.VOLTAGE</code></td>
+<td><code> V</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-PS</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.channels.1.on</code></li>
-<li>action: <code>.channels.1.on</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.channels.1.on</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.channels.1.on</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Lautsprecher (`speaker`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 </table>
 
 ## Gewerk Schalter (`switch`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-WRC2</h5>
-<ul>
-<li><code>PRESS_LONG_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG</code></li>
-<li>action: <code>.1.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_SHORT</code></li>
-<li>action: <code>.1.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG</code></li>
-<li>action: <code>.2.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_SHORT</code></li>
-<li>action: <code>.2.PRESS_SHORT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>PRESS_LONG_BOTTOM</td>
+<td><code>.1.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_BOTTOM</td>
+<td><code>.1.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_TOP</td>
+<td><code>.2.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_TOP</td>
+<td><code>.2.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_SHORT</code></td>
+</tr>
+</tbody></table>
 <h5>HM-RC-2-PBU-FM</h5>
-<ul>
-<li><code>PRESS_CONT_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_CONT</code></li>
-<li>action: <code>.1.PRESS_CONT</code></li>
-</ul>
-<li><code>PRESS_LONG_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG</code></li>
-<li>action: <code>.1.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_LONGRELEASE_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG_RELEASE</code></li>
-<li>action: <code>.1.PRESS_LONG_RELEASE</code></li>
-</ul>
-<li><code>PRESS_SHORT_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_SHORT</code></li>
-<li>action: <code>.1.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_CONT_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_CONT</code></li>
-<li>action: <code>.2.PRESS_CONT</code></li>
-</ul>
-<li><code>PRESS_LONG_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG</code></li>
-<li>action: <code>.2.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_LONGRELEASE_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG_RELEASE</code></li>
-<li>action: <code>.2.PRESS_LONG_RELEASE</code></li>
-</ul>
-<li><code>PRESS_SHORT_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_SHORT</code></li>
-<li>action: <code>.2.PRESS_SHORT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>PRESS_CONT_BOTTOM</td>
+<td><code>.1.PRESS_CONT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_CONT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_BOTTOM</td>
+<td><code>.1.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONGRELEASE_BOTTOM</td>
+<td><code>.1.PRESS_LONG_RELEASE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG_RELEASE</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_BOTTOM</td>
+<td><code>.1.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_CONT_TOP</td>
+<td><code>.2.PRESS_CONT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_CONT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_TOP</td>
+<td><code>.2.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONGRELEASE_TOP</td>
+<td><code>.2.PRESS_LONG_RELEASE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG_RELEASE</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_TOP</td>
+<td><code>.2.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_SHORT</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-Sw1-DR</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HM-LC-SW1-FM</h5>
-<ul>
-<li><code>power</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+</tbody></table>
 <h5>HM-PB-2-WM55</h5>
-<ul>
-<li><code>lowBatteryCh1</code>
-<ul>
-<li>state: <code>.1.LOWBAT</code></li>
-</ul>
-<li><code>PRESS_LONG_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_LONG</code></li>
-<li>action: <code>.1.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_BOTTOM</code>
-<ul>
-<li>state: <code>.1.PRESS_SHORT</code></li>
-<li>action: <code>.1.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_LONG</code></li>
-<li>action: <code>.2.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT_TOP</code>
-<ul>
-<li>state: <code>.2.PRESS_SHORT</code></li>
-<li>action: <code>.2.PRESS_SHORT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>lowBatteryCh1</td>
+<td><code>.1.LOWBAT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_BOTTOM</td>
+<td><code>.1.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_BOTTOM</td>
+<td><code>.1.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG_TOP</td>
+<td><code>.2.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT_TOP</td>
+<td><code>.2.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.PRESS_SHORT</code></td>
+</tr>
+</tbody></table>
 <h5>HB-UNI-SenAct-4-4-RC</h5>
-<ul>
-<li><code>state1</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-<li><code>state2</code>
-<ul>
-<li>state: <code>.2.STATE</code></li>
-</ul>
-<li><code>state3</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-</ul>
-<li><code>state4</code>
-<ul>
-<li>state: <code>.4.STATE</code></li>
-</ul>
-<li><code>PRESS_LONG1</code>
-<ul>
-<li>state: <code>.5.PRESS_LONG</code></li>
-<li>action: <code>.5.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT1</code>
-<ul>
-<li>state: <code>.5.PRESS_SHORT</code></li>
-<li>action: <code>.5.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG2</code>
-<ul>
-<li>state: <code>.6.PRESS_LONG</code></li>
-<li>action: <code>.6.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT2</code>
-<ul>
-<li>state: <code>.6.PRESS_SHORT</code></li>
-<li>action: <code>.6.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG3</code>
-<ul>
-<li>state: <code>.7.PRESS_LONG</code></li>
-<li>action: <code>.7.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT3</code>
-<ul>
-<li>state: <code>.7.PRESS_SHORT</code></li>
-<li>action: <code>.7.PRESS_SHORT</code></li>
-</ul>
-<li><code>PRESS_LONG4</code>
-<ul>
-<li>state: <code>.8.PRESS_LONG</code></li>
-<li>action: <code>.8.PRESS_LONG</code></li>
-</ul>
-<li><code>PRESS_SHORT4</code>
-<ul>
-<li>state: <code>.8.PRESS_SHORT</code></li>
-<li>action: <code>.8.PRESS_SHORT</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state1</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>state2</td>
+<td><code>.2.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>state3</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>state4</td>
+<td><code>.4.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG1</td>
+<td><code>.5.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.5.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT1</td>
+<td><code>.5.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.5.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG2</td>
+<td><code>.6.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT2</td>
+<td><code>.6.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG3</td>
+<td><code>.7.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.7.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT3</td>
+<td><code>.7.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.7.PRESS_SHORT</code></td>
+</tr>
+<tr>
+<td><code>PRESS_LONG4</td>
+<td><code>.8.PRESS_LONG</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.8.PRESS_LONG</code></td>
+</tr>
+<tr>
+<td><code>PRESS_SHORT4</td>
+<td><code>.8.PRESS_SHORT</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.8.PRESS_SHORT</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Fernseher (`tv`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"television-clean",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"television-off"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"television-clean",<br />&nbsp;"false":&nbsp;"television-off"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Benutzer (`user`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
-<tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><code>"account"</code></td><td>-</td></tr>
-<tr><td><code>battery</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>location</code></td><td>-</td><td>-</td><td>-</td><td><code>"account"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>battery</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
 
 ## Gewerk Staubsauger-Roboter (`vacuum`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 </table>
 
 ## Gewerk Wetter-Station (`weather-station`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>wind</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr>
-<tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>wind</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-STHO</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-STHO-A</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWO-B</h5>
-<ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>wind</code>
-<ul>
-<li>state: <code>.1.WIND_SPEED</code></li>
-</ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-<li><code>sunshineDuration</code>
-<ul>
-<li>state: <code>.1.SUNSHINEDURATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>wind</td>
+<td><code>.1.WIND_SPEED</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>sunshineDuration</td>
+<td><code>.1.SUNSHINEDURATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWO-PL</h5>
-<ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>wind</code>
-<ul>
-<li>state: <code>.1.WIND_SPEED</code></li>
-</ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-<li><code>sunshineDuration</code>
-<ul>
-<li>state: <code>.1.SUNSHINEDURATION</code></li>
-</ul>
-<li><code>raining</code>
-<ul>
-<li>state: <code>.1.RAINING</code></li>
-</ul>
-<li><code>rainCounter</code>
-<ul>
-<li>state: <code>.1.RAIN_COUNTER</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>wind</td>
+<td><code>.1.WIND_SPEED</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>sunshineDuration</td>
+<td><code>.1.SUNSHINEDURATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>raining</td>
+<td><code>.1.RAINING</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>rainCounter</td>
+<td><code>.1.RAIN_COUNTER</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-WDS40-TH-I-2</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-STHO</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.channels.1.actualTemperature</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.channels.1.humidity</code></li>
-</ul>
-<li><code>vapor</code>
-<ul>
-<li>state: <code>.channels.1.vaporAmount</code></li>
-</ul>
-<li><code>display</code>
-<ul>
-<li>state: <code>.channels.1.display</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.channels.1.actualTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.channels.1.humidity</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>vapor</td>
+<td><code>.channels.1.vaporAmount</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>display</td>
+<td><code>.channels.1.display</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-STHO-A</h5>
-<ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWO-B</h5>
-<ul>
-<li><code>humidity</code>
-<ul>
-<li>state: <code>.1.HUMIDITY</code></li>
-</ul>
-<li><code>wind</code>
-<ul>
-<li>state: <code>.1.WIND_SPEED</code></li>
-</ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.1.ACTUAL_TEMPERATURE</code></li>
-</ul>
-<li><code>illumination</code>
-<ul>
-<li>state: <code>.1.ILLUMINATION</code></li>
-</ul>
-<li><code>sunshineduration</code>
-<ul>
-<li>state: <code>.1.SUNSHINEDURATION</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>humidity</td>
+<td><code>.1.HUMIDITY</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>wind</td>
+<td><code>.1.WIND_SPEED</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>temperature</td>
+<td><code>.1.ACTUAL_TEMPERATURE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>illumination</td>
+<td><code>.1.ILLUMINATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>sunshineduration</td>
+<td><code>.1.SUNSHINEDURATION</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Fenster (`window`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"geschlossen",<br />&nbsp;&nbsp;&nbsp;"1":&nbsp;"offen",<br />&nbsp;&nbsp;&nbsp;"2":&nbsp;"offen",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;&nbsp;&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"window-closed-variant",<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"window-open-variant"<br />}</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"geschlossen",<br />&nbsp;"1":&nbsp;"offen",<br />&nbsp;"2":&nbsp;"offen",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"window-closed-variant",<br />&nbsp;"true":&nbsp;"window-open-variant"<br />}</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HmIP-SWDM</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWDO-I</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWDO</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SRH</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"window#open#closed",<br />&nbsp;"1":&nbsp;"window#open#tilted",<br />&nbsp;"2":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-RHS</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"window#open#closed",<br />&nbsp;"1":&nbsp;"window#open#tilted",<br />&nbsp;"2":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-Sco</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HM-Sec-SC-2</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-</ul>
-</ul>
-<h4>Adapter hmip</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter hmip
 <h5>HmIP-SWDO</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.channels.1.windowOpen</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.channels.1.windowOpen</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SWDO-I</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.channels.1.windowOpen</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.channels.1.windowOpen</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>HmIP-SRH</h5>
-<ul>
-<li><code>open</code>
-<ul>
-<li>state: <code>.channels.1.windowOpen</code></li>
-</ul>
-<li><code>state</code>
-<ul>
-<li>state: <code>.channels.1.windowState</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.channels.1.windowOpen</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>state</td>
+<td><code>.channels.1.windowState</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"CLOSED":&nbsp;"window#open#closed",<br />&nbsp;"TILTED":&nbsp;"window#open#tilted",<br />&nbsp;"OPEN":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 
 ## Gewerk Sonstige (`_defaults`)
+
 ### vordefinierte Datenpunkte
-<table><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr>
-<tr><td><code>_any</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#090",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"an",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"aus"<br />}</code></td><td>-</td><td>-</td><td>-</td></tr>
-<tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;">80":&nbsp;"battery-high",<br />&nbsp;&nbsp;&nbsp;"<=80":&nbsp;"battery-medium",<br />&nbsp;&nbsp;&nbsp;"<=30":&nbsp;"battery-low",<br />&nbsp;&nbsp;&nbsp;"<=10":&nbsp;"battery-outline&nbsp;blink",<br />&nbsp;&nbsp;&nbsp;"<=5":&nbsp;"battery-alert-variant-outline&nbsp;blink"<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"<=10":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#900"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td></tr>
-<tr><td><code>firmware</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"Update&nbsp;verfügbar",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"kein&nbsp;Update"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"mdi-cog-refresh",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"mdi-cog-outline"<br />}</code></td><td>-</td></tr>
-<tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-snowflake"<br />}</code></td><td>-</td></tr>
-<tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>"water-percent"</code></td><td>-</td></tr>
-<tr><td><code>illuminance</code></td><td>-</td><td>-</td><td><code>"&nbsp;lux"</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr>
-<tr><td><code>lowbattery</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"niedrig",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"voll"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"battery-alert-variant-outline",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"battery-high"<br />}</code></td><td>-</td></tr>
-<tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr>
-<tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
-<tr><td><code>config</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-cog"<br />}</code></td><td>-</td></tr>
-<tr><td><code>connectivity</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-wifi-arrow-left-right"<br />}</code></td><td>-</td></tr>
-<tr><td><code>reachability</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#090"<br />&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"erreichbar",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"nicht&nbsp;erreichbar"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"lan-connect",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"lan-disconnect"<br />}</code></td><td>-</td></tr>
-<tr><td><code>rssi</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"default":&nbsp;"mdi-antenna"<br />}</code></td><td>-</td></tr>
-<tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr>
-<tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr>
-<tr><td><code>unreach</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color":&nbsp;"#090"<br />&nbsp;&nbsp;&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"nicht&nbsp;erreichbar",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"erreichbar"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&nbsp;&nbsp;"true":&nbsp;"lan-disconnect",<br />&nbsp;&nbsp;&nbsp;"false":&nbsp;"lan-connect"<br />}</code></td><td>-</td></tr>
-<tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>"&nbsp;km/h"</code></td><td><code>"weather-windy"</code></td><td>-</td></tr>
+
+<table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
+<tbody><tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;">80":&nbsp;"battery-high",<br />&nbsp;"<=80":&nbsp;"battery-medium",<br />&nbsp;"<=30":&nbsp;"battery-low",<br />&nbsp;"<=10":&nbsp;"battery-outline&nbsp;blink",<br />&nbsp;"<=5":&nbsp;"battery-alert-variant-outline&nbsp;blink"<br />}</code></td><td><code>{<br />&nbsp;"<=10":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#900"<br />&nbsp;}<br />}</code></td></tr></tbody>
+<tbody><tr><td><code>firmware</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"Update&nbsp;verfügbar",<br />&nbsp;"false":&nbsp;"kein&nbsp;Update"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"mdi-cog-refresh",<br />&nbsp;"false":&nbsp;"mdi-cog-outline"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-snowflake"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>"water-percent"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>illuminance</code></td><td>-</td><td>-</td><td><code>"&nbsp;lux"</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>lowbattery</code></td><td><code>{<br />&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;},<br />&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"true":&nbsp;"niedrig",<br />&nbsp;"false":&nbsp;"voll"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"battery-alert-variant-outline",<br />&nbsp;"false":&nbsp;"battery-high"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>position</code></td><td>-</td><td>-</td><td>-</td><td><code>"map-marker"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>config</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-cog"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>connectivity</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-wifi-arrow-left-right"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>reachability</code></td><td><code>{<br />&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#090"<br />&nbsp;},<br />&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"true":&nbsp;"erreichbar",<br />&nbsp;"false":&nbsp;"nicht&nbsp;erreichbar"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lan-connect",<br />&nbsp;"false":&nbsp;"lan-disconnect"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>rssi</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-antenna"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>trigger</code></td><td>-</td><td>-</td><td>-</td><td><code>"power"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>unreach</code></td><td><code>{<br />&nbsp;"true":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#900",<br />&nbsp;&nbsp;"fontWeight":&nbsp;"bold"<br />&nbsp;},<br />&nbsp;"false":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#090"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"true":&nbsp;"nicht&nbsp;erreichbar",<br />&nbsp;"false":&nbsp;"erreichbar"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lan-disconnect",<br />&nbsp;"false":&nbsp;"lan-connect"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>"&nbsp;km/h"</code></td><td><code>"weather-windy"</code></td><td>-</td></tr></tbody>
 </table>
-<h3>Beispielkonfiguration</h3>
-<h4>Adapter hm-rpc</h4>
+### Beispielkonfiguration
+#### Adapter hm-rpc
 <h5>HM-LC-Sw1PBU-FM</h5>
-<ul>
-<li><code>powerCh1</code>
-<ul>
-<li>state: <code>.1.STATE</code></li>
-<li>action: <code>.1.STATE</code></li>
-</ul>
-<li><code>powerCh2</code>
-<ul>
-<li>state: <code>.2.STATE</code></li>
-<li>action: <code>.2.STATE</code></li>
-</ul>
-<li><code>powerCh3</code>
-<ul>
-<li>state: <code>.3.STATE</code></li>
-<li>action: <code>.3.STATE</code></li>
-</ul>
-<li><code>powerCh4</code>
-<ul>
-<li>state: <code>.4.STATE</code></li>
-<li>action: <code>.4.STATE</code></li>
-</ul>
-<li><code>powerCh5</code>
-<ul>
-<li>state: <code>.5.STATE</code></li>
-<li>action: <code>.5.STATE</code></li>
-</ul>
-<li><code>powerCh6</code>
-<ul>
-<li>state: <code>.6.STATE</code></li>
-<li>action: <code>.6.STATE</code></li>
-</ul>
-<li><code>powerCh7</code>
-<ul>
-<li>state: <code>.7.STATE</code></li>
-<li>action: <code>.7.STATE</code></li>
-</ul>
-<li><code>powerCh8</code>
-<ul>
-<li>state: <code>.8.STATE</code></li>
-<li>action: <code>.8.STATE</code></li>
-</ul>
-<li><code>powerCh9</code>
-<ul>
-<li>state: <code>.9.STATE</code></li>
-<li>action: <code>.9.STATE</code></li>
-</ul>
-<li><code>powerCh10</code>
-<ul>
-<li>state: <code>.10.STATE</code></li>
-<li>action: <code>.10.STATE</code></li>
-</ul>
-<li><code>powerCh11</code>
-<ul>
-<li>state: <code>.11.STATE</code></li>
-<li>action: <code>.11.STATE</code></li>
-</ul>
-<li><code>powerCh12</code>
-<ul>
-<li>state: <code>.12.STATE</code></li>
-<li>action: <code>.12.STATE</code></li>
-</ul>
-<li><code>powerCh13</code>
-<ul>
-<li>state: <code>.13.STATE</code></li>
-<li>action: <code>.13.STATE</code></li>
-</ul>
-<li><code>powerCh14</code>
-<ul>
-<li>state: <code>.14.STATE</code></li>
-<li>action: <code>.14.STATE</code></li>
-</ul>
-<li><code>powerCh15</code>
-<ul>
-<li>state: <code>.15.STATE</code></li>
-<li>action: <code>.15.STATE</code></li>
-</ul>
-<li><code>powerCh16</code>
-<ul>
-<li>state: <code>.16.STATE</code></li>
-<li>action: <code>.16.STATE</code></li>
-</ul>
-</ul>
-<h4>Adapter mihome-vacuum</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>powerCh1</td>
+<td><code>.1.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.1.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh2</td>
+<td><code>.2.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.2.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh3</td>
+<td><code>.3.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.3.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh4</td>
+<td><code>.4.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.4.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh5</td>
+<td><code>.5.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.5.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh6</td>
+<td><code>.6.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.6.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh7</td>
+<td><code>.7.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.7.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh8</td>
+<td><code>.8.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.8.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh9</td>
+<td><code>.9.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.9.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh10</td>
+<td><code>.10.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.10.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh11</td>
+<td><code>.11.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.11.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh12</td>
+<td><code>.12.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.12.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh13</td>
+<td><code>.13.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.13.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh14</td>
+<td><code>.14.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.14.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh15</td>
+<td><code>.15.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.15.STATE</code></td>
+</tr>
+<tr>
+<td><code>powerCh16</td>
+<td><code>.16.STATE</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.16.STATE</code></td>
+</tr>
+</tbody></table>
+#### Adapter mihome-vacuum
 <h5>state</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>n</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>f</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>o</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>6</code>
-<ul>
-<li>0: <code>q</code></li>
-</ul>
-<li><code>7</code>
-<ul>
-<li>0: <code>u</code></li>
-</ul>
-<li><code>8</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>9</code>
-<ul>
-<li>0: <code>u</code></li>
-</ul>
-<li><code>10</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>6</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>7</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>8</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>9</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>10</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>action</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>c</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>o</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>n</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>t</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>r</code></li>
-</ul>
-<li><code>6</code>
-<ul>
-<li>0: <code>o</code></li>
-</ul>
-<li><code>7</code>
-<ul>
-<li>0: <code>l</code></li>
-</ul>
-<li><code>8</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>9</code>
-<ul>
-<li>0: <code>c</code></li>
-</ul>
-<li><code>10</code>
-<ul>
-<li>0: <code>l</code></li>
-</ul>
-<li><code>11</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>12</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-<li><code>13</code>
-<ul>
-<li>0: <code>r</code></li>
-</ul>
-<li><code>14</code>
-<ul>
-<li>0: <code>Q</code></li>
-</ul>
-<li><code>15</code>
-<ul>
-<li>0: <code>u</code></li>
-</ul>
-<li><code>16</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>17</code>
-<ul>
-<li>0: <code>u</code></li>
-</ul>
-<li><code>18</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-</ul>
-<h4>Adapter mqtt</h4>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>6</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>7</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>8</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>9</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>10</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>11</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>12</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>13</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>14</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>15</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>16</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>17</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>18</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter mqtt
 <h5>version</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>V</code></li>
-<li>2: <code>e</code></li>
-<li>3: <code>r</code></li>
-<li>4: <code>s</code></li>
-<li>5: <code>i</code></li>
-<li>6: <code>o</code></li>
-<li>7: <code>n</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>I</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>F</code></li>
-<li>4: <code>O</code></li>
-<li>5: <code>.</code></li>
-<li>6: <code>V</code></li>
-<li>7: <code>e</code></li>
-<li>8: <code>r</code></li>
-<li>9: <code>s</code></li>
-<li>10: <code>i</code></li>
-<li>11: <code>o</code></li>
-<li>12: <code>n</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>reachability</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>l</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>v</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>ip</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>I</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>N</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>F</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>O</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>6</code>
-<ul>
-<li>0: <code>I</code></li>
-</ul>
-<li><code>7</code>
-<ul>
-<li>0: <code>P</code></li>
-</ul>
-<li><code>8</code>
-<ul>
-<li>0: <code>A</code></li>
-</ul>
-<li><code>9</code>
-<ul>
-<li>0: <code>d</code></li>
-</ul>
-<li><code>10</code>
-<ul>
-<li>0: <code>d</code></li>
-</ul>
-<li><code>11</code>
-<ul>
-<li>0: <code>r</code></li>
-</ul>
-<li><code>12</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>13</code>
-<ul>
-<li>0: <code>s</code></li>
-</ul>
-<li><code>14</code>
-<ul>
-<li>0: <code>s</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>6</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>7</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>8</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>9</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>10</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>11</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>12</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>13</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>14</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>signal</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>W</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>f</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>_</code></li>
-</ul>
-<li><code>6</code>
-<ul>
-<li>0: <code>S</code></li>
-</ul>
-<li><code>7</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>8</code>
-<ul>
-<li>0: <code>g</code></li>
-</ul>
-<li><code>9</code>
-<ul>
-<li>0: <code>n</code></li>
-</ul>
-<li><code>10</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-<li><code>11</code>
-<ul>
-<li>0: <code>l</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>6</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>7</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>8</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>9</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>10</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>11</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>dataReceived</h5>
-<ul>
-<li><code>0</code>
-<ul>
-<li>0: <code>.</code></li>
-</ul>
-<li><code>1</code>
-<ul>
-<li>0: <code>R</code></li>
-</ul>
-<li><code>2</code>
-<ul>
-<li>0: <code>f</code></li>
-</ul>
-<li><code>3</code>
-<ul>
-<li>0: <code>R</code></li>
-</ul>
-<li><code>4</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>5</code>
-<ul>
-<li>0: <code>c</code></li>
-</ul>
-<li><code>6</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>7</code>
-<ul>
-<li>0: <code>i</code></li>
-</ul>
-<li><code>8</code>
-<ul>
-<li>0: <code>v</code></li>
-</ul>
-<li><code>9</code>
-<ul>
-<li>0: <code>e</code></li>
-</ul>
-<li><code>10</code>
-<ul>
-<li>0: <code>d</code></li>
-</ul>
-<li><code>11</code>
-<ul>
-<li>0: <code>_</code></li>
-</ul>
-<li><code>12</code>
-<ul>
-<li>0: <code>D</code></li>
-</ul>
-<li><code>13</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-<li><code>14</code>
-<ul>
-<li>0: <code>t</code></li>
-</ul>
-<li><code>15</code>
-<ul>
-<li>0: <code>a</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>4</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>5</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>6</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>7</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>8</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>9</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>10</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>11</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>12</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>13</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>14</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>15</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>powerCurrent</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>E</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>E</code></li>
-<li>4: <code>R</code></li>
-<li>5: <code>G</code></li>
-<li>6: <code>Y</code></li>
-<li>7: <code>_</code></li>
-<li>8: <code>C</code></li>
-<li>9: <code>u</code></li>
-<li>10: <code>r</code></li>
-<li>11: <code>r</code></li>
-<li>12: <code>e</code></li>
-<li>13: <code>n</code></li>
-<li>14: <code>t</code></li>
-</ul>
-<li><code>unit</code>
-<ul>
-<li>0: <code> </code></li>
-<li>1: <code>A</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>powerMeter</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>E</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>E</code></li>
-<li>4: <code>R</code></li>
-<li>5: <code>G</code></li>
-<li>6: <code>Y</code></li>
-<li>7: <code>_</code></li>
-<li>8: <code>P</code></li>
-<li>9: <code>o</code></li>
-<li>10: <code>w</code></li>
-<li>11: <code>e</code></li>
-<li>12: <code>r</code></li>
-</ul>
-<li><code>unit</code>
-<ul>
-<li>0: <code> </code></li>
-<li>1: <code>W</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>powerConsumption</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>E</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>E</code></li>
-<li>4: <code>R</code></li>
-<li>5: <code>G</code></li>
-<li>6: <code>Y</code></li>
-<li>7: <code>_</code></li>
-<li>8: <code>T</code></li>
-<li>9: <code>o</code></li>
-<li>10: <code>t</code></li>
-<li>11: <code>a</code></li>
-<li>12: <code>l</code></li>
-</ul>
-<li><code>unit</code>
-<ul>
-<li>0: <code> </code></li>
-<li>1: <code>k</code></li>
-<li>2: <code>W</code></li>
-<li>3: <code>h</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>powerConsumptionToday</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>E</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>E</code></li>
-<li>4: <code>R</code></li>
-<li>5: <code>G</code></li>
-<li>6: <code>Y</code></li>
-<li>7: <code>_</code></li>
-<li>8: <code>T</code></li>
-<li>9: <code>o</code></li>
-<li>10: <code>d</code></li>
-<li>11: <code>a</code></li>
-<li>12: <code>y</code></li>
-</ul>
-<li><code>unit</code>
-<ul>
-<li>0: <code> </code></li>
-<li>1: <code>k</code></li>
-<li>2: <code>W</code></li>
-<li>3: <code>h</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>powerConsumptionYesterday</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>E</code></li>
-<li>2: <code>N</code></li>
-<li>3: <code>E</code></li>
-<li>4: <code>R</code></li>
-<li>5: <code>G</code></li>
-<li>6: <code>Y</code></li>
-<li>7: <code>_</code></li>
-<li>8: <code>Y</code></li>
-<li>9: <code>e</code></li>
-<li>10: <code>s</code></li>
-<li>11: <code>t</code></li>
-<li>12: <code>e</code></li>
-<li>13: <code>r</code></li>
-<li>14: <code>d</code></li>
-<li>15: <code>a</code></li>
-<li>16: <code>y</code></li>
-</ul>
-<li><code>unit</code>
-<ul>
-<li>0: <code> </code></li>
-<li>1: <code>k</code></li>
-<li>2: <code>W</code></li>
-<li>3: <code>h</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power1</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>1</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>1</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power2</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>2</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>2</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power3</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>3</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>3</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power4</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>4</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>4</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power5</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>5</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>5</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power6</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>6</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>6</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power7</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>7</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>7</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power8</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>8</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>8</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
 <h5>power9</h5>
-<ul>
-<li><code>state</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>9</code></li>
-</ul>
-<li><code>action</code>
-<ul>
-<li>0: <code>.</code></li>
-<li>1: <code>P</code></li>
-<li>2: <code>O</code></li>
-<li>3: <code>W</code></li>
-<li>4: <code>E</code></li>
-<li>5: <code>R</code></li>
-<li>6: <code>9</code></li>
-</ul>
-</ul>
-<h4>Adapter nuki-extended</h4>
-<ul>
-<li><code>door</code>
-<ul>
-<li>state: <code>.state.closed</code></li>
-</ul>
-<li><code>doorState</code>
-<ul>
-<li>state: <code>.state.doorState</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-<li><code>lock</code>
-<ul>
-<li>state: <code>.state.locked</code></li>
-</ul>
-<li><code>lockState</code>
-<ul>
-<li>state: <code>.state.lockState</code></li>
-<li>display: <code>[object Object]</code></li>
-</ul>
-<li><code>lockUpdate</code>
-<ul>
-<li>state: <code>.state.lastStateUpdate</code></li>
-</ul>
-<li><code>lowbattery</code>
-<ul>
-<li>state: <code>.state.batteryCritical</code></li>
-</ul>
-<li><code>ACTIONS</code>
-<ul>
-<li>action: <code>._ACTION</code></li>
-<li>display: <code>[object Object]</code></li>
-<li>actionElement: <code>DropdownAction</code></li>
-</ul>
-<li><code>LOCK</code>
-<ul>
-<li>action: <code>._ACTION.LOCK</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>LOCK_N_GO</code>
-<ul>
-<li>action: <code>._ACTION.LOCK_N_GO</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>LOCK_N_GO_WITH_UNLATCH</code>
-<ul>
-<li>action: <code>._ACTION.LOCK_N_GO_WITH_UNLATCH</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>UNLATCH</code>
-<ul>
-<li>action: <code>._ACTION.UNLATCH</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>UNLOCK</code>
-<ul>
-<li>action: <code>._ACTION.UNLOCK</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-</ul>
-<h4>Adapter tr-064</h4>
-<ul>
-<li><code>ab</code>
-<ul>
-<li>state: <code>.ab</code></li>
-</ul>
-<li><code>ip</code>
-<ul>
-<li>state: <code>.externalIP</code></li>
-</ul>
-<li><code>ipv6</code>
-<ul>
-<li>state: <code>.externalIPv6</code></li>
-</ul>
-<li><code>reboot</code>
-<ul>
-<li>action: <code>.reboot</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>reconnect</code>
-<ul>
-<li>action: <code>.reconnectInternet</code></li>
-<li>actionElement: <code>IconButtonAction</code></li>
-</ul>
-<li><code>wlan24</code>
-<ul>
-<li>state: <code>.wlan24</code></li>
-</ul>
-<li><code>wlan50</code>
-<ul>
-<li>state: <code>.wlan50</code></li>
-</ul>
-</ul>
-<h4>Adapter unifi</h4>
-<ul>
-<li><code>update_available</code>
-<ul>
-<li>state: <code>.update_available</code></li>
-</ul>
-<li><code>version</code>
-<ul>
-<li>state: <code>.version</code></li>
-</ul>
-</ul>
-<h4>Adapter zwave2</h4>
-<ul>
-<li><code>valve</code>
-<ul>
-<li>state: <code>.Multilevel_Switch.currentValue</code></li>
-<li>unit: <code>%</code></li>
-<li>icon: <code>rotate-right</code></li>
-</ul>
-<li><code>mode</code>
-<ul>
-<li>state: <code>.Thermostat_Mode.mode</code></li>
-<li>action: <code>.Thermostat_Mode.mode</code></li>
-<li>icon: <code>[object Object]</code></li>
-</ul>
-<li><code>setTemperatureEnergySave</code>
-<ul>
-<li>state: <code>.Thermostat_Setpoint.setpoint_energySaveHeating</code></li>
-<li>action: <code>.Thermostat_Setpoint.setpoint_energySaveHeating</code></li>
-<li>unit: <code>°C</code></li>
-<li>icon: <code>radiator-disabled</code></li>
-</ul>
-<li><code>temperature</code>
-<ul>
-<li>state: <code>.Multilevel_Sensor.airTemperature</code></li>
-</ul>
-<li><code>setTemperature</code>
-<ul>
-<li>state: <code>.Thermostat_Setpoint.setpoint_heating</code></li>
-<li>action: <code>.Thermostat_Setpoint.setpoint_heating</code></li>
-</ul>
-</ul>
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter nuki-extended
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>door</td>
+<td><code>.state.closed</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>doorState</td>
+<td><code>.state.doorState</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"UNAVAILABLE",<br />&nbsp;"1":&nbsp;"DEACTIVATED",<br />&nbsp;"2":&nbsp;"DOOR_CLOSED",<br />&nbsp;"3":&nbsp;"DOOR_OPENED",<br />&nbsp;"4":&nbsp;"DOOR_STATE_UNKNOWN",<br />&nbsp;"5":&nbsp;"CALIBRATING"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lock</td>
+<td><code>.state.locked</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lockState</td>
+<td><code>.state.lockState</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"UNCALIBRATED",<br />&nbsp;"1":&nbsp;"LOCKED",<br />&nbsp;"2":&nbsp;"UNLOCKING",<br />&nbsp;"3":&nbsp;"UNLOCKED",<br />&nbsp;"4":&nbsp;"LOCKING",<br />&nbsp;"5":&nbsp;"UNLATCHED",<br />&nbsp;"6":&nbsp;"UNLOCKED_LOCK_N_GO",<br />&nbsp;"7":&nbsp;"UNLATCHING",<br />&nbsp;"254":&nbsp;"MOTOR_BLOCKED",<br />&nbsp;"255":&nbsp;"UNDEFINED"<br />}</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lockUpdate</td>
+<td><code>.state.lastStateUpdate</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>lowbattery</td>
+<td><code>.state.batteryCritical</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>ACTIONS</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>{<br />&nbsp;"0":&nbsp;"NO_ACTION",<br />&nbsp;"1":&nbsp;"UNLOCK",<br />&nbsp;"2":&nbsp;"LOCK",<br />&nbsp;"3":&nbsp;"UNLATCH",<br />&nbsp;"4":&nbsp;"LOCK_N_GO",<br />&nbsp;"5":&nbsp;"LOCK_N_GO_WITH_UNLATCH"<br />}</code></td>
+<td><code>._ACTION</code></td>
+</tr>
+<tr>
+<td><code>LOCK</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>._ACTION.LOCK</code></td>
+</tr>
+<tr>
+<td><code>LOCK_N_GO</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>._ACTION.LOCK_N_GO</code></td>
+</tr>
+<tr>
+<td><code>LOCK_N_GO_WITH_UNLATCH</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>._ACTION.LOCK_N_GO_WITH_UNLATCH</code></td>
+</tr>
+<tr>
+<td><code>UNLATCH</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>._ACTION.UNLATCH</code></td>
+</tr>
+<tr>
+<td><code>UNLOCK</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>._ACTION.UNLOCK</code></td>
+</tr>
+</tbody></table>
+#### Adapter tr-064
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>ab</td>
+<td><code>.ab</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>ip</td>
+<td><code>.externalIP</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>ipv6</td>
+<td><code>.externalIPv6</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>reboot</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.reboot</code></td>
+</tr>
+<tr>
+<td><code>reconnect</td>
+<td><code>undefined</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.reconnectInternet</code></td>
+</tr>
+<tr>
+<td><code>wlan24</td>
+<td><code>.wlan24</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>wlan50</td>
+<td><code>.wlan50</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter unifi
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>update_available</td>
+<td><code>.update_available</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>version</td>
+<td><code>.version</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody></table>
+#### Adapter zwave2
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>valve</td>
+<td><code>.Multilevel_Switch.currentValue</code></td>
+<td><code>%</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>mode</td>
+<td><code>.Thermostat_Mode.mode</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Thermostat_Mode.mode</code></td>
+</tr>
+<tr>
+<td><code>setTemperatureEnergySave</td>
+<td><code>.Thermostat_Setpoint.setpoint_energySaveHeating</code></td>
+<td><code>°C</code></td>
+<td><code>""</code></td>
+<td><code>.Thermostat_Setpoint.setpoint_energySaveHeating</code></td>
+</tr>
+<tr>
+<td><code>temperature</td>
+<td><code>.Multilevel_Sensor.airTemperature</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>undefined</code></td>
+</tr>
+<tr>
+<td><code>setTemperature</td>
+<td><code>.Thermostat_Setpoint.setpoint_heating</code></td>
+<td><code>undefined</code></td>
+<td><code>""</code></td>
+<td><code>.Thermostat_Setpoint.setpoint_heating</code></td>
+</tr>
+</tbody></table>
