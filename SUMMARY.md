@@ -1,34 +1,35 @@
 # Table of contents
 
+* [Introduction](README.md)
 * [Einführung](index.md)
 
 ## Geräte
 
-* [Geräte](devices/devices.md)
-  * [Geräte importieren](devices/devices-importer.md)
-* [Gewerke](devices/functions.md)
-  - [Benutzer](/devices/functions/user.md)
-  - [Bewegungs-/Präsenzmelder](/devices/functions/motion.md)
-  - [Fenster](/devices/functions/window.md)
-  - [Fernseher](/devices/functions/tv.md)
-  - [Haushalt](/devices/functions/household.md)
-  - [Heizung](/devices/functions/heating.md)
-  - [Lautsprecher](/devices/functions/speaker.md)
-  - [Licht](/devices/functions/light.md)
-  - [Lüfter](/devices/functions/fan.md)
-  - [Ort](/devices/functions/location.md)
-  - [Rasenmäher-Roboter](/devices/functions/mower.md)
-  - [Rauchmelder](/devices/functions/smoke.md)
-  - [Rollladen / Jalousie](/devices/functions/blind.md)
-  - [Schalter](/devices/functions/switch.md)
-  - [Sensor](/devices/functions/sensor.md)
-  - [Server](/devices/functions/server.md)
-  - [Sonstige](/devices/functions/_defaults.md)
-  - [Staubsauger-Roboter](/devices/functions/vacuum.md)
-  - [Steckdose](/devices/functions/socket.md)
-  - [Szenen](/devices/functions/scenes.md)
-  - [Tür](/devices/functions/door.md)
-  - [Wetter-Station](/devices/functions/weather-station.md)
+* [Geräte](geraete/devices/README.md)
+  * [Geräte importieren](geraete/devices/devices-importer.md)
+* [Gewerke](geraete/functions/README.md)
+  * [Benutzer](geraete/functions/user.md)
+  * [Bewegungs-/Präsenzmelder](geraete/functions/motion.md)
+  * [Fenster](geraete/functions/window.md)
+  * [Fernseher](geraete/functions/tv.md)
+  * [Haushalt](geraete/functions/household.md)
+  * [Heizung](geraete/functions/heating.md)
+  * [Lautsprecher](geraete/functions/speaker.md)
+  * [Licht](geraete/functions/light.md)
+  * [Lüfter](geraete/functions/fan.md)
+  * [Ort](geraete/functions/location.md)
+  * [Rasenmäher-Roboter](geraete/functions/mower.md)
+  * [Rauchmelder](geraete/functions/smoke.md)
+  * [Rollladen / Jalousie](geraete/functions/blind.md)
+  * [Schalter](geraete/functions/switch.md)
+  * [Sensor](geraete/functions/sensor.md)
+  * [Server](geraete/functions/server.md)
+  * [Sonstige](geraete/functions/_defaults.md)
+  * [Staubsauger-Roboter](geraete/functions/vacuum.md)
+  * [Steckdose](geraete/functions/socket.md)
+  * [Szenen](geraete/functions/scenes.md)
+  * [Tür](geraete/functions/door.md)
+  * [Wetter-Station](geraete/functions/weather-station.md)
 
 ## Layout
 
@@ -39,11 +40,11 @@
 
 ## Einstellungen
 
-* [Einstellungen](settings/settings.md)
+* [Einstellungen](einstellungen/settings.md)
 
 ## Sonstiges
 
-* [Häufige Fragen und Lösungen](other/faq.md)
-* [Fehleranalyse und -Meldung](other/error-reporting.md)
-* [Backup & Restore](other/backup-and-restore.md)
+* [Häufige Fragen und Lösungen](sonstiges/faq.md)
+* [Fehleranalyse und -Meldung](sonstiges/error-reporting.md)
+* [Backup & Restore](sonstiges/backup-and-restore.md)
 
