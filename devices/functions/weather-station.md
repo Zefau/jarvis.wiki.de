@@ -7,8 +7,8 @@
 <tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>wind</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
-<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>"mdi-weather-sunny"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td>-</td><td><code>&quot;mdi-brightness-7&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>sunshineduration</code></td><td>-</td><td>-</td><td>-</td><td><code>&quot;mdi-weather-sunny&quot;</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration

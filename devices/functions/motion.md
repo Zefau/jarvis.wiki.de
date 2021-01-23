@@ -4,8 +4,8 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"motion-sensor",<br />&nbsp;"false":&nbsp;"motion-sensor-off"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>motion</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;motion-sensor&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;motion-sensor-off&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>presence</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;motion-sensor&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;motion-sensor-off&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration

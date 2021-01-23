@@ -4,7 +4,7 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"mdi-alarm-light-outline",<br />&nbsp;"1":&nbsp;"mdi-alarm-light",<br />&nbsp;"2":&nbsp;"mdi-alarm-light",<br />&nbsp;"3":&nbsp;"mdi-alarm-light",<br />&nbsp;"true":&nbsp;"mdi-alarm-light",<br />&nbsp;"false":&nbsp;"mdi-alarm-light-outline"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;mdi-alarm-light-outline&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;mdi-alarm-light&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;mdi-alarm-light&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;mdi-alarm-light&quot;,<br />&nbsp;&quot;true&quot;:&nbsp;&quot;mdi-alarm-light&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;mdi-alarm-light-outline&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration
@@ -26,7 +26,7 @@
 <td><code>alarm</td>
 <td><code>.1.SMOKE_DETECTOR_ALARM_STATUS</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"IDLE_OFF",<br />&nbsp;"1":&nbsp;"PRIMARY_ALARM",<br />&nbsp;"2":&nbsp;"INTRUSION_ALARM",<br />&nbsp;"3":&nbsp;"SECONDARY_ALARM"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;IDLE_OFF&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;PRIMARY_ALARM&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;INTRUSION_ALARM&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;SECONDARY_ALARM&quot;<br />}</code></td>
 <td><code></code></td>
 </tr>
 </tbody></table>

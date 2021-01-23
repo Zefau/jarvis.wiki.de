@@ -4,9 +4,9 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;"&gt;90":&nbsp;"window-shutter-open",<br />&nbsp;"&lt;=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;"&gt;90":&nbsp;"window-shutter-open",<br />&nbsp;"&lt;=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&gt;90&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&lt;=90&quot;:&nbsp;&quot;window-shutter&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&gt;90&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&lt;=90&quot;:&nbsp;&quot;window-shutter&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;in&nbsp;Bewegung&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;keine&quot;<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;pan-vertical&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;dots-vertical&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration

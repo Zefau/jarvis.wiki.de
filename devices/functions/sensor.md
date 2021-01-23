@@ -4,10 +4,10 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr></tbody>
-<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>"&nbsp;lux"</code></td><td><code>"mdi-brightness-7"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>"&nbsp;hPa"</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°C&quot;</code></td><td><code>&quot;mdi-thermometer&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>illumination</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;lux&quot;</code></td><td><code>&quot;mdi-brightness-7&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;hPa&quot;</code></td><td><code>&quot;mdi-air-purifier&quot;</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration

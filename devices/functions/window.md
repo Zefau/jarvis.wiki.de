@@ -4,7 +4,7 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"geschlossen",<br />&nbsp;"1":&nbsp;"offen",<br />&nbsp;"2":&nbsp;"offen",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"window-closed-variant",<br />&nbsp;"true":&nbsp;"window-open-variant"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;geschlossen&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;offen&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;offen&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;geschlossen&quot;,<br />&nbsp;&quot;true&quot;:&nbsp;&quot;offen&quot;<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;window-closed-variant&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;window-open-variant&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;window-closed-variant&quot;,<br />&nbsp;&quot;true&quot;:&nbsp;&quot;window-open-variant&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration
@@ -80,7 +80,7 @@
 <td><code>open</td>
 <td><code>.1.STATE</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"window#open#closed",<br />&nbsp;"1":&nbsp;"window#open#tilted",<br />&nbsp;"2":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;window#open#closed&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;window#open#tilted&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;window#open#opened&quot;<br />}</code></td>
 <td><code></code></td>
 </tr>
 </tbody></table>
@@ -98,7 +98,7 @@
 <td><code>open</td>
 <td><code>.1.STATE</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"window#open#closed",<br />&nbsp;"1":&nbsp;"window#open#tilted",<br />&nbsp;"2":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;window#open#closed&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;window#open#tilted&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;window#open#opened&quot;<br />}</code></td>
 <td><code></code></td>
 </tr>
 </tbody></table>
@@ -198,7 +198,7 @@
 <td><code>state</td>
 <td><code>.channels.1.windowState</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"CLOSED":&nbsp;"window#open#closed",<br />&nbsp;"TILTED":&nbsp;"window#open#tilted",<br />&nbsp;"OPEN":&nbsp;"window#open#opened"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;CLOSED&quot;:&nbsp;&quot;window#open#closed&quot;,<br />&nbsp;&quot;TILTED&quot;:&nbsp;&quot;window#open#tilted&quot;,<br />&nbsp;&quot;OPEN&quot;:&nbsp;&quot;window#open#opened&quot;<br />}</code></td>
 <td><code></code></td>
 </tr>
 </tbody></table>

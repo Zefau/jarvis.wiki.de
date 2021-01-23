@@ -4,16 +4,16 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>dimmer</code></td><td><code>{<br />&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=&gt;&nbsp;val&nbsp;&gt;&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>level</code></td><td><code>{<br />&nbsp;"0":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#999"<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;"0":&nbsp;"aus"<br />}</code></td><td><code>"val&nbsp;=&gt;&nbsp;val&nbsp;&gt;&nbsp;0&nbsp;?&nbsp;\"&nbsp;%\"&nbsp;:&nbsp;null"</code></td><td><code>{<br />&nbsp;"0":&nbsp;"lightbulb-off-outline",<br />&nbsp;"default":&nbsp;"lightbulb-on"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°K"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"thermometer"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>"&nbsp;°"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;lightbulb-on&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;lightbulb-off-outline&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;lightbulb-on&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;lightbulb-off-outline&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>dimmer</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;{<br />&nbsp;&nbsp;&quot;color&quot;:&nbsp;&quot;#999&quot;<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;aus&quot;<br />}</code></td><td><code>&quot;val&nbsp;=&gt;&nbsp;val&nbsp;&gt;&nbsp;0&nbsp;?&nbsp;\&quot;&nbsp;%\&quot;&nbsp;:&nbsp;null&quot;</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;lightbulb-off-outline&quot;,<br />&nbsp;&quot;default&quot;:&nbsp;&quot;lightbulb-on&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>level</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;{<br />&nbsp;&nbsp;&quot;color&quot;:&nbsp;&quot;#999&quot;<br />&nbsp;}<br />}</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;aus&quot;<br />}</code></td><td><code>&quot;val&nbsp;=&gt;&nbsp;val&nbsp;&gt;&nbsp;0&nbsp;?&nbsp;\&quot;&nbsp;%\&quot;&nbsp;:&nbsp;null&quot;</code></td><td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;lightbulb-off-outline&quot;,<br />&nbsp;&quot;default&quot;:&nbsp;&quot;lightbulb-on&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>ct</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°K&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;thermometer&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>colortemperature</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°K&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;thermometer&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hue</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;palette&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>rgb</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;palette&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hsv</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;palette&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;palette&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration
@@ -88,7 +88,7 @@
 <td><code>colorTop</td>
 <td><code>.8.COLOR</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"BLACK",<br />&nbsp;"1":&nbsp;"BLUE",<br />&nbsp;"2":&nbsp;"GREEN",<br />&nbsp;"3":&nbsp;"TURQUOISE",<br />&nbsp;"4":&nbsp;"RED",<br />&nbsp;"5":&nbsp;"PURPLE",<br />&nbsp;"6":&nbsp;"YELLOW",<br />&nbsp;"7":&nbsp;"WHITE"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;BLACK&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;BLUE&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;GREEN&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;TURQUOISE&quot;,<br />&nbsp;&quot;4&quot;:&nbsp;&quot;RED&quot;,<br />&nbsp;&quot;5&quot;:&nbsp;&quot;PURPLE&quot;,<br />&nbsp;&quot;6&quot;:&nbsp;&quot;YELLOW&quot;,<br />&nbsp;&quot;7&quot;:&nbsp;&quot;WHITE&quot;<br />}</code></td>
 <td><code>.8.COLOR</code></td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@
 <td><code>colorBottom</td>
 <td><code>.12.COLOR</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"BLACK",<br />&nbsp;"1":&nbsp;"BLUE",<br />&nbsp;"2":&nbsp;"GREEN",<br />&nbsp;"3":&nbsp;"TURQUOISE",<br />&nbsp;"4":&nbsp;"RED",<br />&nbsp;"5":&nbsp;"PURPLE",<br />&nbsp;"6":&nbsp;"YELLOW",<br />&nbsp;"7":&nbsp;"WHITE"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;BLACK&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;BLUE&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;GREEN&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;TURQUOISE&quot;,<br />&nbsp;&quot;4&quot;:&nbsp;&quot;RED&quot;,<br />&nbsp;&quot;5&quot;:&nbsp;&quot;PURPLE&quot;,<br />&nbsp;&quot;6&quot;:&nbsp;&quot;YELLOW&quot;,<br />&nbsp;&quot;7&quot;:&nbsp;&quot;WHITE&quot;<br />}</code></td>
 <td><code>.12.COLOR</code></td>
 </tr>
 </tbody></table>

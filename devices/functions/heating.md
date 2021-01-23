@@ -4,21 +4,21 @@
 ## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
-<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer-chevron-up"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td>-</td><td>-</td></tr></tbody>
-<tbody><tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>"radiator"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>"min."</code></td><td><code>"clock-outline"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°C&quot;</code></td><td><code>&quot;thermometer&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>settemperature</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;°C&quot;</code></td><td><code>&quot;thermometer-chevron-up&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>humidity</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td>-</td><td>-</td></tr></tbody>
+<tbody><tr><td><code>boost</code></td><td>-</td><td>-</td><td>-</td><td><code>&quot;radiator&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>boostTime</code></td><td>-</td><td>-</td><td><code>&quot;min.&quot;</code></td><td><code>&quot;clock-outline&quot;</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>boostState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>frost</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>windowState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>partyMode</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
-<tbody><tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>"brightness-auto"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeAuto</code></td><td>-</td><td>-</td><td>-</td><td><code>&quot;brightness-auto&quot;</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>modeManu</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>modeCurrent</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>modeLowering</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
-<tbody><tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>"list-status"</code></td><td>-</td></tr></tbody>
-<tbody><tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>"%"</code></td><td><code>"valve"</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>modeControl</code></td><td>-</td><td>-</td><td>-</td><td><code>&quot;list-status&quot;</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>valve</code></td><td>-</td><td>-</td><td><code>&quot;%&quot;</code></td><td><code>&quot;valve&quot;</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>valvePosition</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 <tbody><tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
@@ -504,7 +504,7 @@
 <td><code>modeControl</td>
 <td><code>.4.CONTROL_MODE</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"Auto-Mode",<br />&nbsp;"1":&nbsp;"Manu-Mode",<br />&nbsp;"2":&nbsp;"Party-Mode",<br />&nbsp;"3":&nbsp;"Boost-Mode"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;Auto-Mode&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;Manu-Mode&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;Party-Mode&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;Boost-Mode&quot;<br />}</code></td>
 <td><code>.4.CONTROL_MODE</code></td>
 </tr>
 <tr>
@@ -585,7 +585,7 @@
 <td><code>modeControl</td>
 <td><code>.2.CONTROL_MODE</code></td>
 <td><code></code></td>
-<td><code>{<br />&nbsp;"0":&nbsp;"Auto-Mode",<br />&nbsp;"1":&nbsp;"Manu-Mode",<br />&nbsp;"2":&nbsp;"Party-Mode",<br />&nbsp;"3":&nbsp;"Boost-Mode"<br />}</code></td>
+<td><code>{<br />&nbsp;&quot;0&quot;:&nbsp;&quot;Auto-Mode&quot;,<br />&nbsp;&quot;1&quot;:&nbsp;&quot;Manu-Mode&quot;,<br />&nbsp;&quot;2&quot;:&nbsp;&quot;Party-Mode&quot;,<br />&nbsp;&quot;3&quot;:&nbsp;&quot;Boost-Mode&quot;<br />}</code></td>
 <td><code>.2.CONTROL_MODE</code></td>
 </tr>
 <tr>
