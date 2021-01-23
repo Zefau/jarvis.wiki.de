@@ -7,7 +7,7 @@
 * [Geräte](devices/devices.md)
   * [Geräte importieren](devices/devices-importer.md)
 * [Gewerke](devices/functions.md)
-    - [Benutzer](#gewerk-benutzer-user)
+  - [Benutzer](#gewerk-benutzer-user)
   - [Bewegungs-/Präsenzmelder](#gewerk-bewegungs-präsenzmelder-motion)
   - [Fenster](#gewerk-fenster-window)
   - [Fernseher](#gewerk-fernseher-tv)
