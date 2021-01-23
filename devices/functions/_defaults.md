@@ -28,7 +28,9 @@
 
 ### Adapter hm-rpc
 
+
 *HM-LC-Sw1PBU-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -152,7 +154,9 @@
 
 ### Adapter mihome-vacuum
 
+
 *state*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -238,7 +242,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *action*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -383,7 +389,9 @@
 
 ### Adapter mqtt
 
+
 *version*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -406,7 +414,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *reachability*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -457,7 +467,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *ip*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -571,7 +583,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *signal*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -664,7 +678,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *dataReceived*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -785,7 +801,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -808,7 +826,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *powerCurrent*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -831,7 +851,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *powerMeter*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -854,7 +876,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *powerConsumption*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -877,7 +901,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *powerConsumptionToday*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -900,7 +926,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *powerConsumptionYesterday*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -923,7 +951,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power1*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -946,7 +976,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -969,7 +1001,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power3*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -992,7 +1026,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power4*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1015,7 +1051,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power5*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1038,7 +1076,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power6*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1061,7 +1101,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power7*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1084,7 +1126,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power8*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1107,7 +1151,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *power9*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

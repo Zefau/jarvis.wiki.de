@@ -12,7 +12,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-WRC2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -49,7 +51,9 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
+
 *HM-RC-2-PBU-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -114,7 +118,9 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1-DR*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -130,7 +136,9 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-SW1-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -146,7 +154,9 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
+
 *HM-PB-2-WM55*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -190,7 +200,9 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
+
 *HB-UNI-SenAct-4-4-RC*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

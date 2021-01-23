@@ -28,7 +28,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-STHD*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -93,7 +95,9 @@
 <td><code>.1.PARTY_MODE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-eTRV-B*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -151,7 +155,9 @@
 <td><code>.1.PARTY_MODE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-eTRV*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -223,7 +229,9 @@
 <td><code>.1.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-eTRV-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -295,7 +303,9 @@
 <td><code>.1.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BWTH*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -332,7 +342,9 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-WTH*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -369,7 +381,9 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-WTH-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -406,7 +420,9 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
+
 *HM-CC-RT-DN*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -499,7 +515,9 @@
 <td><code>.4.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
+
 *HM-TC-IT-WM-W-EU*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -613,7 +631,9 @@
 <td><code>.2.WINDOW_OPEN_REPORTING</code></td>
 </tr>
 </tbody></table>
+
 *HM-WDS40-TH-I*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -636,7 +656,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-WDS10-TH-O*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -659,7 +681,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-WDS30-OT2-SM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -755,7 +779,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-STH*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -785,7 +811,9 @@
 <td><code>.channels.1.setPointTemperature</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-eTRV-B*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -822,7 +850,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-eTRV-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -845,7 +875,9 @@
 <td><code>.channels.1.setPointTemperature</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-WTH-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

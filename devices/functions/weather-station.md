@@ -16,7 +16,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-STHO*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -39,7 +41,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-STHO-A*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -62,7 +66,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWO-B*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -106,7 +112,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWO-PL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -164,7 +172,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-WDS40-TH-I-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -190,7 +200,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-STHO*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -227,7 +239,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-STHO-A*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -250,7 +264,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWO-B*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

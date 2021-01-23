@@ -13,7 +13,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-SMI55*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -36,7 +38,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SMI*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -59,7 +63,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SMO-A*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -82,7 +88,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SAM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -105,7 +113,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SPI*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -128,7 +138,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-PB-6-WM55*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -221,7 +233,9 @@
 <td><code>.6.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
+
 *HM-Sen-MDIR-WM55*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -272,7 +286,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-Sen-MDIR-O-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -295,7 +311,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-Sen-MDIR-O-3*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -321,7 +339,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-SMI*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

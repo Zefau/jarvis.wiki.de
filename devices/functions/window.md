@@ -12,7 +12,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-SWDM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -28,7 +30,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWDO-I*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -44,7 +48,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWDO*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -60,7 +66,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SRH*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -76,7 +84,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-Sec-RHS*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -92,7 +102,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-Sec-Sco*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -108,7 +120,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-Sec-SC-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -127,7 +141,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-SWDO*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -143,7 +159,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SWDO-I*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -159,7 +177,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-SRH*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

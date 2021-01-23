@@ -14,7 +14,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-FSM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -72,7 +74,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-PS*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -88,7 +92,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-PSM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -111,7 +117,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-ES-PMSw1-Pl-DN-R1*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -169,7 +177,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1-Pl-2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -192,7 +202,9 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1-Pl-DN-R1*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -215,7 +227,9 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-ES-PMSw1-DR*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -280,7 +294,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HM-ES-PMSw1-Pl*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -348,7 +364,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-PS*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

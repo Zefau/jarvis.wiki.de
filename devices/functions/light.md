@@ -21,7 +21,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-BSM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -58,7 +60,9 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BSL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -102,7 +106,9 @@
 <td><code>.12.COLOR</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BRC2*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -118,7 +124,9 @@
 <td><code>.4.STATE</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BDT*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -134,7 +142,9 @@
 <td><code>.4.LEVEL</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Dim1T-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -164,7 +174,9 @@
 <td><code>.1.RAMP_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-RGBW-WM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -201,7 +213,9 @@
 <td><code>.2.COLOR</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1PBU-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -217,7 +231,9 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -247,7 +263,9 @@
 <td><code>.1.WORKING</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw1-DR*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -270,7 +288,9 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw2-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -307,7 +327,9 @@
 <td><code>.2.ON_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Sw4-DR*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -372,7 +394,9 @@
 <td><code>.4.ON_TIME</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Dim1TPBU-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -388,7 +412,9 @@
 <td><code>.1.LEVEL</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Dim1T-Pl-3*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

@@ -14,7 +14,9 @@
 
 ### Adapter hm-rpc
 
+
 *HmIP-BBL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -51,7 +53,9 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-FROLL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -81,7 +85,9 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BROLL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -118,7 +124,9 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Bl1-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -148,7 +156,9 @@
 <td><code>.1.STOP</code></td>
 </tr>
 </tbody></table>
+
 *HM-LC-Bl1PBU-FM*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -178,7 +188,9 @@
 <td><code>.1.STOP</code></td>
 </tr>
 </tbody></table>
+
 *HmIPW-DRBL4*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -302,7 +314,9 @@
 
 ### Adapter hmip
 
+
 *HmIP-BBL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -332,7 +346,9 @@
 <td><code>.channels.1.stop</code></td>
 </tr>
 </tbody></table>
+
 *HmIP-BROLL*
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
