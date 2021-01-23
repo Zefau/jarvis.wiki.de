@@ -1,18 +1,18 @@
 
-## Gewerk Schalter (`switch`)
+# Gewerk Schalter (`switch`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-WRC2</h5>
+*HmIP-WRC2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -49,7 +49,7 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
-<h5>HM-RC-2-PBU-FM</h5>
+*HM-RC-2-PBU-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -114,7 +114,7 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1-DR</h5>
+*HM-LC-Sw1-DR*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -130,7 +130,7 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-SW1-FM</h5>
+*HM-LC-SW1-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -146,7 +146,7 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HM-PB-2-WM55</h5>
+*HM-PB-2-WM55*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -190,7 +190,7 @@
 <td><code>.2.PRESS_SHORT</code></td>
 </tr>
 </tbody></table>
-<h5>HB-UNI-SenAct-4-4-RC</h5>
+*HB-UNI-SenAct-4-4-RC*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

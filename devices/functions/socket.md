@@ -1,7 +1,7 @@
 
-## Gewerk Steckdose (`socket`)
+# Gewerk Steckdose (`socket`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>power</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
@@ -9,12 +9,12 @@
 <tbody><tr><td><code>meter</code></td><td>-</td><td>-</td><td><code>"&nbsp;W"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"mdi-power-plug-off-outline",<br />&nbsp;">0":&nbsp;"mdi-power-plug"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-FSM</h5>
+*HmIP-FSM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -72,7 +72,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-PS</h5>
+*HmIP-PS*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -88,7 +88,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-PSM</h5>
+*HmIP-PSM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -111,7 +111,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-ES-PMSw1-Pl-DN-R1</h5>
+*HM-ES-PMSw1-Pl-DN-R1*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -169,7 +169,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1-Pl-2</h5>
+*HM-LC-Sw1-Pl-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -192,7 +192,7 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1-Pl-DN-R1</h5>
+*HM-LC-Sw1-Pl-DN-R1*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -215,7 +215,7 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-ES-PMSw1-DR</h5>
+*HM-ES-PMSw1-DR*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -280,7 +280,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-ES-PMSw1-Pl</h5>
+*HM-ES-PMSw1-Pl*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -346,9 +346,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter hmip
+### Adapter hmip
 
-<h5>HmIP-PS</h5>
+*HmIP-PS*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

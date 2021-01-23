@@ -1,18 +1,18 @@
 
-## Gewerk Rauchmelder (`smoke`)
+# Gewerk Rauchmelder (`smoke`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>alarm</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"mdi-alarm-light-outline",<br />&nbsp;"1":&nbsp;"mdi-alarm-light",<br />&nbsp;"2":&nbsp;"mdi-alarm-light",<br />&nbsp;"3":&nbsp;"mdi-alarm-light",<br />&nbsp;"true":&nbsp;"mdi-alarm-light",<br />&nbsp;"false":&nbsp;"mdi-alarm-light-outline"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-SWSD</h5>
+*HmIP-SWSD*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -28,7 +28,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-SD</h5>
+*HM-Sec-SD*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -51,7 +51,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-SD-2</h5>
+*HM-Sec-SD-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -74,7 +74,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-SD-2-Team</h5>
+*HM-Sec-SD-2-Team*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

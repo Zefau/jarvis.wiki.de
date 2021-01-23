@@ -1,7 +1,7 @@
 
-## Gewerk Licht (`light`)
+# Gewerk Licht (`light`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>on</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"lightbulb-on",<br />&nbsp;"false":&nbsp;"lightbulb-off-outline"<br />}</code></td><td>-</td></tr></tbody>
@@ -16,12 +16,12 @@
 <tbody><tr><td><code>hex</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;"default":&nbsp;"palette"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-BSM</h5>
+*HmIP-BSM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -58,7 +58,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BSL</h5>
+*HmIP-BSL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -102,7 +102,7 @@
 <td><code>.12.COLOR</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BRC2</h5>
+*HmIP-BRC2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -118,7 +118,7 @@
 <td><code>.4.STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BDT</h5>
+*HmIP-BDT*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -134,7 +134,7 @@
 <td><code>.4.LEVEL</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Dim1T-FM</h5>
+*HM-LC-Dim1T-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -164,7 +164,7 @@
 <td><code>.1.RAMP_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-RGBW-WM</h5>
+*HM-LC-RGBW-WM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -201,7 +201,7 @@
 <td><code>.2.COLOR</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1PBU-FM</h5>
+*HM-LC-Sw1PBU-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -217,7 +217,7 @@
 <td><code>.1.STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1-FM</h5>
+*HM-LC-Sw1-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -247,7 +247,7 @@
 <td><code>.1.WORKING</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw1-DR</h5>
+*HM-LC-Sw1-DR*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -270,7 +270,7 @@
 <td><code>.1.ON_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw2-FM</h5>
+*HM-LC-Sw2-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -307,7 +307,7 @@
 <td><code>.2.ON_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Sw4-DR</h5>
+*HM-LC-Sw4-DR*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -372,7 +372,7 @@
 <td><code>.4.ON_TIME</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Dim1TPBU-FM</h5>
+*HM-LC-Dim1TPBU-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -388,7 +388,7 @@
 <td><code>.1.LEVEL</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Dim1T-Pl-3</h5>
+*HM-LC-Dim1T-Pl-3*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -419,7 +419,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter hue-extended
+### Adapter hue-extended
 
 <table><thead><tr>
 <th>State Key</th>
@@ -465,7 +465,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter hue
+### Adapter hue
 
 <table><thead><tr>
 <th>State Key</th>
@@ -511,7 +511,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter mqtt
+### Adapter mqtt
 
 <table><thead><tr>
 <th>State Key</th>
@@ -550,7 +550,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter shelly
+### Adapter shelly
 
 <table><thead><tr>
 <th>State Key</th>

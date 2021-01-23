@@ -1,18 +1,18 @@
 
-## Gewerk Fenster (`window`)
+# Gewerk Fenster (`window`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"geschlossen",<br />&nbsp;"1":&nbsp;"offen",<br />&nbsp;"2":&nbsp;"offen",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"window-closed-variant",<br />&nbsp;"true":&nbsp;"window-open-variant"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-SWDM</h5>
+*HmIP-SWDM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -28,7 +28,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SWDO-I</h5>
+*HmIP-SWDO-I*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -44,7 +44,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SWDO</h5>
+*HmIP-SWDO*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -60,7 +60,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SRH</h5>
+*HmIP-SRH*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -76,7 +76,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-RHS</h5>
+*HM-Sec-RHS*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -92,7 +92,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-Sco</h5>
+*HM-Sec-Sco*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -108,7 +108,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-SC-2</h5>
+*HM-Sec-SC-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -125,9 +125,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter hmip
+### Adapter hmip
 
-<h5>HmIP-SWDO</h5>
+*HmIP-SWDO*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -143,7 +143,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SWDO-I</h5>
+*HmIP-SWDO-I*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -159,7 +159,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SRH</h5>
+*HmIP-SRH*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

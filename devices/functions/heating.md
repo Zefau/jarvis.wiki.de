@@ -1,7 +1,7 @@
 
-## Gewerk Heizung (`heating`)
+# Gewerk Heizung (`heating`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"thermometer"</code></td><td>-</td></tr></tbody>
@@ -23,12 +23,12 @@
 <tbody><tr><td><code>valveState</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-STHD</h5>
+*HmIP-STHD*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -93,7 +93,7 @@
 <td><code>.1.PARTY_MODE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-eTRV-B</h5>
+*HmIP-eTRV-B*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -151,7 +151,7 @@
 <td><code>.1.PARTY_MODE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-eTRV</h5>
+*HmIP-eTRV*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -223,7 +223,7 @@
 <td><code>.1.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-eTRV-2</h5>
+*HmIP-eTRV-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -295,7 +295,7 @@
 <td><code>.1.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BWTH</h5>
+*HmIP-BWTH*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -332,7 +332,7 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-WTH</h5>
+*HmIP-WTH*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -369,7 +369,7 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-WTH-2</h5>
+*HmIP-WTH-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -406,7 +406,7 @@
 <td><code>.1.BOOST_MODE</code></td>
 </tr>
 </tbody></table>
-<h5>HM-CC-RT-DN</h5>
+*HM-CC-RT-DN*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -499,7 +499,7 @@
 <td><code>.4.VALVE_STATE</code></td>
 </tr>
 </tbody></table>
-<h5>HM-TC-IT-WM-W-EU</h5>
+*HM-TC-IT-WM-W-EU*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -613,7 +613,7 @@
 <td><code>.2.WINDOW_OPEN_REPORTING</code></td>
 </tr>
 </tbody></table>
-<h5>HM-WDS40-TH-I</h5>
+*HM-WDS40-TH-I*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -636,7 +636,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-WDS10-TH-O</h5>
+*HM-WDS10-TH-O*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -659,7 +659,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-WDS30-OT2-SM</h5>
+*HM-WDS30-OT2-SM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -753,9 +753,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter hmip
+### Adapter hmip
 
-<h5>HmIP-STH</h5>
+*HmIP-STH*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -785,7 +785,7 @@
 <td><code>.channels.1.setPointTemperature</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-eTRV-B</h5>
+*HmIP-eTRV-B*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -822,7 +822,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-eTRV-2</h5>
+*HmIP-eTRV-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -845,7 +845,7 @@
 <td><code>.channels.1.setPointTemperature</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-WTH-2</h5>
+*HmIP-WTH-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

@@ -1,7 +1,7 @@
 
-## Gewerk Sonstige (`_defaults`)
+# Gewerk Sonstige (`_defaults`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>battery</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;">80":&nbsp;"battery-high",<br />&nbsp;"<=80":&nbsp;"battery-medium",<br />&nbsp;"<=30":&nbsp;"battery-low",<br />&nbsp;"<=10":&nbsp;"battery-outline&nbsp;blink",<br />&nbsp;"<=5":&nbsp;"battery-alert-variant-outline&nbsp;blink"<br />}</code></td><td><code>{<br />&nbsp;"<=10":&nbsp;{<br />&nbsp;&nbsp;"color":&nbsp;"#900"<br />&nbsp;}<br />}</code></td></tr></tbody>
@@ -23,12 +23,12 @@
 <tbody><tr><td><code>wind</code></td><td>-</td><td>-</td><td><code>"&nbsp;km/h"</code></td><td><code>"weather-windy"</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HM-LC-Sw1PBU-FM</h5>
+*HM-LC-Sw1PBU-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -150,9 +150,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter mihome-vacuum
+### Adapter mihome-vacuum
 
-<h5>state</h5>
+*state*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -238,7 +238,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>action</h5>
+*action*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -381,9 +381,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter mqtt
+### Adapter mqtt
 
-<h5>version</h5>
+*version*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -406,7 +406,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>reachability</h5>
+*reachability*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -457,7 +457,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>ip</h5>
+*ip*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -571,7 +571,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>signal</h5>
+*signal*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -664,7 +664,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>dataReceived</h5>
+*dataReceived*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -785,7 +785,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power</h5>
+*power*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -808,7 +808,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>powerCurrent</h5>
+*powerCurrent*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -831,7 +831,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>powerMeter</h5>
+*powerMeter*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -854,7 +854,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>powerConsumption</h5>
+*powerConsumption*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -877,7 +877,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>powerConsumptionToday</h5>
+*powerConsumptionToday*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -900,7 +900,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>powerConsumptionYesterday</h5>
+*powerConsumptionYesterday*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -923,7 +923,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power1</h5>
+*power1*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -946,7 +946,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power2</h5>
+*power2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -969,7 +969,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power3</h5>
+*power3*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -992,7 +992,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power4</h5>
+*power4*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1015,7 +1015,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power5</h5>
+*power5*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1038,7 +1038,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power6</h5>
+*power6*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1061,7 +1061,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power7</h5>
+*power7*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1084,7 +1084,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power8</h5>
+*power8*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1107,7 +1107,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>power9</h5>
+*power9*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -1131,7 +1131,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter nuki-extended
+### Adapter nuki-extended
 
 <table><thead><tr>
 <th>State Key</th>
@@ -1226,7 +1226,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter tr-064
+### Adapter tr-064
 
 <table><thead><tr>
 <th>State Key</th>
@@ -1286,7 +1286,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter unifi
+### Adapter unifi
 
 <table><thead><tr>
 <th>State Key</th>
@@ -1311,7 +1311,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter zwave2
+### Adapter zwave2
 
 <table><thead><tr>
 <th>State Key</th>

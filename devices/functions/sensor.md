@@ -1,7 +1,7 @@
 
-## Gewerk Sensor (`sensor`)
+# Gewerk Sensor (`sensor`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>temperature</code></td><td>-</td><td>-</td><td><code>"&nbsp;°C"</code></td><td><code>"mdi-thermometer"</code></td><td>-</td></tr></tbody>
@@ -10,12 +10,12 @@
 <tbody><tr><td><code>pressure</code></td><td>-</td><td>-</td><td><code>"&nbsp;hPa"</code></td><td><code>"mdi-air-purifier"</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HM-Sec-TiS</h5>
+*HM-Sec-TiS*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -31,7 +31,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SLO</h5>
+*HmIP-SLO*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -68,7 +68,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-SWD</h5>
+*HmIP-SWD*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -98,7 +98,7 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
-<h5>HM-Sec-WDS-2</h5>
+*HM-Sec-WDS-2*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>

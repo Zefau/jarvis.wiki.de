@@ -1,7 +1,7 @@
 
-## Gewerk Rollladen / Jalousie (`blind`)
+# Gewerk Rollladen / Jalousie (`blind`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>"&nbsp;%"</code></td><td><code>{<br />&nbsp;"default":&nbsp;"window-shutter-open",<br />&nbsp;">90":&nbsp;"window-shutter-open",<br />&nbsp;"<=90":&nbsp;"window-shutter"<br />}</code></td><td>-</td></tr></tbody>
@@ -9,12 +9,12 @@
 <tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"in&nbsp;Bewegung",<br />&nbsp;"false":&nbsp;"keine"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"true":&nbsp;"pan-vertical",<br />&nbsp;"false":&nbsp;"dots-vertical"<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HmIP-BBL</h5>
+*HmIP-BBL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -51,7 +51,7 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-FROLL</h5>
+*HmIP-FROLL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -81,7 +81,7 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BROLL</h5>
+*HmIP-BROLL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -118,7 +118,7 @@
 <td><code>.4.STOP</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Bl1-FM</h5>
+*HM-LC-Bl1-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -148,7 +148,7 @@
 <td><code>.1.STOP</code></td>
 </tr>
 </tbody></table>
-<h5>HM-LC-Bl1PBU-FM</h5>
+*HM-LC-Bl1PBU-FM*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -178,7 +178,7 @@
 <td><code>.1.STOP</code></td>
 </tr>
 </tbody></table>
-<h5>HmIPW-DRBL4</h5>
+*HmIPW-DRBL4*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -300,9 +300,9 @@
 </tr>
 </tbody></table>
 
-#### Adapter hmip
+### Adapter hmip
 
-<h5>HmIP-BBL</h5>
+*HmIP-BBL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -332,7 +332,7 @@
 <td><code>.channels.1.stop</code></td>
 </tr>
 </tbody></table>
-<h5>HmIP-BROLL</h5>
+*HmIP-BROLL*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -363,7 +363,7 @@
 </tr>
 </tbody></table>
 
-#### Adapter shelly
+### Adapter shelly
 
 <table><thead><tr>
 <th>State Key</th>

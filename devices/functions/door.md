@@ -1,19 +1,19 @@
 
-## Gewerk Tür (`door`)
+# Gewerk Tür (`door`)
 
-### vordefinierte Datenpunkte
+## vordefinierte Datenpunkte
 
 <table><thead><tr><th>Datenpunkt Bezeichner</th><th>Datenpunkt Stil</th><th>Anzeige</th><th>Einheit</th><th>Icon</th><th>Icon Stil</th></tr></thead>
 <tbody><tr><td><code>open</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"door#open#closed",<br />&nbsp;"1":&nbsp;"door#open#opened",<br />&nbsp;"false":&nbsp;"geschlossen",<br />&nbsp;"true":&nbsp;"offen"<br />}</code></td><td>-</td><td><code>{<br />&nbsp;"0":&nbsp;"window-closed-variant",<br />&nbsp;"1":&nbsp;"window-open-variant",<br />&nbsp;"false":&nbsp;"door-closed",<br />&nbsp;"true":&nbsp;"door-open"<br />}</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>lock</code></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></tbody>
 </table>
 
-<h3>Beispielkonfiguration
+##Beispielkonfiguration
 
 
-#### Adapter hm-rpc
+### Adapter hm-rpc
 
-<h5>HM-Sec-Key</h5>
+*HM-Sec-Key*
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
