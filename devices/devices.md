@@ -67,7 +67,7 @@ Mit den Datenpunkt Eigenschaften können die Standardwerte für die visuellen Ko
 Die folgenden Eigenschaften stehen zur Verfügung:
 - `on` (Standard `true`): Definiert den Wert, der beim Einschalten gesetzt werden soll. Dieser Wert wird für `SwitchAction`, `IconButtonAction` und `ButtonAction` genutzt.
 - `off` (Standard `false`): Definiert den Wert, der beim Ausschalten gesetzt werden soll. Dieser Wert wird für `SwitchAction` genutzt.
-- `min` (Standard `0`) / `max` (Standard `100`): Definiert den unteren und oberen möglichen Wert eines Geräts. Dieser Wertebereich wird für `LevelBody` genutzt.
+- `min` (Standard `0`) / `max` (Standard `100`): Definiert den unteren und oberen möglichen Wert eines Geräts. Dieser Wertebereich wird für `LevelBody` und `BlindLevelAction` genutzt.
 - `level` (Standard `100`): Definiert das initiale Dimmlevel beim Einschalten eines Dimmers.
 
 Die Angaben sind im JSON Format zu machen, analog der [JSON Eingabefelder](#datenpunkt-eigenschaften).

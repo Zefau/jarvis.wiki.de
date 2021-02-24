@@ -49,6 +49,24 @@
 </tr>
 </tbody></table>
 
+#### HmIP-SWDO-PL
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>open</td>
+<td><code>.1.STATE</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
 #### HmIP-SWDO
 
 <table><thead><tr>

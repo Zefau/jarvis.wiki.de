@@ -3,6 +3,7 @@
 ## Übersicht
 
 - [General](#general)
+  - [iPad Anzeige Spalten werden zusammen gestaucht](#ipad-anzeige-spalten-werden-zusammen-gestaucht)
   - [Button / Switch Size](#button-switch-size)
   - [Trotz manuell geänderter Anzeigevariante wird Wert aus Datenpunkt visualisiert - Fehler?](#trotz-manuell-geaenderter-anzeigevariante-wird-wert-aus-datenpunkt-visualisiert-fehler)
   - [Alternative Anzeigewerte](#alternative-anzeigewerte)
@@ -30,6 +31,7 @@
 - [Module CustomHTML](#module-customhtml)
   - [Desktop vs. Mobil - Relative Höhe des Widgets](#desktop-vs-mobil-relative-hoehe-des-widgets)
 - [Module DateTime](#module-datetime)
+  - [Sonnenauf- und Untergangszeiten werden nicht angezeigt....](#sonnenauf-und-untergangszeiten-werden-nicht-angezeigt-)
   - [DateTime module is left aligned instead of centered](#datetime-module-is-left-aligned-instead-of-centered)
 - [Module DisplayImage](#module-displayimage)
   - [DisplayImage == iobroker state](#displayimage-iobroker-state)
@@ -44,6 +46,39 @@
 ## Fragen und Lösungen
 
 ### General
+
+#### iPad Anzeige Spalten werden zusammen gestaucht
+[Siehe vollständige und Lösung Beschreibung im Issue](https://github.com/Zefau/ioBroker.jarvis/issues/665).
+
+*Please note that you may restore an old layout via jarvis adapter configuration directly within ioBroker
+
+**Prerequisites / Voraussetzungen**
+- [2.0.0, aber auch schon aktuellste Beta versucht *36 ] Which jarvis version are you running / Welche Version von jarvis nutzt du? **BITTE GENAUE ANGABE!**
+- [ ] Fehler / Screenshot der Browser Konsole (F12), siehe [Fehleranalyse und -Meldung]
+ Ich will Jarvis auf zwei iPads nutzen (iPad Air 2, ipad Air 4, jeweils im Querformat mit Safari bzw. der ioBroker App, testweise auch mit Firefox ausprobiert). Die Browser Caches wurden gelöscht, am PC kann man es nachvollziehen, wenn man das Browserfenster auf die iPad Größe verkleinert
+Auf dem PC sieht alles super aus:
+Startseite mit drei Spalten, Wetter-Tab (eine Spalte) über die ganze Breite, meine Wegstrecke ins Büro (eigener Tab, ein iFrame) ebenfalls über die ganze Breite.
+Auf dem iPad ist die Startseite auf 3 Spalten, das Wetter Widghet und das Maps-iFrame werden aber angezeigt, als ob drei Spalten vorhanden wären, es ist also 2/3 des Bildschirms leer.
+Mache ich das Wetter Tab auf Vollbild, passt es, allerdings kann ich im Darkmode dann kaum noch was lesen
+
+Ideal wäre es, wenn man je Tab die Spalten angeben könnte, nicht nur global, so wäre ich variabler und verliere nicht so viel Platz. Die Höhe und Breite der iFrames habe ich auch schon nach % und fix in px angegeben, hat alles nicht interessiert.
+
+**Describe the bug / Beschreibe den Fehler**
+A clear and concise description of what the bug / problem is.
+Eine genaue Beschreibung des Fehlers inkl. Herleitung, um diesen Nachstellen zu können.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+Sofern möglich, bitte Screenshots einfügen, um den Fehler bildlich zu erläutern.
+
+____
+
+**Please note that bug reports may be closed if the information above are not given!**
+
+**Bitte beachte, dass Bug-Reports ggf. einfach geschlossen werden, wenn die oben genannten Kriterien nicht angemessen gegeben sind!**
+
+***
+
 
 #### Button / Switch Size
 [Siehe vollständige und Lösung Beschreibung im Issue](https://github.com/Zefau/ioBroker.jarvis/issues/526).
@@ -334,6 +369,18 @@ _Originally posted by @Timmes123 in https://github.com/Zefau/ioBroker.jarvis/iss
 ***
 
 ### Module DateTime
+
+#### Sonnenauf- und Untergangszeiten werden nicht angezeigt....
+[Siehe vollständige und Lösung Beschreibung im Issue](https://github.com/Zefau/ioBroker.jarvis/issues/666).
+
+Sonnenauf- und Untergang wird trotz Aktivierung im Date/Time-Widget nicht angezeit.
+
+getestete Version: 2.2.0 beta 42
+Browser: -Safari iPad
+. Chrome iPad
+
+***
+
 
 #### DateTime module is left aligned instead of centered
 [Siehe vollständige und Lösung Beschreibung im Issue](https://github.com/Zefau/ioBroker.jarvis/issues/353).

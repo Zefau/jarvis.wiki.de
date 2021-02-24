@@ -32,6 +32,7 @@ Es werden zwei Modi unterstützt um die Adapter-Struktur zu durchsuchen:
   - [Function `motion` of hm-rpc](#function-motion-of-hm-rpc)
   - [Function `door` of hm-rpc](#function-door-of-hm-rpc)
   - [Function `weather-station` of hm-rpc](#function-weather-station-of-hm-rpc)
+  - [Function `other` of hm-rpc](#function-other-of-hm-rpc)
   - [Function `switch` of hm-rpc](#function-switch-of-hm-rpc)
   - [Function `CUxD` of hm-rpc](#function-CUxD-of-hm-rpc)
 - [hmip](#adapter-hmip)
@@ -91,8 +92,11 @@ Es werden zwei Modi unterstützt um die Adapter-Struktur zu durchsuchen:
   - [Function `smartlocks` of nuki-extended](#function-smartlocks-of-nuki-extended)
 - [rpi2](#adapter-rpi2)
 - [shelly](#adapter-shelly)
+  - [Function `socket` of shelly](#function-socket-of-shelly)
   - [Function `blind` of shelly](#function-blind-of-shelly)
   - [Function `light` of shelly](#function-light-of-shelly)
+  - [Function `switch` of shelly](#function-switch-of-shelly)
+  - [Function `sensor` of shelly](#function-sensor-of-shelly)
 - [sonoff](#adapter-sonoff)
 - [tr-064](#adapter-tr-064)
   - [Function `calllists` of tr-064](#function-calllists-of-tr-064)
@@ -920,6 +924,11 @@ alle Datenpunkte werden übernommen
          "state": ".1.STATE"
       }
    },
+   "HmIP-SWDO-PL": {
+      "open": {
+         "state": ".1.STATE"
+      }
+   },
    "HmIP-SWDO": {
       "open": {
          "state": ".1.STATE"
@@ -1346,6 +1355,79 @@ alle Datenpunkte werden übernommen
 ```
 
 
+#### Function `other` of hm-rpc
+```
+{
+   "HmIP-FCI1": {
+      "power": {
+         "state": ".1.STATE",
+         "action": ".1.STATE"
+      },
+      "PRESS_LONG": {
+         "state": ".1.PRESS_LONG",
+         "action": ".1.PRESS_LONG"
+      },
+      "PRESS_SHORT": {
+         "state": ".1.PRESS_SHORT",
+         "action": ".1.PRESS_SHORT"
+      }
+   },
+   "HmIP-PCBS": {
+      "powerCh2": {
+         "state": ".2.STATE",
+         "action": ".2.STATE"
+      },
+      "powerCh3": {
+         "state": ".3.STATE",
+         "action": ".3.STATE"
+      },
+      "powerCh4": {
+         "state": ".4.STATE",
+         "action": ".4.STATE"
+      },
+      "powerCh5": {
+         "state": ".5.STATE",
+         "action": ".5.STATE"
+      }
+   },
+   "HmIP-PCBS2": {
+      "powerCh3": {
+         "state": ".3.STATE",
+         "action": ".3.STATE"
+      },
+      "powerCh4": {
+         "state": ".4.STATE",
+         "action": ".4.STATE"
+      },
+      "powerCh5": {
+         "state": ".5.STATE",
+         "action": ".5.STATE"
+      },
+      "powerCh6": {
+         "state": ".6.STATE",
+         "action": ".6.STATE"
+      },
+      "powerCh7": {
+         "state": ".7.STATE",
+         "action": ".7.STATE"
+      },
+      "powerCh8": {
+         "state": ".8.STATE",
+         "action": ".8.STATE"
+      },
+      "powerCh9": {
+         "state": ".9.STATE",
+         "action": ".9.STATE"
+      },
+      "powerCh10": {
+         "state": ".10.STATE",
+         "action": ".10.STATE"
+      }
+   }
+}
+```
+
+
 #### Function `switch` of hm-rpc
 ```
 {
@@ -1435,16 +1517,16 @@ alle Datenpunkte werden übernommen
       }
    },
    "HB-UNI-SenAct-4-4-RC": {
-      "state1": {
+      "stateCh1": {
          "state": ".1.STATE"
       },
-      "state2": {
+      "stateCh2": {
          "state": ".2.STATE"
       },
-      "state3": {
+      "stateCh3": {
          "state": ".3.STATE"
       },
-      "state4": {
+      "stateCh4": {
          "state": ".4.STATE"
       },
       "PRESS_LONG1": {
@@ -2363,6 +2445,26 @@ alle Datenpunkte werden übernommen
 
 ### Adapter shelly
 
+#### Function `socket` of shelly
+```
+{
+   "power": {
+      "state": ".Relay0.Switch",
+      "action": ".Relay0.Switch",
+      "actionElement": "SwitchAction"
+   },
+   "powerCounter": {
+      "state": ".Relay0.Energy",
+      "unit": " Wh"
+   },
+   "powerMeter": {
+      "state": ".Relay0.Power",
+      "unit": " W"
+   }
+}
+```
+
+
 #### Function `blind` of shelly
 ```
 {
@@ -2371,7 +2473,9 @@ alle Datenpunkte werden übernommen
       "action": ".Shutter.Position"
    },
    "activity": {
-      "state": ".Shutter.state",
+      "state": ".Shutter.state"
+   },
+   "stop": {
       "action": ".Shutter.Pause"
    }
 }
@@ -2381,14 +2485,315 @@ alle Datenpunkte werden übernommen
 #### Function `light` of shelly
 ```
 {
-   "power": {
-      "state": ".lights.Switch",
-      "action": ".lights.Switch"
+   "power": [
+      {
+         "state": ".lights.Switch",
+         "action": ".lights.Switch",
+         "actionElement": "SwitchAction"
+      },
+      {
+         "state": ".white0.Switch",
+         "action": ".white0.Switch",
+         "actionElement": "SwitchAction"
+      }
+   ],
+   "powerCh1": {
+      "state": ".white1.Switch",
+      "action": ".white1.Switch",
+      "actionElement": "SwitchAction"
    },
-   "level": {
-      "state": ".lights.brightness",
-      "action": ".lights.brightness"
+   "powerCh2": {
+      "state": ".white2.Switch",
+      "action": ".white2.Switch",
+      "actionElement": "SwitchAction"
+   },
+   "powerCh3": {
+      "state": ".white3.Switch",
+      "action": ".white3.Switch",
+      "actionElement": "SwitchAction"
+   },
+   "colorTemperature": {
+      "state": ".lights.white",
+      "action": ".lights.white",
+      "actionElement": "LightTemperatureBody",
+      "properties": {
+         "min": 0,
+         "max": 100
+      }
+   },
+   "level": [
+      {
+         "state": ".lights.brightness",
+         "action": ".lights.brightness"
+      },
+      {
+         "state": ".white0.brightness",
+         "action": ".white0.brightness"
+      }
+   ],
+   "levelCh1": {
+      "state": ".white1.brightness",
+      "action": ".white1.brightness"
+   },
+   "levelCh2": {
+      "state": ".white2.brightness",
+      "action": ".white2.brightness"
+   },
+   "levelCh3": {
+      "state": ".white3.brightness",
+      "action": ".white3.brightness"
+   },
+   "hex": {
+      "state": ".lights.rgbw",
+      "action": ".lights.rgbw"
+   },
+   "hue": {
+      "state": ".lights.hue",
+      "action": ".lights.hue"
+   },
+   "powerMeter": [
+      {
+         "state": ".Relay0.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".lights.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".white0.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".Emeter0.Power",
+         "unit": " W"
+      }
+   ],
+   "powerMeterCh1": [
+      {
+         "state": ".Relay1.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".white1.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".Emeter1.Power",
+         "unit": " W"
+      }
+   ],
+   "powerMeterCh2": [
+      {
+         "state": ".Relay2.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".white2.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".Emeter2.Power",
+         "unit": " W"
+      }
+   ],
+   "powerMeterCh3": [
+      {
+         "state": ".Relay3.Power",
+         "unit": " W"
+      },
+      {
+         "state": ".white3.Power",
+         "unit": " W"
+      }
+   ],
+   "powerCounter": [
+      {
+         "state": ".Relay0.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".lights.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".white0.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".Emeter0.Total",
+         "unit": " Wh"
+      }
+   ],
+   "powerCounterCh1": [
+      {
+         "state": ".Relay1.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".white1.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".Emeter1.Total",
+         "unit": " Wh"
+      }
+   ],
+   "powerCounterCh2": [
+      {
+         "state": ".Relay2.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".white2.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".Emeter2.Total",
+         "unit": " Wh"
+      }
+   ],
+   "powerCounterCh3": [
+      {
+         "state": ".Relay3.Energy",
+         "unit": " Wh"
+      },
+      {
+         "state": ".white3.Energy",
+         "unit": " Wh"
+      }
+   ],
+   "powerCurrent": {
+      "state": ".Emeter0.Current",
+      "unit": " A"
+   },
+   "powerCurrentCh1": {
+      "state": ".Emeter1.Current",
+      "unit": " A"
+   },
+   "powerCurrentCh2": {
+      "state": ".Emeter2.Current",
+      "unit": " A"
+   },
+   "powerVoltage": {
+      "state": ".Emeter0.Voltage",
+      "unit": " V"
+   },
+   "powerVoltageCh1": {
+      "state": ".Emeter1.Voltage",
+      "unit": " V"
+   },
+   "powerVoltageCh2": {
+      "state": ".Emeter2.Voltage",
+      "unit": " V"
+   },
+   "powerCounterReturned": {
+      "state": ".Emeter0.Total_Returned",
+      "unit": " Wh"
+   },
+   "powerCounterReturnedCh1": {
+      "state": ".Emeter1.Total_Returned",
+      "unit": " Wh"
+   },
+   "powerCounterReturnedCh2": {
+      "state": ".Emeter2.Total_Returned",
+      "unit": " Wh"
+   },
+   "powerTotalCurrent": {
+      "state": ".Total.Current",
+      "unit": " A"
+   },
+   "powerTotalConsumed": {
+      "state": ".Total.ConsumedPower",
+      "unit": " Wh"
+   },
+   "powerTotalInstant": {
+      "state": ".Total.InstantPower",
+      "unit": " W"
+   },
+   "powerTotalVoltage": {
+      "state": ".Total.Voltage",
+      "unit": " V"
+   },
+   "powerTotalVoltageMean": {
+      "state": ".Total.VoltageMean",
+      "unit": " V"
    }
+}
+```
+
+
+#### Function `switch` of shelly
+```
+{
+   "input": {
+      "state": ".Relay0.Input"
+   },
+   "inputCh2": {
+      "state": ".Relay1.Input"
+   },
+   "inputCh3": {
+      "state": ".Relay2.Input"
+   },
+   "event": {
+      "state": ".Relay0.Event"
+   },
+   "eventCh2": {
+      "state": ".Relay1.Event"
+   },
+   "eventCh3": {
+      "state": ".Relay2.Event"
+   },
+   "eventCount": {
+      "state": ".Relay0.EventCount"
+   },
+   "eventCountCh2": {
+      "state": ".Relay1.EventCount"
+   },
+   "eventCountCh3": {
+      "state": ".Relay2.EventCount"
+   }
+}
+```
+
+
+#### Function `sensor` of shelly
+```
+{
+   "battery": [
+      {
+         "state": ".sensor.battery"
+      },
+      {
+         "state": ".bat.value"
+      }
+   ],
+   "humidity": {
+      "state": ".hum.value"
+   },
+   "flood": {
+      "state": ".sensor.flood"
+   },
+   "door": {
+      "state": ".sensor.door"
+   },
+   "illumination": {
+      "state": ".sensor.lux"
+   },
+   "tilt": {
+      "state": ".sensor.tilt"
+   },
+   "vibration": {
+      "state": ".sensor.vibration"
+   },
+   "temperature": [
+      {
+         "state": ".sensor.temperatureC"
+      },
+      {
+         "state": ".tmp.temperatureC"
+      }
+   ]
 }
 ```
 

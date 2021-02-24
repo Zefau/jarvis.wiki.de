@@ -21,6 +21,7 @@ Jedes Modul, dass in einem Widget (einer Box) angezeigt wird (und damit nicht fu
 - [DateTime](#modul-datetime)
 - [DisplayImage](#modul-displayimage)
 - [iFrame](#modul-iframe)
+- [JsonTable](#modul-jsontable)
 - [Map](#modul-map)
 - [MediaControl](#modul-mediacontrol)
 - [StateList](#modul-statelist)
@@ -174,6 +175,26 @@ Keine Screenshots verfügbar
 | `height` | Höhe des iFrame Fensters  | Text | `100%` |
 | `width` | Breite des iFrame Fensters  | Text | `100%` |
 | `refresh` | Aktualisierungsintervall  | Number | `0` |
+
+
+***
+
+
+### Modul: JsonTable
+#### Kurzbeschreibung
+Zeigt eine Tabelle auf Basis einer JSON-Struktur an.
+
+
+#### Beispiel Screenshots
+Keine Screenshots verfügbar
+
+
+#### Konfiguration
+| Parameter | Beschreibung | Typ | Standard |
+| - | - | - | - |
+| `thead` | Spalten  | Text | `[{ "label": "Spalte", "align": "left" }]` |
+| `sortable` | Sortierung  | Switch | `true` |
+| `max` | Max. Einträge  | Number | - |
 
 
 ***

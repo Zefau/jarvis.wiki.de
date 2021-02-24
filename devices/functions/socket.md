@@ -382,3 +382,35 @@
 <td><code>.channels.1.on</code></td>
 </tr>
 </tbody></table>
+
+### Adapter shelly
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>power</td>
+<td><code>.Relay0.Switch</code></td>
+<td><code></code></td>
+<td></td>
+<td><code>.Relay0.Switch</code></td>
+</tr>
+<tr>
+<td><code>powerCounter</td>
+<td><code>.Relay0.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>powerMeter</td>
+<td><code>.Relay0.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>

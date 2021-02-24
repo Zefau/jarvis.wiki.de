@@ -578,6 +578,9 @@
 
 ### Adapter shelly
 
+
+#### power
+
 <table><thead><tr>
 <th>State Key</th>
 <th>State</th>
@@ -586,17 +589,908 @@
 <th>Action</th>
 </thead><tbody>
 <tr>
-<td><code>power</td>
+<td><code>0</td>
 <td><code>.lights.Switch</code></td>
 <td><code></code></td>
 <td></td>
 <td><code>.lights.Switch</code></td>
 </tr>
 <tr>
-<td><code>level</td>
+<td><code>1</td>
+<td><code>.white0.Switch</code></td>
+<td><code></code></td>
+<td></td>
+<td><code>.white0.Switch</code></td>
+</tr>
+</tbody></table>
+
+#### powerCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>actionElement</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>actionElement</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCh3
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>actionElement</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### colorTemperature
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>actionElement</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>properties</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### level
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
 <td><code>.lights.brightness</code></td>
 <td><code></code></td>
 <td></td>
 <td><code>.lights.brightness</code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white0.brightness</code></td>
+<td><code></code></td>
+<td></td>
+<td><code>.white0.brightness</code></td>
+</tr>
+</tbody></table>
+
+#### levelCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### levelCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### levelCh3
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### hex
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### hue
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>action</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerMeter
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay0.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.lights.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.white0.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>.Emeter0.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerMeterCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay1.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white1.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.Emeter1.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerMeterCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay2.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white2.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.Emeter2.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerMeterCh3
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay3.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white3.Power</code></td>
+<td><code> W</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounter
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay0.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.lights.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.white0.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>3</td>
+<td><code>.Emeter0.Total</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay1.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white1.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.Emeter1.Total</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay2.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white2.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>2</td>
+<td><code>.Emeter2.Total</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterCh3
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.Relay3.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.white3.Energy</code></td>
+<td><code> Wh</code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCurrent
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCurrentCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCurrentCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerVoltage
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerVoltageCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerVoltageCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterReturned
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterReturnedCh1
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerCounterReturnedCh2
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerTotalCurrent
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerTotalConsumed
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerTotalInstant
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerTotalVoltage
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### powerTotalVoltageMean
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>unit</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
 </tr>
 </tbody></table>

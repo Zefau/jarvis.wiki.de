@@ -122,3 +122,164 @@
 <td><code></code></td>
 </tr>
 </tbody></table>
+
+### Adapter shelly
+
+
+#### battery
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.sensor.battery</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.bat.value</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### humidity
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### flood
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### door
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### illumination
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### tilt
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### vibration
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>state</td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>
+
+#### temperature
+
+<table><thead><tr>
+<th>State Key</th>
+<th>State</th>
+<th>Einheit</th>
+<th>Anzeige</th>
+<th>Action</th>
+</thead><tbody>
+<tr>
+<td><code>0</td>
+<td><code>.sensor.temperatureC</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>1</td>
+<td><code>.tmp.temperatureC</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+</tbody></table>

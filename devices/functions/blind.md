@@ -7,6 +7,7 @@
 <tbody><tr><td><code>level</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&gt;90&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&lt;=90&quot;:&nbsp;&quot;window-shutter&quot;<br />}</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>level2</code></td><td>-</td><td>-</td><td><code>&quot;&nbsp;%&quot;</code></td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&gt;90&quot;:&nbsp;&quot;window-shutter-open&quot;,<br />&nbsp;&quot;&lt;=90&quot;:&nbsp;&quot;window-shutter&quot;<br />}</code></td><td>-</td></tr></tbody>
 <tbody><tr><td><code>activity</code></td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;in&nbsp;Bewegung&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;keine&quot;<br />}</code></td><td>-</td><td><code>{<br />&nbsp;&quot;true&quot;:&nbsp;&quot;pan-vertical&quot;,<br />&nbsp;&quot;false&quot;:&nbsp;&quot;dots-vertical&quot;<br />}</code></td><td>-</td></tr></tbody>
+<tbody><tr><td><code>stop</code></td><td>-</td><td>-</td><td>-</td><td><code>{<br />&nbsp;&quot;default&quot;:&nbsp;&quot;mdi-stop-circle&quot;<br />}</code></td><td>-</td></tr></tbody>
 </table>
 
 ## Beispielkonfiguration
@@ -398,6 +399,13 @@
 <tr>
 <td><code>activity</td>
 <td><code>.Shutter.state</code></td>
+<td><code></code></td>
+<td></td>
+<td><code></code></td>
+</tr>
+<tr>
+<td><code>stop</td>
+<td><code></code></td>
 <td><code></code></td>
 <td></td>
 <td><code>.Shutter.Pause</code></td>
